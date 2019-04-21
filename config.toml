@@ -16,10 +16,10 @@ baseurl = "/"
 copyright = "&copy; {year} Cory J. Cascalheira"
 
 # Enable analytics by entering your Google Analytics tracking ID
-googleAnalytics = ""
+googleAnalytics = "UA-138734038-1"
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "cjcascalheira"
 
 ############################
 ## Advanced options below ##
