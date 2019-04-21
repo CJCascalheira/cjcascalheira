@@ -128,6 +128,23 @@ section_pager = false
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
 
+# Publication types.
+#   Used to categorize publications.
+#   The index of the publication type in the list is used as its unique numerical identifier.
+#   The numeric ID is used in a publication's frontmatter to categorize it.
+#   The language can be edited below.
+#   For multilingual sites, `publication_types` can be copied to each language section at the end of this file and
+#   translated.
+publication_types = [
+    'Uncategorized',  # 0
+    'Conference paper',  # 1
+    'Journal article',  # 2
+    'Manuscript',  # 3
+    'Report',  # 4
+    'Book',  # 5
+    'Book section'  # 6
+  ]
+  
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
