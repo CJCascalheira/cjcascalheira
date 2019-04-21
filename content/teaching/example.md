@@ -1,9 +1,9 @@
 ---
-date: "2018-09-09T00:00:00-04:00"
+date: "2019-04-21"
 draft: false
 linktitle: Example Page
 menu:
-  tutorial:
+  teaching:
     parent: Example Topic
     weight: 1
 title: Example Page

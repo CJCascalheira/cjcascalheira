@@ -25,12 +25,24 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/CJCascalheira
-- icon: google-scholar
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/cjcascalheira/
+- icon: researchgate
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://www.researchgate.net/profile/Cory_Cascalheira
 - icon: github
   icon_pack: fab
   link: https://github.com/CJCascalheira
+- icon: academia
+  icon_pack: ai
+  link: https://nmsu.academia.edu/CoryCascalheira
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-5780-3101
+- icon: cv
+  icon_pack: ai
+  link: /docs/cv_cjcascalheira.pdf
 superuser: true
 user_groups:
 - Researchers
