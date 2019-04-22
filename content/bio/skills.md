@@ -43,6 +43,6 @@ weight = 1
   icon = "hand-holding-heart"
   icon_pack = "fas"
   name = "Therapist"
-  description = "This."
+  description = "I served homeless men and women as a counselor-in-training, facilitating groups in psychoeducation—such as [WRAP](https://copelandcenter.com/), [WHAM](https://www.integration.samhsa.gov/health-wellness/wham), and [Matrix](https://store.samhsa.gov/series/matrix-manuals)—and cognitive behavioral therapy."
 
 +++
