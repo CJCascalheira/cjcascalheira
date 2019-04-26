@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Research interests include identity, risk, and resilience among sexual minorities.
+bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities.
 education:
   courses:
   - course: B.A. in Psychology
@@ -49,4 +49,6 @@ user_groups:
 - Visitors
 ---
 
-Cory J. Cascalheira is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include risk, resilience, and identity among marginalized populations, especially sexual minorities.
+Cory J. Cascalheira, B.A. is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include oppression, resilience, and identity among marginalized populations, especially sexual minorities. 
+
+Clinically, he has experience delivering cognitive-behavioral therapy during individual and group interventions with people suffering from homelessness, addiction, and recidivism.
