@@ -1,0 +1,50 @@
+---
+title: "Open Stats Lab One-way ANOVA in R Using Data from Bastian, Jetten, & Ferris (2014)"
+author: "Cory J. Cascalheira"
+date: "2018-11-12"
+slug: osl-bastian-jetten-ferris-2014
+categories:
+  - R
+  - Tutorial
+tags:
+  - anova
+  - t-test
+image:
+  caption: ""
+  focal_point: ""
+---
+
+
+
+<div id="open-stats-lab" class="section level1">
+<h1>Open Stats Lab</h1>
+<hr />
+<p>Kevin P. McIntyre developed this amazing resource for students of psychology. Check out <a href="https://sites.trinity.edu/osl/">Open Stats Lab</a> for a collection of all activities.</p>
+<p>Each activity includes an article from <em>Psychological Science</em>, a data set, and an activity to complete in SPSS. However, if you are an open source fanatic, you could also complete the activity in <a href="https://jasp-stats.org/">JASP</a>. For tips on how to use JASP, check out <a href="https://osf.io/t56kg/">this resource</a> created by Buchanan, Hopke, and Donaldson (2018).</p>
+<p>I prefer to get my hands deep into the data. Dr. McIntyre does not <em>yet</em> offer an R activity to accompany the work of <a href="https://journals.sagepub.com/stoken/default+domain/yFi5kZDGWMGBNQY62zIE/full">Bastian, Jetten, and Ferris (2014)</a>, so here is one possible solution written in R.</p>
+</div>
+<div id="analysis" class="section level1">
+<h1>Analysis</h1>
+<hr />
+<p>I will perform assumption checks for each test prior to running it. We already know that the data meet all assumptions, otherwise the authors would have used a different analytic approach. However, checking the assumptions is helpful because:</p>
+<ol style="list-style-type: decimal">
+<li>reproducibility and accuracy can be verified; and</li>
+<li>if you are a student, then you should form the habit of testing assumptions.</li>
+</ol>
+<p>This analysis will follow the data science workflow advocated by <a href="https://r4ds.had.co.nz/introduction.html">Garrett Grolemund and Hadley Wickham</a>. First, we will set-up our session and import the data. Then, we must clean the data. Next, we will transform, model, and visualize the data to understand it. Finally, we will communicate our findings.</p>
+<p>Our task is to perform four analyses.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Independent t-Test</strong> - did participants differ significantly in their experience of pain intensity and pain unpleasantness?</li>
+<li><strong>Independent t-Test</strong> - did participants experience significant differences in affect?</li>
+<li><strong>Independent t-Test</strong> - did participants in the pain condition find their activity more threatening and challenging?</li>
+<li><strong>One-way ANOVA</strong> - does pain lead to differences in group bonding?</li>
+</ol>
+<div id="import" class="section level2">
+<h2>Import</h2>
+<hr />
+<p>Let’s load the packages necessary for this analysis into our workspace.</p>
+<pre class="r"><code>library(tidyverse)
+library(psych)
+library(car)</code></pre>
+</div>
+</div>

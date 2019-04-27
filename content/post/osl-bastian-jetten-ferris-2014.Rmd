@@ -1,0 +1,53 @@
+---
+title: "Open Stats Lab One-way ANOVA in R Using Data from Bastian, Jetten, & Ferris (2014)"
+author: "Cory J. Cascalheira"
+date: "2018-11-12"
+slug: osl-bastian-jetten-ferris-2014
+categories:
+  - R
+  - Tutorial
+tags:
+  - anova
+  - t-test
+image:
+  caption: ""
+  focal_point: ""
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Open Stats Lab
+___
+Kevin P. McIntyre developed this amazing resource for students of psychology. Check out [Open Stats Lab](https://sites.trinity.edu/osl/) for a collection of all activities.
+
+Each activity includes an article from *Psychological Science*, a data set, and an activity to complete in SPSS. However, if you are an open source fanatic, you could also complete the activity in [JASP](https://jasp-stats.org/). For tips on how to use JASP, check out [this resource](https://osf.io/t56kg/) created by Buchanan, Hopke, and Donaldson (2018).
+
+I prefer to get my hands deep into the data. Dr. McIntyre does not *yet* offer an R activity to accompany the work of [Bastian, Jetten, and Ferris (2014)](https://journals.sagepub.com/stoken/default+domain/yFi5kZDGWMGBNQY62zIE/full), so here is one possible solution written in R.
+
+# Analysis 
+___
+I will perform assumption checks for each test prior to running it. We already know that the data meet all assumptions, otherwise the authors would have used a different analytic approach. However, checking the assumptions is helpful because:
+
+1. reproducibility and accuracy can be verified; and
+2. if you are a student, then you should form the habit of testing assumptions.
+
+This analysis will follow the data science workflow advocated by [Garrett Grolemund and Hadley Wickham](https://r4ds.had.co.nz/introduction.html). First, we will set-up our session and import the data. Then, we must clean the data. Next, we will transform, model, and visualize the data to understand it. Finally, we will communicate our findings.
+
+Our task is to perform four analyses.
+
+1. **Independent t-Test** - did participants differ significantly in their experience of pain intensity and pain unpleasantness?
+2. **Independent t-Test** - did participants experience significant differences in affect?
+3. **Independent t-Test** - did participants in the pain condition find their activity more threatening and challenging?
+4. **One-way ANOVA** - does pain lead to differences in group bonding?
+
+## Import
+___
+Let's load the packages necessary for this analysis into our workspace.
+
+```{r message = FALSE}
+library(tidyverse)
+library(psych)
+library(car)
+```
