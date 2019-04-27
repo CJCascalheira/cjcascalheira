@@ -1,0 +1,18 @@
+---
+title: "Open Stats Lab Factorial ANOVA in R Using Data from Maglio & Polman (2014)"
+authors:
+  - admin
+date: "2018-11-26"
+slug: osl-maglio-polman-2014
+categories:
+  - R
+  - Tutorial
+tags:
+  - anova
+  - factorial
+  - t-test
+  - open data
+image:
+  caption: ""
+  focal_point: ""
+---
