@@ -4,6 +4,7 @@ authors:
   - admin
 date: "2018-12-10"
 slug: osl-gino-kouchaki-galinsky-2015
+summary: "A solution to Kevin P. McIntyre's Open Stats Lab activity on additional analytic skills using a data set from Gino, Kouchaki, and Galinsky (2015)."
 categories:
   - R
   - Tutorial
@@ -16,4 +17,8 @@ tags:
 image:
   caption: ""
   focal_point: ""
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
 ---

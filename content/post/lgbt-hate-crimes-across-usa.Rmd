@@ -19,9 +19,9 @@ image:
   caption: ""
   focal_point: ""
 output:
-blogdown::html_page:
-  toc: true
-  toc_depth: 1
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
 ---
 
 ```{r setup, include=FALSE}

@@ -4,6 +4,7 @@ authors:
   - admin
 date: "2018-11-19"
 slug: osl-harvie-et-al-2015
+summary: "A solution to Kevin P. McIntyre's Open Stats Lab activity on one-way ANOVA using a data set from Harvie et al. (2015)."
 categories:
   - R
   - Tutorial
@@ -15,4 +16,8 @@ tags:
 image:
   caption: ""
   focal_point: ""
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 1
 ---
