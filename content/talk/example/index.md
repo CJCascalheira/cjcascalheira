@@ -4,7 +4,8 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
   ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis
   sapien eu, pulvinar tempor diam.
 all_day: false
-authors: []
+authors:
+- admin
 date: "2030-06-01T13:00:00-04:00"
 date_end: "2030-06-01T15:00:00-04:00"
 event: Academic Theme Conference
