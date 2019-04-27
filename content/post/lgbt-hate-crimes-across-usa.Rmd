@@ -1,6 +1,7 @@
 ---
-title: LGBT Hate Crimes Across the U.S.
-author: Cory J. Cascalheira
+title: "LGBT Hate Crimes Across the U.S."
+authors:
+  - admin
 date: "2019-03-10"
 slug: lgbt-hate-crimes-across-usa
 summary: "This brief exploratory project presents geospatial, animated, and static visualizations about hate crimes affecting the LGBT community."
