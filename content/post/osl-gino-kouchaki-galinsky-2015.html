@@ -4,6 +4,7 @@ authors:
   - admin
 date: "2018-12-10"
 slug: osl-gino-kouchaki-galinsky-2015
+summary: "A solution to Kevin P. McIntyre's Open Stats Lab activity on additional analytic skills using a data set from Gino, Kouchaki, and Galinsky (2015)."
 categories:
   - R
   - Tutorial
@@ -16,8 +17,1089 @@ tags:
 image:
   caption: ""
   focal_point: ""
+output:
+  blogdown::html_page:
+    toc: true
+    toc_depth: 2
 ---
 
 
+<div id="TOC">
+<ul>
+<li><a href="#open-stats-lab">Open Stats Lab</a></li>
+<li><a href="#analysis">Analysis</a><ul>
+<li><a href="#import">Import</a></li>
+<li><a href="#clean">Clean</a></li>
+<li><a href="#understand">Understand</a></li>
+<li><a href="#communicate">Communicate</a></li>
+</ul></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+</ul>
+</div>
 
+<div id="open-stats-lab" class="section level1">
+<h1>Open Stats Lab</h1>
+<hr />
+<p>Kevin P. McIntyre developed this amazing resource for students of psychology. Check out <a href="https://sites.trinity.edu/osl/">Open Stats Lab</a> for a collection of all activities.</p>
+<p>Each activity includes an article from <em>Psychological Science</em>, a data set, and an activity to complete in SPSS. However, if you are an open source fanatic, you could also complete the activity in <a href="https://jasp-stats.org/">JASP</a>. For tips on how to use JASP, check out <a href="https://osf.io/t56kg/">this resource</a> created by Buchanan, Hopke, and Donaldson (2018).</p>
+<p>I prefer to get my hands deep into the data. Dr. McIntyre does not <em>yet</em> offer an R activity to accompany the work of <a href="https://journals.sagepub.com/stoken/default+domain/6XgDSfr6ZHSDs47tx5bu/full">Gino, Kouchaki, and Galinsky (2015)</a>, so here is one possible solution written in R.</p>
+</div>
+<div id="analysis" class="section level1">
+<h1>Analysis</h1>
+<hr />
+<p>I will perform assumption checks for each test prior to running it. We already know that the data meet all assumptions, otherwise the authors would have used a different analytic approach. However, checking the assumptions is helpful because:</p>
+<ol style="list-style-type: decimal">
+<li>reproducibility and accuracy can be verified; and</li>
+<li>if you are a student, then you should form the habit of testing assumptions.</li>
+</ol>
+<p>This analysis will follow the data science workflow advocated by <a href="https://r4ds.had.co.nz/introduction.html">Garrett Grolemund and Hadley Wickham</a>. First, we will set-up our session and import the data. Then, we must clean the data. Next, we will transform, model, and visualize the data to understand it. Finally, we will communicate our findings.</p>
+<div id="import" class="section level2">
+<h2>Import</h2>
+<hr />
+<p>We start by loading the necessary packages.</p>
+<pre class="r"><code>library(tidyverse) # utility &amp; visualization
+library(psych) # Cronbach&#39;s alpha
+library(knitr) # create tables
+library(kableExtra) # style tables
+library(broom) # calculate effect size
+library(car) # Levene&#39;s test
+library(gmodels) # crosstabs method for chi-square</code></pre>
+<p>Now we can import the data set. Note the relative path since the working directory has been set.</p>
+<pre class="r"><code>gino &lt;- read_csv(&quot;https://www.cjcascalheira.com/data/osl-gino-kouchaki-galinsky-2015/gino-kouchaki-galinsky-2015-experiment-3.csv&quot;)</code></pre>
+<p>We can also set the default theme for the exploratory plots we will create as we test the assumptions of the univariate ANOVAs.</p>
+<pre class="r"><code>theme_set(theme_minimal())</code></pre>
+</div>
+<div id="clean" class="section level2">
+<h2>Clean</h2>
+<hr />
+<p>Unlike some data sets in the Open Stats Lab series, Dr. McIntyre chose to leave all observations in this file. That is, the data set has 291 observations instead of 288.</p>
+<pre class="r"><code>glimpse(gino)</code></pre>
+<pre><code>## Observations: 291
+## Variables: 30
+## $ instr               &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+## $ filter              &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+## $ CONDITION           &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+## $ FAILED_MC           &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+## $ condition_string    &lt;chr&gt; &quot;neutral&quot;, &quot;neutral&quot;, &quot;neutral&quot;, &quot;neutral&quot;...
+## $ impurity_1          &lt;dbl&gt; 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, ...
+## $ impurity_2          &lt;dbl&gt; 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, ...
+## $ impurity_3          &lt;dbl&gt; 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, ...
+## $ dissonance_1        &lt;dbl&gt; 1, 2, 2, 1, 1, 3, 2, 1, 1, 1, 2, 1, 5, 1, ...
+## $ dissonance_2        &lt;dbl&gt; 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 5, 1, 5, 1, ...
+## $ dissonance_3        &lt;dbl&gt; 6, 2, 2, 1, 1, 2, 1, 1, 1, 1, 6, 1, 5, 1, ...
+## $ neg_aff1            &lt;dbl&gt; 3, 4, 2, 1, 1, 1, 1, 1, 1, 5, 4, 1, 3, 1, ...
+## $ neg_aff2            &lt;dbl&gt; 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 4, 1, 2, 1, ...
+## $ neg_aff3            &lt;dbl&gt; 3, 3, 2, 1, 1, 2, 1, 1, 1, 5, 5, 1, 2, 1, ...
+## $ pos_aff1            &lt;dbl&gt; 2, 5, 5, 6, 4, 4, 5, 5, 6, 6, 5, 6, 2, 6, ...
+## $ pos_aff2            &lt;dbl&gt; 1, 6, 5, 6, 5, 4, 5, 5, 6, 6, 5, 6, 2, 7, ...
+## $ pos_aff3            &lt;dbl&gt; 1, 5, 2, 6, 6, 4, 2, 4, 5, 5, 2, 6, 2, 6, ...
+## $ embarrassed         &lt;dbl&gt; 1, 1, 5, 1, 4, 2, 1, 1, 1, 1, 6, 1, 5, 1, ...
+## $ ashamed             &lt;dbl&gt; 1, 1, 2, 1, 4, 2, 1, 1, 1, 1, 5, 1, 5, 1, ...
+## $ alientation_1       &lt;dbl&gt; 2, 3, 5, 1, 1, 2, 2, 2, 2, 1, 3, 4, 4, 1, ...
+## $ alientation_2       &lt;dbl&gt; 1, 3, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 3, 1, ...
+## $ alientation_3       &lt;dbl&gt; 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 3, 1, 5, 1, ...
+## $ alientation_4       &lt;dbl&gt; 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 4, 1, 3, 1, ...
+## $ MCheck              &lt;dbl&gt; 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, ...
+## $ age                 &lt;dbl&gt; 30, 31, 29, 33, 20, 18, 31, 39, 33, 28, 28...
+## $ male                &lt;dbl&gt; 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, ...
+## $ decided_to_help     &lt;dbl&gt; 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, ...
+## $ neutralDummy        &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+## $ failureDummy        &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...
+## $ inauthenticityDummy &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ...</code></pre>
+<p>It appears that we must filter for those participants who passed the manipulation check, <code>FAILED_MC</code>, excluding those who failed it. Once we do that, this variable is useless and we can drop it, along with <code>instr</code>, <code>filter</code>, <code>MCheck</code>, the demographic variables and the dummy variables. Keep only one of the two condition variables.</p>
+<pre class="r"><code>gino_clean &lt;- gino %&gt;%
+  filter(FAILED_MC == 0) %&gt;%
+  select(-c(instr, filter, CONDITION, FAILED_MC, MCheck, age, male),
+         -ends_with(&quot;Dummy&quot;)) %&gt;%
+  rename(condition = condition_string)</code></pre>
+<p>A transformation of condition into a factor is necessary for the one-way ANOVAs.</p>
+<pre class="r"><code>gino_clean &lt;- within(gino_clean, {
+  condition &lt;- factor(condition)
+})</code></pre>
+</div>
+<div id="understand" class="section level2">
+<h2>Understand</h2>
+<hr />
+<p>Our first task is to compute aggregate dependent measures. A chain of pipes makes this task is relatively simple in R. For each dependent measure, we will mutate a new variable that selects individual columns to compute the mean for each row. The aggregate is more useful for future analyses, so the individual measures of impurity, dissonance, and so on will be dropped.</p>
+<p>Always save your results as new R data frames to track changes.</p>
+<pre class="r"><code>(gino_means &lt;- gino_clean %&gt;%
+  mutate(
+    feelings_of_impurity = select(gino_clean, starts_with(&quot;impurity&quot;)) %&gt;% rowMeans(),
+    feelings_of_discomfort = select(gino_clean, starts_with(&quot;dissonance&quot;)) %&gt;% rowMeans(),
+    negative_affect = select(gino_clean, starts_with(&quot;neg&quot;)) %&gt;% rowMeans(),
+    positive_affect = select(gino_clean, starts_with(&quot;pos&quot;)) %&gt;% rowMeans(),
+    embarrassment = select(gino_clean, embarrassed, ashamed) %&gt;% rowMeans(),
+    self_alienation = select(gino_clean, starts_with(&quot;alien&quot;)) %&gt;% rowMeans()
+  ) %&gt;%
+  select(condition, feelings_of_impurity, feelings_of_discomfort, negative_affect,
+         positive_affect, embarrassment, self_alienation, decided_to_help))</code></pre>
+<pre><code>## # A tibble: 288 x 8
+##    condition feelings_of_imp~ feelings_of_dis~ negative_affect
+##    &lt;fct&gt;                &lt;dbl&gt;            &lt;dbl&gt;           &lt;dbl&gt;
+##  1 neutral                  1             2.67            2.67
+##  2 neutral                  1             2               3   
+##  3 neutral                  1             2               2   
+##  4 neutral                  1             1               1   
+##  5 neutral                  1             1               1   
+##  6 neutral                  2             2.33            1.33
+##  7 neutral                  1             1.33            1   
+##  8 neutral                  1             1               1   
+##  9 neutral                  1             1               1   
+## 10 neutral                  1             1               3.67
+## # ... with 278 more rows, and 4 more variables: positive_affect &lt;dbl&gt;,
+## #   embarrassment &lt;dbl&gt;, self_alienation &lt;dbl&gt;, decided_to_help &lt;dbl&gt;</code></pre>
+<div id="cronbachs-alpha" class="section level3">
+<h3>Cronbach’s Alpha</h3>
+<p>Cronbach’s alpha is a measure of internal consistency ranging from 0 to 1. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4205511/">Acceptable values</a> for the coefficient range from 0.70 to 0.95, although it has been noted that values greater than 0.90 may indicate redundancy. Longer measurement instruments increase internal consistency, but may cause redundancy.</p>
+<p>A function exists to calculate Cronbach’s alpha in <code>psych::alpha</code>. The function takes a data frame of scale items as its primary argument. Select the individual scale items prior to aggregation to compute alpha for each underlying construct.</p>
+<pre class="r"><code># Cronbach&#39;s alpha for feelings of impurity
+gino_clean %&gt;%
+  select(starts_with(&quot;impurity&quot;)) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N    ase mean  sd median_r
+##       0.94      0.94    0.91      0.84  15 0.0062  2.3 1.7     0.84
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.93 0.94 0.95 
+## 
+##  Reliability if an item is dropped:
+##            raw_alpha std.alpha G6(smc) average_r  S/N alpha se var.r med.r
+## impurity_1      0.92      0.92    0.84      0.84 10.9    0.010    NA  0.84
+## impurity_2      0.91      0.91    0.83      0.83  9.7    0.011    NA  0.83
+## impurity_3      0.91      0.91    0.84      0.84 10.4    0.010    NA  0.84
+## 
+##  Item statistics 
+##              n raw.r std.r r.cor r.drop mean  sd
+## impurity_1 288  0.94  0.94  0.90   0.87  2.3 1.8
+## impurity_2 288  0.95  0.95  0.91   0.88  2.2 1.8
+## impurity_3 288  0.95  0.94  0.90   0.87  2.4 1.9
+## 
+## Non missing response frequency for each item
+##               1    2    3    4    5    6    7 miss
+## impurity_1 0.59 0.09 0.06 0.07 0.11 0.05 0.02    0
+## impurity_2 0.60 0.11 0.06 0.08 0.06 0.07 0.03    0
+## impurity_3 0.56 0.10 0.07 0.08 0.09 0.06 0.03    0</code></pre>
+<pre class="r"><code># Cronbach&#39;s alpha for feelings of discomfort
+gino_clean %&gt;%
+  select(starts_with(&quot;dissonance&quot;)) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N   ase mean sd median_r
+##       0.94      0.94    0.93      0.85  17 0.006  4.1  2     0.82
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.93 0.94 0.95 
+## 
+##  Reliability if an item is dropped:
+##              raw_alpha std.alpha G6(smc) average_r  S/N alpha se var.r
+## dissonance_1      0.90      0.90    0.82      0.82  9.3   0.0115    NA
+## dissonance_2      0.88      0.88    0.79      0.79  7.6   0.0136    NA
+## dissonance_3      0.96      0.96    0.92      0.92 24.7   0.0046    NA
+##              med.r
+## dissonance_1  0.82
+## dissonance_2  0.79
+## dissonance_3  0.92
+## 
+##  Item statistics 
+##                n raw.r std.r r.cor r.drop mean  sd
+## dissonance_1 288  0.96  0.96  0.94   0.90  4.0 2.2
+## dissonance_2 288  0.97  0.97  0.96   0.92  4.0 2.1
+## dissonance_3 288  0.92  0.92  0.84   0.82  4.3 2.1
+## 
+## Non missing response frequency for each item
+##                 1    2    3    4    5    6    7 miss
+## dissonance_1 0.25 0.11 0.05 0.05 0.23 0.20 0.11    0
+## dissonance_2 0.24 0.09 0.05 0.06 0.25 0.21 0.10    0
+## dissonance_3 0.21 0.06 0.06 0.05 0.25 0.23 0.14    0</code></pre>
+<pre class="r"><code># Cronbach&#39;s alpha for negative affect
+gino_clean %&gt;%
+  select(starts_with(&quot;neg&quot;)) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N    ase mean sd median_r
+##       0.93      0.93     0.9      0.81  13 0.0075  3.7  2     0.78
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.91 0.93 0.94 
+## 
+##  Reliability if an item is dropped:
+##          raw_alpha std.alpha G6(smc) average_r  S/N alpha se var.r med.r
+## neg_aff1      0.88      0.88    0.78      0.78  7.3   0.0143    NA  0.78
+## neg_aff2      0.93      0.93    0.87      0.87 12.9   0.0085    NA  0.87
+## neg_aff3      0.87      0.87    0.77      0.77  6.9   0.0150    NA  0.77
+## 
+##  Item statistics 
+##            n raw.r std.r r.cor r.drop mean  sd
+## neg_aff1 288  0.94  0.94  0.91   0.87  3.9 2.2
+## neg_aff2 288  0.91  0.91  0.83   0.81  3.3 2.1
+## neg_aff3 288  0.95  0.95  0.92   0.88  3.9 2.2
+## 
+## Non missing response frequency for each item
+##             1    2    3    4    5    6    7 miss
+## neg_aff1 0.28 0.08 0.06 0.09 0.20 0.16 0.13    0
+## neg_aff2 0.34 0.13 0.07 0.12 0.14 0.10 0.10    0
+## neg_aff3 0.27 0.08 0.09 0.05 0.22 0.16 0.13    0</code></pre>
+<pre class="r"><code># Cronbach&#39;s alpha for positive affect
+gino_clean %&gt;%
+  select(starts_with(&quot;pos&quot;)) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N    ase mean  sd median_r
+##       0.95      0.95    0.94      0.86  18 0.0055  2.8 1.8     0.81
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.94 0.95 0.96 
+## 
+##  Reliability if an item is dropped:
+##          raw_alpha std.alpha G6(smc) average_r  S/N alpha se var.r med.r
+## pos_aff1      0.89      0.89    0.81      0.81  8.5   0.0125    NA  0.81
+## pos_aff2      0.89      0.89    0.81      0.81  8.5   0.0125    NA  0.81
+## pos_aff3      0.98      0.98    0.96      0.96 49.9   0.0023    NA  0.96
+## 
+##  Item statistics 
+##            n raw.r std.r r.cor r.drop mean  sd
+## pos_aff1 288  0.97  0.97  0.97   0.93  2.8 1.9
+## pos_aff2 288  0.97  0.97  0.97   0.93  2.9 2.0
+## pos_aff3 288  0.91  0.92  0.82   0.82  2.7 1.8
+## 
+## Non missing response frequency for each item
+##             1    2    3    4    5    6    7 miss
+## pos_aff1 0.35 0.25 0.08 0.09 0.09 0.10 0.04    0
+## pos_aff2 0.33 0.26 0.08 0.06 0.11 0.10 0.06    0
+## pos_aff3 0.34 0.26 0.11 0.10 0.08 0.06 0.05    0</code></pre>
+<pre class="r"><code># Cronbach&#39;s alpha for embarrassment
+gino_clean %&gt;%
+  select(embarrassed, ashamed) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N   ase mean  sd median_r
+##        0.9       0.9    0.81      0.81 8.6 0.012  3.7 2.1     0.81
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.87 0.9 0.92 
+## 
+##  Reliability if an item is dropped:
+##             raw_alpha std.alpha G6(smc) average_r S/N alpha se var.r med.r
+## embarrassed      0.81      0.81    0.66      0.81  NA       NA  0.81  0.81
+## ashamed          0.66      0.81      NA        NA  NA       NA  0.66  0.81
+## 
+##  Item statistics 
+##               n raw.r std.r r.cor r.drop mean  sd
+## embarrassed 288  0.95  0.95  0.86   0.81  3.6 2.2
+## ashamed     288  0.95  0.95  0.86   0.81  3.7 2.2
+## 
+## Non missing response frequency for each item
+##                1    2    3    4    5    6    7 miss
+## embarrassed 0.28 0.13 0.06 0.07 0.22 0.16 0.09    0
+## ashamed     0.28 0.11 0.05 0.11 0.18 0.17 0.09    0</code></pre>
+<pre class="r"><code># Cronbach&#39;s alpha for self-alienation
+gino_clean %&gt;%
+  select(starts_with(&quot;alien&quot;)) %&gt;%
+  psych::alpha()</code></pre>
+<pre><code>## 
+## Reliability analysis   
+## Call: psych::alpha(x = .)
+## 
+##   raw_alpha std.alpha G6(smc) average_r S/N    ase mean  sd median_r
+##        0.9       0.9    0.89      0.69   9 0.0095    3 1.7     0.72
+## 
+##  lower alpha upper     95% confidence boundaries
+## 0.88 0.9 0.92 
+## 
+##  Reliability if an item is dropped:
+##               raw_alpha std.alpha G6(smc) average_r  S/N alpha se  var.r
+## alientation_1      0.92      0.92    0.89      0.80 12.2   0.0077 0.0014
+## alientation_2      0.85      0.84    0.82      0.64  5.4   0.0154 0.0307
+## alientation_3      0.85      0.85    0.82      0.66  5.9   0.0153 0.0168
+## alientation_4      0.85      0.86    0.82      0.67  6.0   0.0149 0.0122
+##               med.r
+## alientation_1  0.79
+## alientation_2  0.56
+## alientation_3  0.67
+## alientation_4  0.67
+## 
+##  Item statistics 
+##                 n raw.r std.r r.cor r.drop mean  sd
+## alientation_1 288  0.77  0.78  0.66   0.62  2.7 1.7
+## alientation_2 288  0.92  0.92  0.89   0.85  2.8 1.7
+## alientation_3 288  0.92  0.90  0.88   0.83  3.3 2.1
+## alientation_4 288  0.91  0.90  0.88   0.83  3.2 2.0
+## 
+## Non missing response frequency for each item
+##                  1    2    3    4    5    6    7 miss
+## alientation_1 0.31 0.31 0.10 0.08 0.13 0.06 0.02    0
+## alientation_2 0.33 0.25 0.09 0.09 0.17 0.05 0.02    0
+## alientation_3 0.31 0.18 0.06 0.06 0.22 0.11 0.06    0
+## alientation_4 0.32 0.18 0.06 0.12 0.17 0.10 0.05    0</code></pre>
+<p>After writing their essays, participants answered a questionnaire composed of items on a 7-point scale. The items assessed feelings of impurity (<span class="math inline">\(\alpha = .94\)</span>), discomfort (<span class="math inline">\(\alpha = .94\)</span>), negative (<span class="math inline">\(\alpha = .93\)</span>) and positive (<span class="math inline">\(\alpha = .95\)</span>) affect, embarrassment (<span class="math inline">\(\alpha = .90\)</span>), and self-alienation (<span class="math inline">\(\alpha = .90\)</span>).</p>
+</div>
+<div id="descriptive-statistics" class="section level3">
+<h3>Descriptive Statistics</h3>
+<p>One method for calculating descriptive statistics uses a pipeline chaining <code>group_by()</code> and <code>summarize()</code>. First, we need to transform the data into long format using <code>gather()</code>.</p>
+<p>Although the activity does not require it, you will notice the upper and lower bounds of the 95% confidence interval in the output. Note that the confidence intervals differ slightly from those reported by Gino, Kouchaki, and Galinsky (2015), which is to be expected. Had we chosen to perform bootstrapping with a call to <code>quantile()</code>, the computed 95% confidence intervals would have likely been different from those yielded below. Slight variation of confidence intervals is acceptable.</p>
+<pre class="r"><code>(gino_summary &lt;- gino_means %&gt;%
+  select(-decided_to_help) %&gt;%
+  gather(key = item, value = score, -condition) %&gt;%
+  group_by(condition, item) %&gt;%
+  summarize(
+    mean = mean(score),
+    sd = sd(score),
+    n = n(),
+    t_star = qt(p = 0.975, df = n - 1),
+    upper = mean + (t_star * (sd/sqrt(n))), 
+    lower = mean - (t_star * (sd/sqrt(n)))
+  ))</code></pre>
+<pre><code>## # A tibble: 18 x 8
+## # Groups:   condition [3]
+##    condition      item                  mean    sd     n t_star upper lower
+##    &lt;fct&gt;          &lt;chr&gt;                &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1 failure        embarrassment         4.69 1.82     97   1.98  5.05  4.32
+##  2 failure        feelings_of_discomf~  4.90 1.64     97   1.98  5.23  4.57
+##  3 failure        feelings_of_impurity  2.09 1.56     97   1.98  2.40  1.77
+##  4 failure        negative_affect       4.61 1.73     97   1.98  4.96  4.26
+##  5 failure        positive_affect       1.84 1.01     97   1.98  2.05  1.64
+##  6 failure        self_alienation       3.21 1.62     97   1.98  3.54  2.89
+##  7 inauthenticity embarrassment         4.40 1.71     92   1.99  4.76  4.05
+##  8 inauthenticity feelings_of_discomf~  5.11 1.53     92   1.99  5.43  4.80
+##  9 inauthenticity feelings_of_impurity  3.66 1.82     92   1.99  4.03  3.28
+## 10 inauthenticity negative_affect       4.63 1.68     92   1.99  4.98  4.28
+## 11 inauthenticity positive_affect       1.99 1.11     92   1.99  2.22  1.76
+## 12 inauthenticity self_alienation       3.83 1.51     92   1.99  4.14  3.52
+## 13 neutral        embarrassment         1.96 1.38     99   1.98  2.24  1.69
+## 14 neutral        feelings_of_discomf~  2.41 1.71     99   1.98  2.75  2.07
+## 15 neutral        feelings_of_impurity  1.21 0.613    99   1.98  1.33  1.09
+## 16 neutral        negative_affect       1.88 1.30     99   1.98  2.13  1.62
+## 17 neutral        positive_affect       4.46 1.77     99   1.98  4.82  4.11
+## 18 neutral        self_alienation       1.92 1.19     99   1.98  2.16  1.69</code></pre>
+</div>
+<div id="apa-style-table" class="section level3">
+<h3>APA Style Table</h3>
+<p>If <code>item</code> becames a factor, we can rearrange the order and apply labels that match the publication.</p>
+<pre class="r"><code>(gino_summary &lt;- within(gino_summary, {
+  item &lt;- factor(item, 
+                 levels = c(&quot;self_alienation&quot;, &quot;feelings_of_impurity&quot;, &quot;feelings_of_discomfort&quot;,
+                            &quot;negative_affect&quot;, &quot;positive_affect&quot;, &quot;embarrassment&quot;),
+                 labels = c(&quot;Self-alienation&quot;, &quot;Feelings of impurity&quot;, &quot;Discomfort&quot;,
+                            &quot;Negative affect&quot;, &quot;Positive affect&quot;, &quot;Embarrassment&quot;))
+})) </code></pre>
+<pre><code>## # A tibble: 18 x 8
+## # Groups:   condition [3]
+##    condition      item                  mean    sd     n t_star upper lower
+##    &lt;fct&gt;          &lt;fct&gt;                &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1 failure        Embarrassment         4.69 1.82     97   1.98  5.05  4.32
+##  2 failure        Discomfort            4.90 1.64     97   1.98  5.23  4.57
+##  3 failure        Feelings of impurity  2.09 1.56     97   1.98  2.40  1.77
+##  4 failure        Negative affect       4.61 1.73     97   1.98  4.96  4.26
+##  5 failure        Positive affect       1.84 1.01     97   1.98  2.05  1.64
+##  6 failure        Self-alienation       3.21 1.62     97   1.98  3.54  2.89
+##  7 inauthenticity Embarrassment         4.40 1.71     92   1.99  4.76  4.05
+##  8 inauthenticity Discomfort            5.11 1.53     92   1.99  5.43  4.80
+##  9 inauthenticity Feelings of impurity  3.66 1.82     92   1.99  4.03  3.28
+## 10 inauthenticity Negative affect       4.63 1.68     92   1.99  4.98  4.28
+## 11 inauthenticity Positive affect       1.99 1.11     92   1.99  2.22  1.76
+## 12 inauthenticity Self-alienation       3.83 1.51     92   1.99  4.14  3.52
+## 13 neutral        Embarrassment         1.96 1.38     99   1.98  2.24  1.69
+## 14 neutral        Discomfort            2.41 1.71     99   1.98  2.75  2.07
+## 15 neutral        Feelings of impurity  1.21 0.613    99   1.98  1.33  1.09
+## 16 neutral        Negative affect       1.88 1.30     99   1.98  2.13  1.62
+## 17 neutral        Positive affect       4.46 1.77     99   1.98  4.82  4.11
+## 18 neutral        Self-alienation       1.92 1.19     99   1.98  2.16  1.69</code></pre>
+<p>Isolate the mean and standard deviation, renaming the columns to match APA format.</p>
+<pre class="r"><code># Drop confidence interval information
+(gino_summary_short &lt;- gino_summary %&gt;%
+    select(condition, item, mean, sd))</code></pre>
+<pre><code>## # A tibble: 18 x 4
+## # Groups:   condition [3]
+##    condition      item                  mean    sd
+##    &lt;fct&gt;          &lt;fct&gt;                &lt;dbl&gt; &lt;dbl&gt;
+##  1 failure        Embarrassment         4.69 1.82 
+##  2 failure        Discomfort            4.90 1.64 
+##  3 failure        Feelings of impurity  2.09 1.56 
+##  4 failure        Negative affect       4.61 1.73 
+##  5 failure        Positive affect       1.84 1.01 
+##  6 failure        Self-alienation       3.21 1.62 
+##  7 inauthenticity Embarrassment         4.40 1.71 
+##  8 inauthenticity Discomfort            5.11 1.53 
+##  9 inauthenticity Feelings of impurity  3.66 1.82 
+## 10 inauthenticity Negative affect       4.63 1.68 
+## 11 inauthenticity Positive affect       1.99 1.11 
+## 12 inauthenticity Self-alienation       3.83 1.51 
+## 13 neutral        Embarrassment         1.96 1.38 
+## 14 neutral        Discomfort            2.41 1.71 
+## 15 neutral        Feelings of impurity  1.21 0.613
+## 16 neutral        Negative affect       1.88 1.30 
+## 17 neutral        Positive affect       4.46 1.77 
+## 18 neutral        Self-alienation       1.92 1.19</code></pre>
+<pre class="r"><code># Rename columns
+(gino_summary_short &lt;- gino_summary_short %&gt;%
+    rename(
+      Variable = item,
+      M = mean,
+      SD = sd
+    ) %&gt;%
+    arrange(Variable))</code></pre>
+<pre><code>## # A tibble: 18 x 4
+## # Groups:   condition [3]
+##    condition      Variable                 M    SD
+##    &lt;fct&gt;          &lt;fct&gt;                &lt;dbl&gt; &lt;dbl&gt;
+##  1 failure        Self-alienation       3.21 1.62 
+##  2 inauthenticity Self-alienation       3.83 1.51 
+##  3 neutral        Self-alienation       1.92 1.19 
+##  4 failure        Feelings of impurity  2.09 1.56 
+##  5 inauthenticity Feelings of impurity  3.66 1.82 
+##  6 neutral        Feelings of impurity  1.21 0.613
+##  7 failure        Discomfort            4.90 1.64 
+##  8 inauthenticity Discomfort            5.11 1.53 
+##  9 neutral        Discomfort            2.41 1.71 
+## 10 failure        Negative affect       4.61 1.73 
+## 11 inauthenticity Negative affect       4.63 1.68 
+## 12 neutral        Negative affect       1.88 1.30 
+## 13 failure        Positive affect       1.84 1.01 
+## 14 inauthenticity Positive affect       1.99 1.11 
+## 15 neutral        Positive affect       4.46 1.77 
+## 16 failure        Embarrassment         4.69 1.82 
+## 17 inauthenticity Embarrassment         4.40 1.71 
+## 18 neutral        Embarrassment         1.96 1.38</code></pre>
+<p>The table is too long. Divide this data frame into three R objects, then merge the columns to one master data frame.</p>
+<pre class="r"><code># Separate by condition
+(gino_table &lt;- gino_summary_short %&gt;%
+  filter(condition == &quot;inauthenticity&quot;) %&gt;%
+  ungroup() %&gt;%
+  select(Variable, M, SD))</code></pre>
+<pre><code>## # A tibble: 6 x 3
+##   Variable                 M    SD
+##   &lt;fct&gt;                &lt;dbl&gt; &lt;dbl&gt;
+## 1 Self-alienation       3.83  1.51
+## 2 Feelings of impurity  3.66  1.82
+## 3 Discomfort            5.11  1.53
+## 4 Negative affect       4.63  1.68
+## 5 Positive affect       1.99  1.11
+## 6 Embarrassment         4.40  1.71</code></pre>
+<pre class="r"><code>failure &lt;- gino_summary_short %&gt;%
+  filter(condition == &quot;failure&quot;) %&gt;%
+  ungroup() %&gt;%
+  select(M, SD)
 
+condition &lt;- gino_summary_short %&gt;%
+  filter(condition == &quot;neutral&quot;) %&gt;%
+  ungroup() %&gt;%
+  select(M, SD)
+
+# Prepare table format
+(clean_table &lt;- bind_cols(gino_table, failure, condition))</code></pre>
+<pre><code>## # A tibble: 6 x 7
+##   Variable                 M    SD    M1   SD1    M2   SD2
+##   &lt;fct&gt;                &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 Self-alienation       3.83  1.51  3.21  1.62  1.92 1.19 
+## 2 Feelings of impurity  3.66  1.82  2.09  1.56  1.21 0.613
+## 3 Discomfort            5.11  1.53  4.90  1.64  2.41 1.71 
+## 4 Negative affect       4.63  1.68  4.61  1.73  1.88 1.30 
+## 5 Positive affect       1.99  1.11  1.84  1.01  4.46 1.77 
+## 6 Embarrassment         4.40  1.71  4.69  1.82  1.96 1.38</code></pre>
+<p>The following code is a <code>kable</code> in LaTeX form. It saves the table in APA style as a <code>.png</code> and displays the output.</p>
+<pre class="r"><code>kable(clean_table, &quot;latex&quot;, booktabs = TRUE, digits = 2, align = &quot;lcccccc&quot;,
+      col.names = c(&quot;Variable&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;M&quot;, &quot;SD&quot;, &quot;M&quot;, &quot;SD&quot;)) %&gt;%
+  add_header_above(header = c(&quot; &quot;, &quot;Inauthenticity&quot; = 2, &quot;Failure&quot; = 2, &quot;Control&quot; = 2))</code></pre>
+
+</div>
+<div id="one-way-anova" class="section level3">
+<h3>One-way ANOVA</h3>
+<p>Now we can conduct a one-way between-groups ANOVA for each construct. The assumptions for this parametic test can be thought of as either met before the study was conducted or tested after data collection.</p>
+<p><strong>Design Assumptions</strong> 1. <strong>Continuous dependent variable</strong> at the interval or ratio level.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p><strong>Categorical independent variable</strong> as a factor with three or more levels.</p></li>
+<li><p><strong>Independence of observations</strong> such that participants are randomly assigned to levels of the factor (i.e., groups) with no overlap.</p></li>
+</ol>
+<p><strong>Tested Assumptions</strong> 4. <strong>No significant outliers</strong>, which can skew the distribution and affect normality; assessed via boxplots.</p>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Normal distribution</strong> of dependent measures for each group; assessed with Shapiro-Wilk and Q-Q plots.
+<ul>
+<li>Univariate ANOVAs can tolerate non-normal data.</li>
+<li>Shapiro-Wilk test is conducted on the residuals of the ANOVA models.</li>
+<li>The data points in the Q-Q plot should be aligned with the dotted diagonal line if the distribution of the dependent measure is to be considered normal.</li>
+</ul></li>
+<li><strong>Homogeneity of variances</strong> between all groups for each dependent measure; assessed with <a href="https://files.eric.ed.gov/fulltext/EJ809430.pdf">Levene’s test</a> and plot of residuals versus fitted values.
+<ul>
+<li>Violation of this assumption is most problematic when sample sizes are not <em>roughly</em> <a href="https://stats.stackexchange.com/questions/303905/what-affects-levenes-test-sig-value">equal</a>.</li>
+<li>Homogeneity of variances can be assumed if the red line in <a href="http://www.sthda.com/english/wiki/one-way-anova-test-in-r">residuals vs. fitted values plot</a> is horizontal.</li>
+</ul></li>
+</ol>
+<p>After each omnibus test, we will conduct pairwise comparisons with a Bonferroni correction to determine which pairs of groups are significantly different. The <a href="https://www.r-bloggers.com/r-tutorial-series-anova-pairwise-comparison-methods/">Bonferroni correction</a> divides the Type I error rate by the number of levels of the factor (in this case, 3), making the Bonferroni correction a more conservative estimate of significance.</p>
+<p>Reporting the direction of comparisons relies on the descriptive statistics calculated above.</p>
+<p>The effect size of a one-way ANOVA is partial eta-squared, which we can calculate manually:</p>
+<p><span class="math display">\[\eta_p^2 = \frac{SS_\text{condition}}{SS_\text{condition} + SS_\text{residuals}}\]</span></p>
+<p>After creating an <code>aov</code> object, we will extract coefficient-level information with <code>broom::tidy</code> to code the sum of squares. This prevents transcription error and supports reproducibility.</p>
+<div id="self-alienation" class="section level4 tabset tabset-pills">
+<h4>Self-alienation</h4>
+<pre class="r"><code># Self-alienation
+alienation_aov &lt;- aov(self_alienation ~ condition, data = gino_means)
+
+# Partial eta-squared
+(alienation_tidied &lt;- tidy(alienation_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  182.  90.9       43.2  4.00e-17
+## 2 Residuals   285  600.   2.10      NA   NA</code></pre>
+<pre class="r"><code>alienation_tidied$sumsq[1] / (alienation_tidied$sumsq[1] + alienation_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.2327635</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$self_alienation, gino_means$condition,
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$self_alienation and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 0.012   -             
+## neutral        5.2e-09 &lt; 2e-16       
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>A one-way ANOVA using the self-alienation manipulation check as the dependent measure evinced a main effect of condition, <em>F</em>(2, 285) = 43.23, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .23\)</span>. Pairwise t-tests corrected by Bonferroni adjustment revealed that participants in the inauthentic condition (<em>M</em> = 3.83, <em>SD</em> = 1.51) felt a greater distance from the self than participants in either the failure (<em>M</em> = 3.21, <em>SD</em> = 1.62, <em>p</em> = .012) or the control condition (<em>M</em> = 1.92, <em>SD</em> = 1.19, <em>p</em> &lt; .001). Participants reported greater self-alienation when they recalled a failure than when they recalled a recent situation (<em>p</em> &lt; .001).</p>
+<div id="outliers" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = self_alienation)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Outliers are present int he neutral condition.</p>
+</div>
+<div id="normality" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>alienation_residuals &lt;- residuals(alienation_aov)
+shapiro.test(alienation_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  alienation_residuals
+## W = 0.98086, p-value = 0.0006695</code></pre>
+<pre class="r"><code>plot(alienation_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Since <em>p</em> &lt; .001, we reject the null hypothesis: the data are not normally distributed.</p>
+</div>
+<div id="homoscedasticity" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(self_alienation ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value    Pr(&gt;F)    
+## group   2  9.0921 0.0001487 ***
+##       285                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>plot(alienation_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Since <em>p</em> &lt; .001. we reject the null hypothesis: the variances are heterogeneous.</p>
+</div>
+</div>
+<div id="feelings-of-impurity" class="section level4 tabset tabset-pills">
+<h4>Feelings of Impurity</h4>
+<pre class="r"><code># Feelings of Impurity
+impurity_aov &lt;- aov(feelings_of_impurity ~ condition, data = gino_means)
+
+# Partial eta-squared
+(impurity_tidied &lt;- tidy(impurity_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  291. 146.        72.3  4.04e-26
+## 2 Residuals   285  574.   2.01      NA   NA</code></pre>
+<pre class="r"><code>impurity_tidied$sumsq[1] / (impurity_tidied$sumsq[1] + impurity_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.3365678</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$feelings_of_impurity, gino_means$condition,
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$feelings_of_impurity and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 1.4e-12 -             
+## neutral        5.9e-05 &lt; 2e-16       
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>A one-way ANOVA using the composite score of impurity as the dependent measure also revealed a main effect of condition, <em>F</em>(2, 285) = 72.29, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .34\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed significant difference across conditions. Participants who wrote essays about an inauthentic experience (<em>M</em> = 3.66, <em>SD</em> = 1.82) reported feeling more impure than those who wrote about a failure (<em>M</em> = 2.09, <em>SD</em> = 1.56, <em>p</em> &lt; .001) or recent memory (<em>M</em> = 1.21, <em>SD</em> = 0.61, <em>p</em> &lt; .001). Reported feelings of impurity were higher among participants in the failure than in the control condition (<em>p</em> &lt; .001).</p>
+<div id="outliers-1" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = feelings_of_impurity)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>Outliers are present.</p>
+</div>
+<div id="normality-1" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>impurity_residuals &lt;- residuals(impurity_aov)
+shapiro.test(impurity_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  impurity_residuals
+## W = 0.93409, p-value = 5.143e-10</code></pre>
+<pre class="r"><code>plot(impurity_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>The data are not normally distributed.</p>
+</div>
+<div id="homoscedasticity-1" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(feelings_of_impurity ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value    Pr(&gt;F)    
+## group   2  34.762 3.097e-14 ***
+##       285                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>plot(impurity_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>Since <em>p</em> &lt; .001, we reject the null hypothesis that the variances are homogeneous.</p>
+</div>
+</div>
+<div id="discomfort" class="section level4 tabset tabset-pills">
+<h4>Discomfort</h4>
+<pre class="r"><code># Discomfort
+discomfort_aov &lt;- aov(feelings_of_discomfort ~ condition, data = gino_means)
+
+# Partial eta-squared
+(discomfort_tidied &lt;- tidy(discomfort_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  440. 220.        82.7  4.85e-29
+## 2 Residuals   285  758.   2.66      NA   NA</code></pre>
+<pre class="r"><code>discomfort_tidied$sumsq[1] / (discomfort_tidied$sumsq[1] + discomfort_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.367143</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$feelings_of_discomfort, gino_means$condition,
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$feelings_of_discomfort and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 1       -             
+## neutral        &lt;2e-16  &lt;2e-16        
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>Feelings of discomfort varied across conditions, <em>F</em>(2, 285) = 82.67, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .37\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed that participants who wrote about inauthenticity (<em>M</em> = 5.11, <em>SD</em> = 1.53) felt the same amount of psychological discomfort as those who wrote about failure (<em>M</em> = 4.90, <em>SD</em> = 1.64, <em>p</em> = 1.00), but reported higher levels than those who wrote about a recent situation (<em>M</em> = 2.41, <em>SD</em> = 1.71, <em>p</em> &lt; .001). Participants reported more discomfort when recalling a memory involving failure than a neutral memory (<em>p</em> &lt; .001).</p>
+<div id="outliers-2" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = feelings_of_discomfort)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>Outliers are present in the inauthenticity condition.</p>
+</div>
+<div id="normality-2" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>discomfort_residuals &lt;- residuals(discomfort_aov)
+shapiro.test(discomfort_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  discomfort_residuals
+## W = 0.97762, p-value = 0.0001754</code></pre>
+<pre class="r"><code>plot(discomfort_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>The data are not normally distributed (<em>p</em> &lt; .001).</p>
+</div>
+<div id="homoscedasticity-2" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(feelings_of_discomfort ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value Pr(&gt;F)
+## group   2  1.1707 0.3116
+##       285</code></pre>
+<pre class="r"><code>plot(discomfort_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>Since <em>p</em> = .312, we fail the reject the null hypothesis; the variances are homogeneous.</p>
+</div>
+</div>
+<div id="negative-affect" class="section level4 tabset tabset-pills">
+<h4>Negative Affect</h4>
+<pre class="r"><code># Negative Affect
+negative_aov &lt;- aov(negative_affect ~ condition, data = gino_means)
+
+# Partial eta-squared
+(negative_tidied &lt;- tidy(negative_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  489. 245.        98.3  3.46e-33
+## 2 Residuals   285  709.   2.49      NA   NA</code></pre>
+<pre class="r"><code>negative_tidied$sumsq[1] / (negative_tidied$sumsq[1] + negative_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.408165</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$negative_affect, gino_means$condition,
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$negative_affect and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 1       -             
+## neutral        &lt;2e-16  &lt;2e-16        
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>A main effect of condition was found for reported negative affect, <em>F</em>(2, 285) = 98.28, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .41\)</span>. Pairwise t-tests with Bonferroni corrections revealed no difference in reported negative affect among participants in the inauthenticity (<em>M</em> = 4.63, <em>SD</em> = 1.68) and failure (<em>M</em> = 4.61, <em>SD</em> = 1.73, <em>p</em> = 1.00) conditions. Participants who wrote about a recent memory (<em>M</em> = 1.88, <em>SD</em> = 1.30) were less likely to report negative affect than those who either wrote about inauthenticity (<em>p</em> &lt; .001) or failure (<em>p</em> &lt; .001).</p>
+<div id="outliers-3" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = negative_affect)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>Three outliers in the control condition.</p>
+</div>
+<div id="normality-3" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>negative_residuals &lt;- residuals(negative_aov)
+shapiro.test(negative_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  negative_residuals
+## W = 0.96877, p-value = 6.648e-06</code></pre>
+<pre class="r"><code>plot(negative_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p>The distribution of reported negative affect violates the assumption of normality.</p>
+</div>
+<div id="homoscedasticity-3" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(negative_affect ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value   Pr(&gt;F)   
+## group   2   5.127 0.006493 **
+##       285                    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>plot(negative_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+</div>
+</div>
+<div id="positive-affect" class="section level4 tabset tabset-pills">
+<h4>Positive Affect</h4>
+<pre class="r"><code># Positive Affect
+positive_aov &lt;- aov(positive_affect ~ condition, data = gino_means)
+
+# Partial eta-squared
+(positive_tidied &lt;- tidy(positive_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  423. 212.        117.  9.17e-38
+## 2 Residuals   285  517.   1.81       NA  NA</code></pre>
+<pre class="r"><code>positive_tidied$sumsq[1] / (positive_tidied$sumsq[1] + positive_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.4503483</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$positive_affect, gino_means$condition,
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$positive_affect and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 1       -             
+## neutral        &lt;2e-16  &lt;2e-16        
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>Positive affect varied across conditions as well, <em>F</em>(2, 285) = 116.76, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .45\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed that participants who wrote about an inexperience in which they felt inauthentic (<em>M</em> = 1.99, <em>SD</em> = 1.11) were less likely to report positive affect than those in the control condition (<em>M</em> = 4.46, <em>SD</em> = 1.77, <em>p</em> &lt; .001). Compared to participants who wrote about failure (<em>M</em> = 1.84, <em>SD</em> = 1.01), those assigned to the control group reported greater positive affect (<em>p</em> &lt; .001). Positive affect was the same for participants in both the inauthenticity and failure conditions (<em>p</em> = 1.00).</p>
+<div id="outliers-4" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = positive_affect)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p>Outliers are present.</p>
+</div>
+<div id="normality-4" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>positive_residuals &lt;- residuals(positive_aov)
+shapiro.test(positive_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  positive_residuals
+## W = 0.9622, p-value = 7.839e-07</code></pre>
+<pre class="r"><code>plot(positive_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p>The distribution of reported positive affect is non-normal.</p>
+</div>
+<div id="homoscedasticity-4" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(positive_affect ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value    Pr(&gt;F)    
+## group   2  21.114 2.812e-09 ***
+##       285                      
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>plot(positive_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p>Since <em>p</em> &lt; .001, we reject the null hypothesis; the data are heteroscedastic.</p>
+</div>
+</div>
+<div id="embarrassment" class="section level4 tabset tabset-pills">
+<h4>Embarrassment</h4>
+<pre class="r"><code># Embarrassment
+embarrassment_aov &lt;- aov(embarrassment ~ condition, data = gino_means)
+
+# Partial eta-squared
+(embarrassment_tidied &lt;- tidy(embarrassment_aov))</code></pre>
+<pre><code>## # A tibble: 2 x 6
+##   term         df sumsq meansq statistic   p.value
+##   &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+## 1 condition     2  437. 219.        80.8  1.62e-28
+## 2 Residuals   285  771.   2.71      NA   NA</code></pre>
+<pre class="r"><code>embarrassment_tidied$sumsq[1] / (embarrassment_tidied$sumsq[1] + embarrassment_tidied$sumsq[2])</code></pre>
+<pre><code>## [1] 0.3617641</code></pre>
+<pre class="r"><code># Pairwise comparisons
+pairwise.t.test(gino_means$embarrassment, gino_means$condition, 
+                p.adjust.method = &quot;bonferroni&quot;)</code></pre>
+<pre><code>## 
+##  Pairwise comparisons using t tests with pooled SD 
+## 
+## data:  gino_means$embarrassment and gino_means$condition 
+## 
+##                failure inauthenticity
+## inauthenticity 0.71    -             
+## neutral        &lt;2e-16  &lt;2e-16        
+## 
+## P value adjustment method: bonferroni</code></pre>
+<p>Feelings of embarrassment also varied across conditions, <em>F</em>(2, 285) = 80.77, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .36\)</span>. Pairwise comparisons (with Bonferroni adjustment) indicated no difference in reported embarrassment between those who wrote an essay about an inauthentic experience (<em>M</em> = 4.40, <em>SD</em> = 1.71) and those who wrote about failure (<em>M</em> = 4.69, <em>SD</em> = 1.82, <em>p</em> = .71). Participants were less likely to feel embarrassed when writing about a recent situation (<em>M</em> = 1.96, <em>SD</em> = 1.38) than in a memory involving inauthenticity (<em>p</em> &lt; .001) or failure (<em>p</em> &lt; .001).</p>
+<div id="outliers-5" class="section level5">
+<h5>Outliers?</h5>
+<pre class="r"><code>ggplot(gino_means, aes(x = condition, y = embarrassment)) +
+  geom_boxplot()</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p>Outliers are present.</p>
+</div>
+<div id="normality-5" class="section level5">
+<h5>Normality?</h5>
+<pre class="r"><code>embarrassment_residuals &lt;- residuals(embarrassment_aov)
+shapiro.test(embarrassment_residuals)</code></pre>
+<pre><code>## 
+##  Shapiro-Wilk normality test
+## 
+## data:  embarrassment_residuals
+## W = 0.97344, p-value = 3.504e-05</code></pre>
+<pre class="r"><code>plot(embarrassment_aov, 2)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p>Since <em>p</em> &lt; .001, we reject the null hypothesis; the data violate the assumption of normality.</p>
+</div>
+<div id="homoscedasticity-5" class="section level5">
+<h5>Homoscedasticity?</h5>
+<pre class="r"><code>leveneTest(embarrassment ~ condition, data = gino_means)</code></pre>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##        Df F value  Pr(&gt;F)  
+## group   2  4.1709 0.01639 *
+##       285                  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>plot(embarrassment_aov, 1)</code></pre>
+<p><img src="/post/osl-gino-kouchaki-galinsky-2015_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<p>Since <em>p</em> = .016, we reject the null hypothesis; the variances are heterogeneous.</p>
+</div>
+</div>
+</div>
+<div id="chi-square-test" class="section level3">
+<h3>Chi-square Test</h3>
+<p>A chi-square test of independence is used to examine whether two categorical variables are associated. It can be conducted in R using <code>chisq.test()</code> on a contingency table, or calling that function on two vectors.</p>
+<p><span class="math display">\[H_0: \text{the two variables are independent} \\ H_1: \text{the two variables are associated}\]</span></p>
+<p>Cramer’s V is a <a href="https://www.r-bloggers.com/example-8-39-calculating-cramers-v/">measure of association</a> for categorical variables and be thought of as the effect size of the chi-square test. It is given by the equation:</p>
+<p><span class="math display">\[\phi_c = \sqrt{\frac{\chi^2}{N(k - 1)}}\]</span></p>
+<p>This function can be used to calculate Cramer’s V:</p>
+<pre class="r"><code>cv.test = function(x,y) {
+  CV = sqrt(chisq.test(x, y, correct=FALSE)$statistic /
+              (length(x) * (min(length(unique(x)),length(unique(y))) - 1)))
+  print.noquote(&quot;Cram?r V / Phi:&quot;)
+  return(as.numeric(CV))
+}</code></pre>
+<p>Is the percentage of participants helping the same across groups?</p>
+<pre class="r"><code># Select helping variable
+gino_help &lt;- gino_clean %&gt;%
+  select(condition, decided_to_help)
+
+# Conduct chi-square test on contingency table
+chisq.test(table(gino_help))</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  table(gino_help)
+## X-squared = 10.349, df = 2, p-value = 0.00566</code></pre>
+<pre class="r"><code># Cramer&#39;s V for all conditions
+cv.test(gino_means$condition, gino_means$decided_to_help)</code></pre>
+<pre><code>## [1] Cram?r V / Phi:</code></pre>
+<pre><code>## [1] 0.1895603</code></pre>
+<p>The proportion of participants who decided to help varied across conditions, <span class="math inline">\(\chi^2(2, N = 288) = 10.35\)</span>, <em>p</em> = .006, Cramer’s <em>V</em> = .19.</p>
+<p>Now we calculate the proportion of those who helped by condition.</p>
+<pre class="r"><code>gino_help %&gt;%
+  group_by(condition) %&gt;%
+  summarize(
+    percentage = mean(decided_to_help)
+  )</code></pre>
+<pre><code>## # A tibble: 3 x 2
+##   condition      percentage
+##   &lt;fct&gt;               &lt;dbl&gt;
+## 1 failure             0.175
+## 2 inauthenticity      0.337
+## 3 neutral             0.162</code></pre>
+<p>Notice that when we compute chi-square tests on 2 x 2 frequency tables, it may be avisable to use Yate’s correction.</p>
+<pre class="r"><code># Chi-square of inauthenticity vs. failure
+gino_help_fail &lt;- gino_help %&gt;%
+  filter(condition != &quot;neutral&quot;)
+
+# Drop unused factor level
+gino_help_fail$condition &lt;- droplevels(gino_help_fail$condition)
+
+chisq.test(table(gino_help_fail))</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  table(gino_help_fail)
+## X-squared = 5.6904, df = 1, p-value = 0.01706</code></pre>
+<pre class="r"><code># Chi-square of inauthenticity vs. neutral
+gino_help_neutral &lt;- gino_help %&gt;%
+  filter(condition != &quot;failure&quot;)
+
+# Drop unused factor level
+gino_help_neutral$condition &lt;- droplevels(gino_help_neutral$condition)
+
+chisq.test(table(gino_help_neutral))</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  table(gino_help_neutral)
+## X-squared = 6.9856, df = 1, p-value = 0.008217</code></pre>
+<p>Here, these values do not match those reported by Gino, Kouchaki, and Galinsky (2015). Let us verify our calculations with an alternative method using a function similar to <a href="https://www.statmethods.net/stats/frequencies.html">CROSSTABS in SPSS</a>.</p>
+<pre class="r"><code># Crosstabs method: inauthenticity vs. failure
+CrossTable(gino_help_fail$condition, gino_help_fail$decided_to_help, 
+           format = &quot;SPSS&quot;, chisq = TRUE)</code></pre>
+<pre><code>## 
+##    Cell Contents
+## |-------------------------|
+## |                   Count |
+## | Chi-square contribution |
+## |             Row Percent |
+## |          Column Percent |
+## |           Total Percent |
+## |-------------------------|
+## 
+## Total Observations in Table:  189 
+## 
+##                          | gino_help_fail$decided_to_help 
+## gino_help_fail$condition |        0  |        1  | Row Total | 
+## -------------------------|-----------|-----------|-----------|
+##                  failure |       80  |       17  |       97  | 
+##                          |    0.806  |    2.366  |           | 
+##                          |   82.474% |   17.526% |   51.323% | 
+##                          |   56.738% |   35.417% |           | 
+##                          |   42.328% |    8.995% |           | 
+## -------------------------|-----------|-----------|-----------|
+##           inauthenticity |       61  |       31  |       92  | 
+##                          |    0.849  |    2.495  |           | 
+##                          |   66.304% |   33.696% |   48.677% | 
+##                          |   43.262% |   64.583% |           | 
+##                          |   32.275% |   16.402% |           | 
+## -------------------------|-----------|-----------|-----------|
+##             Column Total |      141  |       48  |      189  | 
+##                          |   74.603% |   25.397% |           | 
+## -------------------------|-----------|-----------|-----------|
+## 
+##  
+## Statistics for All Table Factors
+## 
+## 
+## Pearson&#39;s Chi-squared test 
+## ------------------------------------------------------------
+## Chi^2 =  6.515902     d.f. =  1     p =  0.01069141 
+## 
+## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
+## ------------------------------------------------------------
+## Chi^2 =  5.690413     d.f. =  1     p =  0.01705784 
+## 
+##  
+##        Minimum expected frequency: 23.36508</code></pre>
+<pre class="r"><code># Crosstabs method: inauthenticity vs. neutral
+CrossTable(gino_help_neutral$condition, gino_help_neutral$decided_to_help, 
+           format = &quot;SPSS&quot;, chisq = TRUE)</code></pre>
+<pre><code>## 
+##    Cell Contents
+## |-------------------------|
+## |                   Count |
+## | Chi-square contribution |
+## |             Row Percent |
+## |          Column Percent |
+## |           Total Percent |
+## |-------------------------|
+## 
+## Total Observations in Table:  191 
+## 
+##                             | gino_help_neutral$decided_to_help 
+## gino_help_neutral$condition |        0  |        1  | Row Total | 
+## ----------------------------|-----------|-----------|-----------|
+##              inauthenticity |       61  |       31  |       92  | 
+##                             |    1.008  |    3.088  |           | 
+##                             |   66.304% |   33.696% |   48.168% | 
+##                             |   42.361% |   65.957% |           | 
+##                             |   31.937% |   16.230% |           | 
+## ----------------------------|-----------|-----------|-----------|
+##                     neutral |       83  |       16  |       99  | 
+##                             |    0.937  |    2.870  |           | 
+##                             |   83.838% |   16.162% |   51.832% | 
+##                             |   57.639% |   34.043% |           | 
+##                             |   43.455% |    8.377% |           | 
+## ----------------------------|-----------|-----------|-----------|
+##                Column Total |      144  |       47  |      191  | 
+##                             |   75.393% |   24.607% |           | 
+## ----------------------------|-----------|-----------|-----------|
+## 
+##  
+## Statistics for All Table Factors
+## 
+## 
+## Pearson&#39;s Chi-squared test 
+## ------------------------------------------------------------
+## Chi^2 =  7.902415     d.f. =  1     p =  0.004936884 
+## 
+## Pearson&#39;s Chi-squared test with Yates&#39; continuity correction 
+## ------------------------------------------------------------
+## Chi^2 =  6.985551     d.f. =  1     p =  0.008217035 
+## 
+##  
+##        Minimum expected frequency: 22.63874</code></pre>
+<p>Participants who wrote an essay about an inauthentic memory were likely to help (33.7%) than those who wrote about failure (17.5%, <span class="math inline">\(\chi^2(1, N = 189) = 5.69\)</span>, <em>p</em> = .017) or a recent situation (16.2%, <span class="math inline">\(\chi^2(1, N = 191) = 6.99\)</span>, <em>p</em> = .008).</p>
+</div>
+</div>
+<div id="communicate" class="section level2">
+<h2>Communicate</h2>
+<hr />
+<p>After writing their essays, participants answered a questionnaire composed of items on a 7-point scale. The items assessed feelings of impurity (<span class="math inline">\(\alpha = .94\)</span>), discomfort (<span class="math inline">\(\alpha = .94\)</span>), negative (<span class="math inline">\(\alpha = .93\)</span>) and positive (<span class="math inline">\(\alpha = .95\)</span>) affect, embarrassment (<span class="math inline">\(\alpha = .90\)</span>), and self-alienation (<span class="math inline">\(\alpha = .90\)</span>).</p>
+<p><strong>Self-alienation</strong>. A one-way ANOVA using the self-alienation manipulation check as the dependent measure evinced a main effect of condition, <em>F</em>(2, 285) = 43.23, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .23\)</span>. Pairwise t-tests corrected by Bonferroni adjustment revealed that participants in the inauthentic condition (<em>M</em> = 3.83, <em>SD</em> = 1.51) felt a greater distance from the self than participants in either the failure (<em>M</em> = 3.21, <em>SD</em> = 1.62, <em>p</em> = .012) or the control condition (<em>M</em> = 1.92, <em>SD</em> = 1.19, <em>p</em> &lt; .001). Participants reported greater self-alienation when they recalled a failure than when they recalled a recent situation (<em>p</em> &lt; .001).</p>
+<p><strong>Feelings of impurity</strong>. A one-way ANOVA using the composite score of impurity as the dependent measure also revealed a main effect of condition, <em>F</em>(2, 285) = 72.29, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .34\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed significant difference across conditions. Participants who wrote essays about an inauthentic experience (<em>M</em> = 3.66, <em>SD</em> = 1.82) reported feeling more impure than those who wrote about a failure (<em>M</em> = 2.09, <em>SD</em> = 1.56, <em>p</em> &lt; .001) or recent memory (<em>M</em> = 1.21, <em>SD</em> = 0.61, <em>p</em> &lt; .001). Reported feelings of impurity were higher among participants in the failure than in the control condition (<em>p</em> &lt; .001).</p>
+<p><strong>Discomfort</strong>. Feelings of discomfort varied across conditions, <em>F</em>(2, 285) = 82.67, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .37\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed that participants who wrote about inauthenticity (<em>M</em> = 5.11, <em>SD</em> = 1.53) felt the same amount of psychological discomfort as those who wrote about failure (<em>M</em> = 4.90, <em>SD</em> = 1.64, <em>p</em> = 1.00), but reported higher levels than those who wrote about a recent situation (<em>M</em> = 2.41, <em>SD</em> = 1.71, <em>p</em> &lt; .001). Participants reported more discomfort when recalling a memory involving failure than a neutral memory (<em>p</em> &lt; .001).</p>
+<p><strong>Negative affect</strong>. A main effect of condition was found for reported negative affect, <em>F</em>(2, 285) = 98.28, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .41\)</span>. Pairwise t-tests with Bonferroni corrections revealed no difference in reported negative affect among participants in the inauthenticity (<em>M</em> = 4.63, <em>SD</em> = 1.68) and failure (<em>M</em> = 4.61, <em>SD</em> = 1.73, <em>p</em> = 1.00) conditions. Participants who wrote about a recent memory (<em>M</em> = 1.88, <em>SD</em> = 1.30) were less likely to report negative affect than those who either wrote about inauthenticity (<em>p</em> &lt; .001) or failure (<em>p</em> &lt; .001).</p>
+<p><strong>Positive affect</strong>. Positive affect varied across conditions as well, <em>F</em>(2, 285) = 116.76, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .45\)</span>. Pairwise comparisons (with Bonferroni adjustment) revealed that participants who wrote about an inexperience in which they felt inauthentic (<em>M</em> = 1.99, <em>SD</em> = 1.11) were less likely to report positive affect than those in the control condition (<em>M</em> = 4.46, <em>SD</em> = 1.77, <em>p</em> &lt; .001). Compared to participants who wrote about failure (<em>M</em> = 1.84, <em>SD</em> = 1.01), those assigned to the control group reported greater positive affect (<em>p</em> &lt; .001). Positive affect was the same for participants in both the inauthenticity and failure conditions (<em>p</em> = 1.00).</p>
+<p><strong>Embarrassment</strong>. Feelings of embarrassment also varied across conditions, <em>F</em>(2, 285) = 80.77, <em>p</em> &lt; .001, <span class="math inline">\(\eta_p^2 = .36\)</span>. Pairwise comparisons (with Bonferroni adjustment) indicated no difference in reported embarrassment between those who wrote an essay about an inauthentic experience (<em>M</em> = 4.40, <em>SD</em> = 1.71) and those who wrote about failure (<em>M</em> = 4.69, <em>SD</em> = 1.82, <em>p</em> = .71). Participants were less likely to feel embarrassed when writing about a recent situation (<em>M</em> = 1.96, <em>SD</em> = 1.38) than in a memory involving inauthenticity (<em>p</em> &lt; .001) or failure (<em>p</em> &lt; .001).</p>
+<p><strong>Decided to help</strong>. The proportion of participants who decided to help varied across conditions, <span class="math inline">\(\chi^2(2, N = 288) = 10.35\)</span>, <em>p</em> = .006, Cramer’s <em>V</em> = .19. Participants who wrote an essay about an inauthentic memory were likely to help (33.7%) than those who wrote about failure (17.5%, <span class="math inline">\(\chi^2(1, N = 189) = 5.69\)</span>, <em>p</em> = .017) or a recent situation (16.2%, <span class="math inline">\(\chi^2(1, N = 191) = 6.99\)</span>, <em>p</em> = .008).</p>
+</div>
+</div>
+<div id="acknowledgements" class="section level1">
+<h1>Acknowledgements</h1>
+<hr />
+<p>I am thankful for my advisor, Dr. Brandt A. Smith for introducing me to R, JASP, and OSL. The discipline of psychology is advocating for preregistered, open materials. His encouragement to utilize open data and open source software has positioned me in the middle of the reproducible movement.</p>
+<p>I would still be clicking checkboxes and dropdowns to analyze data if it were not for <a href="https://www.datacamp.com">DataCamp</a>, <a href="http://www.sthda.com/english/wiki/r-software">Alboukadel Kassambara</a>, <a href="https://www.sas.upenn.edu/~baron/from_cattell/rpsych/rpsych.html#htoc60">Jonathan Baron</a>, and the team behind <a href="http://personality-project.org/r/r.guide.html#withinone">personality-project</a>.</p>
+</div>
