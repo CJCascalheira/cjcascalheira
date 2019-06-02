@@ -26,7 +26,7 @@ date_format = "January 2006"
   location = "Columbus, GA"
   date_start = "2018-09-06"
   date_end = "2019-06-14"
-  description = """Facilitated cognitive behavioral therapy groups; facilitated psychoeducation groups using the Matrix model, WRAP, and WHAM; wrote case notes & weekly probation reports; administered drug screenings (urine analyses, breathalyzers); consulted with professionals to improve client services; performed screening, assessment, orientation, and intake of clients; created GED curriculum for social studies and language arts; tutored inmates at the Muscogee County Jail."""
+  description = """Facilitated cognitive behavioral therapy groups; facilitated psychoeducation groups using the Matrix model, WRAP, and WHAM; wrote case notes in [HMIS](https://www.hudexchange.info/programs/hmis/) & weekly probation reports; administered drug screenings (urine analyses, breathalyzers); consulted with professionals to improve client services; performed screening, assessment, orientation, and intake of clients; created GED curriculum for social studies and language arts; tutored inmates at the Muscogee County Jail."""
 
 [[experience]]
   title = "Volunteer Research Assistant"

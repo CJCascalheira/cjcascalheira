@@ -8,6 +8,8 @@ summary: Advancing the Transitional Living Experience at SafeHouse.
 tags:
 - homeless
 - qualitative
+- brief report
 - grounded theory
+- service
 title: The ATLESH Project
 ---
