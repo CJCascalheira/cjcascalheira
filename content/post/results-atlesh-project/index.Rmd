@@ -1,0 +1,24 @@
+---
+title: "Results from The ATLESH Project"
+authors:
+  - admin
+date: "2019-06-09"
+slug: results-atlesh-project
+summary: "Client-identified areas of improvement and recommendations for leadership of SafeHouse Ministries, a nonprofit in Columbus, Georgia."
+categories:
+  - Research
+  - Community
+tags:
+- homeless
+- qualitative
+- brief report
+- grounded theory
+- service
+image:
+  caption: "SafeHouse Ministries logo."
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+Blog content coming soon.
