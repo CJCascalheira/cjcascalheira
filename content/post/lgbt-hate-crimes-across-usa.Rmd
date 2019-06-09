@@ -18,10 +18,7 @@ tags:
 image:
   caption: ""
   focal_point: ""
-output:
-  blogdown::html_page:
-    toc: true
-    toc_depth: 2
+output: blogdown::html_page
 ---
 
 ```{r setup, include=FALSE}
