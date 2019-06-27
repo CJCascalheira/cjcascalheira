@@ -12,5 +12,5 @@ tags:
 - prep
 - sexual risk
 - hiv prevention
-title: PrEP Stigma in the Southwest
+title: PrEP Stigma in Southwest
 ---
