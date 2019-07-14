@@ -1,0 +1,82 @@
+---
+title: "Write Prolifically"
+authors:
+  - admin
+date: "2019-07-14"
+slug: write-prolifically
+summary: "A collection of motivational tips on how to crank out that next manuscript, blog post, poem, or prose."
+categories:
+  - Skills
+  - Reflection
+tags:
+- academia
+- reflections
+- writing
+image:
+  caption: "Picture courtesy of RawPixel.com"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+I tend to explore [#AcademicTwitter](https://twitter.com/search?q=%23academictwitter&src=typd) as a reward for studying, reading, and writing.
+
+Oddly enough, some of those tweets incite a mental itch. "Cory, you should be writing."
+
+Let this post serve as a repository of interesting insights on the process of writing, especially in the domain of producing scholarly products.
+
+# The Problem
+___
+Attachment to my carefully crafted sentences tends to interfere with productivity.
+
+> "My vulnerable ego only wants to be loved and accepted, to have my words ring out from a loudspeaker in Times Square while a neon ticker scrolls the text across a skyscraper, but it’s a big old coward." ([Kim Liao](https://lithub.com/why-you-should-aim-for-100-rejections-a-year/))
+
+I tend to confuse content generation and copy editing, [two distinct processes](https://serialmentor.com/blog/2013/9/22/silence-your-inner-critic) necessary for effective writing.
+
+The result is writer's block, procrastination, and snail-pace production.
+
+It does not help that we, as professional knowledge workers, face a monumental task where, according to [Katie Grogan](https://twitter.com/Dr_KatieG1/status/1149305568567472131), we are "literally [on] the edge of our collective knowledge."
+
+![The challenge of academic writing *is* the creation of knowledge, with style and substance if you hope for anyone to read your work. What's the big deal, right?](/img/academic-writing-and-knowledge.png)
+
+Incubation of a manuscript from faint idea to publishable article is an immaculate conception that, let's face it, will likely be rejected. 
+
+> "Yet these painful processes are necessary evils if we are ever to climb out of our safe but hermetic cocoons of isolation and share our writing with the world." ([Kim Liao](https://lithub.com/why-you-should-aim-for-100-rejections-a-year/))
+
+It has never been more vital for us to share our voice. Professionally, scholars do not have choice. 
+
+When your next meal depends on how well you write, you either publish or perish.
+
+So, how do we move past that considerable anxiety and produce a piece worth reading?
+
+# Solutions
+___
+Wake up and write.
+
+[Raul Pacheco-Vega](), like an advisor of mine at New Mexico State University, encourages young academics to find an optimal time for creativity. When do the juices flow most readily?
+
+For me, I tend to feel most productive in the morning (it helps to assuage the guilt about subsequent social engagements, too). People as diverse as Dolly Parton and Annie Dillard cite the importance of working just before dawn. However your circadian rhythm flows, choose and commit to a time. 
+
+Then, write. Write every day.
+
+No matter what, write each day to reach a clearly defined goal, such as:
+
+* I will work on a blog post for two [pomodoros](https://francescocirillo.com/pages/pomodoro-technique).
+* I will write 500 words.
+
+That which is measured improves.
+
+## What Do I Write?
+___
+Manuscripts, although the heavy-hitter for any hopeful scholar, need not be the singular impetus to form a writing habit.
+
+Some days, we will feel no motivation to write a quantitative results section (actually, most days). That is permissible. I am giving you permission to be kind to your creative mind. 
+
+However, you can still write daily. Here are some ideas:
+
+* Reflect on a journal article by relating it to your life as a [memorandum](http://www.raulpacheco.org/2016/07/writing-effective-memorandums/).
+* Write a rhetorical precis or [annotated bibilography](http://www.raulpacheco.org/2017/04/writing-an-annotated-bibliography/) for key articles relating to a current project or new idea.
+
+This post is a work in progress. Have you come across any helpful tips?
+
+Let me know in the comments below.
