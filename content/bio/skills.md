@@ -43,6 +43,12 @@ weight = 1
   icon = "hand-holding-heart"
   icon_pack = "fas"
   name = "Therapist"
-  description = "I served homeless men and women as a counselor-in-training, facilitating groups in psychoeducation—such as [WRAP](https://copelandcenter.com/), [WHAM](https://www.integration.samhsa.gov/health-wellness/wham), and [Matrix](https://store.samhsa.gov/series/matrix-manuals)—and cognitive behavioral therapy."
+  description = "I served homeless men and women as a counselor-in-training, facilitating groups in psychoeducation—such as [WRAP](https://copelandcenter.com/), [WHAM](https://www.integration.samhsa.gov/health-wellness/wham), and [Matrix](https://store.samhsa.gov/series/matrix-manuals)—and cognitive behavioral therapy. Currently, I am a practicum counselor at [NMSU](https://cep.nmsu.edu/)."
+
+[[feature]]
+  icon = "hands-helping"
+  icon_pack = "fas"
+  name = "Advocate"
+  description = "I serve on the board of [PFLAG Las Cruces](http://www.pflaglascruces.org/), crafting outreach media that tells our story. As a core member of [Mpact Las Cruces](https://www.facebook.com/MpactLasCruces/), I promote events that target young (18 - 29 years old) men who have sex with men and transgender people to reduce health disparities, build community, and enhance sexual well-being."
 
 +++

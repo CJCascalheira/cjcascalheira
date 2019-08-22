@@ -20,6 +20,15 @@ date_format = "January 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Graduate Research Assistant"
+  company = "New Mexico State University"
+  company_url = "https://education.nmsu.edu/"
+  location = "Las Cruces, NM"
+  date_start = "2019-08-21"
+  date_end = ""
+  description = """Worked with [Dr. Lucero](https://tpal.nmsu.edu/) to explore LGBT+ identity on social media using critical race and queer theory to frame our qualitative analysis."""
+
+[[experience]]
   title = "Substance Abuse Counselor-in-Training"
   company = "SafeHouse Ministries"
   company_url = "http://safehouse-ministries.com/"
