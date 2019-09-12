@@ -26,7 +26,7 @@ date_format = "January 2006"
   location = "Las Cruces, NM"
   date_start = "2019-08-21"
   date_end = ""
-  description = """Worked with [Dr. Leanna Lucero](https://tpal.nmsu.edu/) to explore LGBT+ identity on social media using critical race and queer theory to frame our qualitative analysis; partnered with [Dr. Tracie Hitter](https://cep.nmsu.edu) to review student analyses employing the listening guide as a technique, analyze narratives of African American and Asian American experiences of racism, and perform literature reviews on the sexual self-schema of trans individuals."""
+  description = """Assists [Dr. Leanna Lucero](https://tpal.nmsu.edu/) in the School of Teacher Preparation, Administration, and Leadership to explore (a) social justice in math education and (b) queer-inclusive pedagogy in elementary schools; partners with [Dr. Tracie Hitter](https://cep.nmsu.edu) to (a) review student analyses employing the listening guide as a technique and (b) write and revise manuscripts; collaborates with Dr. Tracie Hitter and Dr. Na-Yuen Choi on a project exploring racism among African Americans and Asian Americans at a Hispanic-serving institution."""
 
 [[experience]]
   title = "Substance Abuse Counselor-in-Training"
