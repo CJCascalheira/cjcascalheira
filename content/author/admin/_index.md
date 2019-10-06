@@ -9,7 +9,7 @@ education:
     year: 2012
 email: coryjc@nmsu.edu
 interests:
-- Sexual Identity
+- Sexuality
 - Mindfulness
 - Cognitive Behavioral Therapy
 - Addiction
@@ -17,7 +17,7 @@ name: Cory J. Cascalheira
 organizations:
 - name: New Mexico State University
   url: https://cep.nmsu.edu/
-role: Doctoral Candidate in Counseling Psychology
+role: Doctoral Researcher in Counseling Psychology
 social:
 - icon: envelope
   icon_pack: fas
@@ -51,4 +51,4 @@ user_groups:
 
 Cory J. Cascalheira, B.A. (he / him / his) is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include oppression, resilience, and identity among marginalized populations, especially sexual minorities. 
 
-Clinically, he has experience delivering cognitive-behavioral therapy during individual and group interventions with people suffering from homelessness, addiction, and recidivism.
+Clinically, he has experience delivering cognitive-behavioral therapy during individual and group interventions with people suffering from homelessness, addiction, and recidivism. Currently, he serves as a practicum counselor and research assistant.
