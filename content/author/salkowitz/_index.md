@@ -6,9 +6,12 @@ bio: Research interests include human sexuality, nature as therapy, and mindfuln
 
 education:
   courses:
-  - course: B.S. in Counseling Psychology
-    institution: University of Maryland
-    year: ????
+  - course: M.A. in Counseling Psychology
+    institution: Towson University
+    year: 2017
+  - course: B.S. in Psychology
+    institution: Towson University
+    year: 2015
     
 email: ysalkow@nmsu.edu
 interests:
