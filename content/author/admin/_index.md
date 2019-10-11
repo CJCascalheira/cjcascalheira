@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities.
+bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities, with attention to addition and sexual well-being.
 education:
   courses:
   - course: B.A. in Psychology
@@ -10,6 +10,7 @@ education:
 email: coryjc@nmsu.edu
 interests:
 - Sexuality
+- Sexual Well-Being
 - Mindfulness
 - Cognitive Behavioral Therapy
 - Addiction

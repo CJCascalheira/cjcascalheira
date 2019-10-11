@@ -6,7 +6,7 @@ title = "Curative Kink"
 date = 2019-10-06
 
 # Add authors
-authors = ["admin"]
+authors = ["admin", "salkowitz", "hitter"]
 
 # Project summary to display on homepage.
 summary = "Exploration of how survivors of childhood abuse heal from, cope with, and transform personal trauma through non-traditional sexual practices."
