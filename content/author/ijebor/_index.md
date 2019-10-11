@@ -44,8 +44,8 @@ user_groups:
 - Researchers
 ---
 
-I am Ellen Ijebor. I am currently a fist-year doctoral student in Counseling Psychology Doctoral Program. I received my Bachelor’s Degree in Psychology with a minor in Religious studies from California State University, Bakersfield this past spring. During my undergraduate studies I worked as a community assistant and office assistant in on-campus housing. I also served as a research assistant to two faculty members and as a teaching assistant.
+I am Ellen Ijebor. I am currently a fist-year doctoral student in the Counseling Psychology Doctoral Program at New Mexico State University. During my undergraduate studies I worked as a community assistant and office assistant in on-campus housing. I also served as a research assistant to two faculty members and as a teaching assistant.
 
-My research during my undergraduate career mostly focused on Imposter Phenomenon and The Dunning Kruger effect and its interactions with factors such as anxiety, social anxiety, depression and marginalized identities. I also did some research on Heroism in conjunction with the Heroic Imagination Project and a study on death anxiety in the LGBTQ+ population. I have spoken at symposiums and presented posters on these research topics at conferences. My research interests now are primarily focused on sexual minorities, ethnic minorities, intersectionality and social justice.
+My research during my undergraduate career mostly focused on Imposter Phenomenon and the Dunning Kruger effect and its interactions with factors such as anxiety, social anxiety, depression and marginalized identities. I also did some research on Heroism in conjunction with the Heroic Imagination Project and a study on death anxiety in the LGBTQ+ population. I have spoken at symposiums and presented posters on these research topics at conferences. My research interests now are primarily focused on sexual minorities, ethnic minorities, intersectionality and social justice.
 
 After I graduate, I would like to remain in academia as a professor and also practice as a clinician in the community.
