@@ -28,9 +28,9 @@ title: "Hierarchy of desire: Partner preferences and social identities of men wh
 url_code: "https://github.com/CJCascalheira/hierarchy-desire"
 url_dataset: ""
 url_pdf: "https://link.springer.com/article/10.1007/s12119-019-09653-z"
-url_poster: ""
+url_poster: "/docs/posters/2019_SSSS_poster_48x36.pdf"
 url_project: "https://osf.io/esxz7/"
-url_slides: ""
+url_slides: "/docs/slides/2019_NMSU-RCW_talk.pptx"
 url_source: ""
 url_video: ""
 ---
