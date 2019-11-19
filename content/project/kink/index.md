@@ -27,7 +27,7 @@ external_link = ""
 slides = ""
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "/docs/projects/Kink_IRB_informed-consent.pdf"
 url_slides = ""
 url_video = ""
 url_code = ""
@@ -47,10 +47,10 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   focal_point = "Center"
 +++
 
-Are you a survivor of childhood abuse (i.e., sexual, physical, etc.)? 
+Some people process past trauma through BDSM and/or kink play. Scholars estimate that this is the case for about 18% of the BDSM / kink community. 
 
-Do you enjoy kink play or BDSM? 
+Sex-positive, kink-aware researchers at New Mexico State University want to hear your story.
 
-Sex-positive, affirming researchers at New Mexico State University want to hear your story. 
+If you believe kink and/or BDSM have helped you heal from or cope with sexual or physical abuse in childhood, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
 
-If you believe kink and/or BDSM have helped you heal from or cope with an abusive past, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
+You can access the informed consent by clicking the PDF link at the top of the page.
