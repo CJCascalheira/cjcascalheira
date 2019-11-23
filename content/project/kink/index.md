@@ -40,7 +40,7 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
 # To use, add an image named `featured.jpg/png` to your project's folder. 
 [image]
   # Caption (optional)
-  caption = "Main recruitment image for the study."
+  caption = ""
   
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
@@ -54,3 +54,5 @@ Sex-positive, kink-aware researchers at New Mexico State University want to hear
 If you believe kink and/or BDSM have helped you heal from or cope with sexual or physical abuse in childhood, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
 
 You can access the informed consent by clicking the PDF link at the top of the page.
+
+![](/img/research/Kink_flyer-web.png)
