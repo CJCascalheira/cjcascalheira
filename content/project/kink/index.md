@@ -47,6 +47,8 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   focal_point = "Center"
 +++
 
+# Currently Seeking Participants!
+___
 Some people process past trauma through BDSM and/or kink play. Scholars estimate that this is the case for about 18% of the BDSM / kink community. 
 
 Sex-positive, kink-aware researchers at New Mexico State University want to hear your story.
@@ -56,11 +58,13 @@ Sex-positive, kink-aware researchers at New Mexico State University want to hear
 If you believe kink and/or BDSM have helped you heal from or cope with sexual or physical abuse in childhood, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
 
 # What's the Purpose?
+___
 The primary aim of the present project is to create a thematic model of how survivors of childhood abuse heal from, cope with, and transform their trauma through kink and/or bondage, discipline, sadism, and masochism (BDSM). 
 
 Additionally, it attempts to reduce the stigmatizing language of pathology around non-traditional sexual practices.
 
 # What Should I Expect?
+___
 As a participant, you can expect a single interview via Skype, Zoom, or by phone. 
 
 After answering some demographic questions, we will ask you about your perception of, interest in, and involvement with kink and/or BDSM (e.g., “How do you define your sexual practices?”). 
@@ -72,4 +76,7 @@ You will have the chance to select a pseudonym and any accidental information di
 Your responses will be record and transcribed. 
 
 ## Informed Consent 
+___
 You can access the informed consent by clicking the [PDF link at the top of the page](/docs/projects/Kink_IRB_informed-consent.pdf).
+
+[Follow the step-by-step guide](/post/sign-informed-consent-adobe) to sign the informed consent document and [email it to Cory](mailto:coryjc@nmsu.edu), the Principal Investigator for this project. 

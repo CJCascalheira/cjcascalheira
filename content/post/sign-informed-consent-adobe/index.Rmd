@@ -1,0 +1,219 @@
+---
+title: "How to Sign Informed Consent Online"
+authors:
+  - admin
+date: "2019-08-14"
+slug: sign-informed-consent-adobe
+summary: "A step-by-step guide on signing informed consent documents with Adobe Acrobat Reader DC."
+categories:
+  - Research
+tags:
+- tutorial
+- guide
+image:
+  caption: "Photo by Cory Cascalheira"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+Follow these steps to sign the informed consent document, email it to the Principal Investigator, and start your participation in a research study!
+
+**Note**: this tutorial assumes that are you using Google Chrome as your Internet browser and Windows 10 as your operating system. The basic of [signing the document](#signing) should be similar across platforms.
+
+If you prefer to provide verbal consent over the phone, Skype, or Zoom for any study listed on this website, please inform the Principal Investigator of your wishes. Some studies may qualify.
+
+If the study is eligible for verbal consent, please expect to spend an additional 5 to 10 minutes discussing informed consent.
+
+# Download Adobe Acrobat
+___
+We will use Adobe Acrobat Reader DC to sign the informed consent document. If you already have it installed, [skip this step](#skip).
+
+Search for "Adobe Acrobat" in Google.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-1.png)
+
+Click the appropriate link.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-2.png)
+
+Download Acrobat Reader DC.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-3.png)
+
+Deselect the optional offers (i.e., no check marks) and then click the download button. 
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-4.png)
+
+Wait for the program to download.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-5.png)
+
+Look at the bottom left-side of your browser and click on the file to start installation. A user control screen will pop up. Click "Yes" to start the installation.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-6.png)
+
+Click the finish button! Adobe Acrobat Reader DC will likely open automatically. If so, great!
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-7.png)
+
+# <a id="skip"></a> Find the Informed Consent Document
+___
+Once you have Adobe Acrobat Reader DC installed on your computer, you will need to download the informed consent document. Each study uses a different informed consent document. 
+
+First, go to the project home page.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-8.png)
+
+Next, select the project in which you are interested.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-9.png)
+
+If the project is actively searching for participants, you will see "Currently Seeking Participants!" at the top of the page. Click the PDF button at the top left-hand side of the page.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-10.png)
+
+Download the informed consent document.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-11.png)
+
+Save the informed consent document somewhere convenient.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-12.png)
+
+# Open the Informed Consent in Adobe Acrobat
+___
+Now, there are two ways that you can open the informed consent document in Adobe Acrobat Reader DC.
+
+To use the first option, click the upward arrow on the downloaded informed consent document. It should be sitting at the bottom of your Internet browser.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-13.png)
+
+Click "Always open in Adobe Reader." The dialogue box will probably close. Click the upward arrow again.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-14.png)
+
+Now click "Open" to open the informed consent document in Adobe Acrobat Reader DC.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-15.png)
+
+Alternatively, you can open Adobe Acrobat Reader DC first and locate the file through the program's interface. 
+
+Press the Windows key to open the search box. Search for "Acrobat Reader" and click the app.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-16.png)
+
+In the upper left-hang corner of the Adobe Acrobat Reader DC app, click "File" and then "Open."
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-17.png)
+
+Search for the informed consent document. Do you remember where you saved it?
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-18.png)
+
+# <a id="signing"></a> Sign the Informed Consent
+___
+You should now have the informed consent document open in Adobe Acrobat Reader DC.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-19.png)
+
+On the right-hand side of the app, look for the purple pen. Click it.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-20.png)
+
+Indicate that you are the one who will sign the document.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-21.png)
+
+Since this is probably your first time using the software, you will need to enter your signature and initials.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-22.png)
+
+You can type in your name using the keyboard and choose a handwriting style. If your device is touchscreen, you can use your own signature. Altneratively, you can sign your name on a piece of paper and upload a picture. Any option is fine.
+
+Here is an example of creating your digital initials using the keyboard. First, add your initials.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-23.png)
+
+A box will pop up.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-24.png)
+
+Add your first and last initial then click "Apply."
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-25.png)
+
+Your initials will now be saved in Adobe Acrobat Reader DC. Repeat the process for your signature.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-26.png)
+
+Read each page of the informed consent document thoroughly. If you have questions, you can call or email the Principal Investigator. After reading each page, scroll down to the bottom of the page and add your initials.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-27.png)
+
+Click "Sign" and then click on your saved initials.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-28.png)
+
+Drag your saved initials to the appropriate spot. Repeat this process for each page.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-29.png)
+
+Continue to read the informed consent document, adding your initials to every page. The final page of the document is called the "Informed Consent Signature Page."
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-30.png)
+
+On this final page, you will:
+
+1. Type your name;
+2. Add today's date;
+3. Scroll to the bottom and add your initials; and
+4. Add your signature.
+
+Follow this order. To add your name, click to "Ab" button. 
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-31.png)
+
+Your cursor will now look like the "Ab" button.
+
+Place your cursor above the "Printed name of research subject" line and click.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-34.png)
+
+Type in your name.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-35.png)
+
+Repeat this process for the date.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-36.png)
+
+Scroll down and add your initials like before.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-37.png)
+
+Scroll back up and add your signature. Click "Sign" and drag your signature to the appropriate line.
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-38.png)
+
+You are now ready to save your document!
+
+Once you add your signature and save the file, no further edits can be made to the informed consent document! Make sure you added your initials to the bottom of every page.
+
+Click "Save."
+
+![](/post/sign-informed-consent-adobe/sign-informed-consent-adobe-39.png)
+
+# Email the Informed Consent Document
+___
+You are now ready to email the informed consent document as an attachment to the Principal Investigator. 
+
+Write up the email, attached the signed file, and hit send.
+
+Please be aware that, although unlikely, it is possible for your email to be intercepted, which would compromise your confidentiality. [Unless you encrypt your email](https://www.nolo.com/legal-encyclopedia/email-privacy-29610.html), it is possible that your participation in your chosen study will be known by the interceptor. You can learn how to encrypt your email [here](https://www.google.com/search?rlz=1C1CHBD_enUS866US866&ei=CoHdXaygAuS9ggeI_7j4BQ&q=how+to+encrypt+email&oq=how+to+encrypt+email&gs_l=psy-ab.3..0l10.12751.15202..15496...0.2..0.88.717.10......0....1..gws-wiz.......0i71j0i67j0i10.PIS06W_ltm8&ved=0ahUKEwisze2R0ojmAhXknuAKHYg_Dl8Q4dUDCAs&uact=5).
+
+Again, if you prefer to provide verbal consent over the phone, Skype, or Zoom for any study listed on this website, please inform the Principal Investigator of your wishes. Some studies may qualify.
+
+If the study is eligible for verbal consent, please expect to spend an additional 5 to 10 minutes discussing informed consent.
+
+As always, thank you for considering to participate in our research! ❤️
