@@ -80,3 +80,12 @@ ___
 You can access the informed consent by clicking the [PDF link at the top of the page](/docs/projects/Kink_IRB_informed-consent.pdf).
 
 [Follow the step-by-step guide](/post/sign-informed-consent-adobe) to sign the informed consent document and [email it to Cory](mailto:coryjc@nmsu.edu), the Principal Investigator for this project. 
+
+# Signs You Might Need a Therapist
+___
+Review these signs to determine if seeing a therapist might be beneficial. Feel free to email a member of the research team with any questions.
+
+1. The issue causes excessive embarrassment or makes you want to avoid others
+2. The issue has caused your quality of life to decrease
+3. The issue has negatively affected school, work, or relationships
+4. The issue causes emotions that are difficult to tolerate, at causing you to feel overwhelmed by the emotion.
