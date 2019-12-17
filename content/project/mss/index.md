@@ -9,7 +9,7 @@ date = 2019-12-17
 authors = ["admin", "hitter"]
 
 # Project summary to display on homepage.
-summary = "Exploration of how survivors of childhood abuse heal from, cope with, and transform personal trauma through non-traditional sexual practices."
+summary = "Implication of sexual scripts among MSM in how sexual practices and desires lead to sexual problems or take away from sexual satisfaction."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
