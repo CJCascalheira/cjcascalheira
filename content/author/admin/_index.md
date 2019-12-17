@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities, with attention to addition and sexual well-being.
+bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities, with attention to addiction, sexual well-being, and non-traditional sexual practices (i.e., BDSM, kink). Clinical interests include mindfulness, ACT, and CBT.
 education:
   courses:
   - course: B.A. in Psychology
@@ -13,7 +13,9 @@ interests:
 - Sexual Well-Being
 - Mindfulness
 - Cognitive Behavioral Therapy
+- Acceptance and Commitment Therapy
 - Addiction
+- Non-traditional Sexual Practices
 name: Cory J. Cascalheira
 organizations:
 - name: New Mexico State University
