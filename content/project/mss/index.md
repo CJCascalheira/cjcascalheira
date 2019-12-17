@@ -27,7 +27,7 @@ external_link = ""
 slides = ""
 
 # Links (optional).
-url_pdf = "/docs/projects/MSS_IRB_informed-consent"
+url_pdf = "/docs/projects/MSS_IRB_informed-consent.pdf"
 url_slides = ""
 url_video = ""
 url_code = ""
