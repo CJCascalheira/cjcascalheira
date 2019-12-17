@@ -73,7 +73,7 @@ We will ask you to reflect on your experiences with kink and/or BDSM as it relat
 
 You will have the chance to select a pseudonym and any accidental information disclosed in the interview will be removed (e.g., if you disclose that your hometown is Denver, we will write “a large urban city”). 
 
-Your responses will be record and transcribed. 
+Your responses will be recorded and transcribed. 
 
 ## Informed Consent 
 ___
