@@ -55,7 +55,7 @@ Do you engage in behaviors that could be safer?
 
 Are you looking for a boyfriend, but just can't seem to find him? 
 
-![](/img/research/MSS_flyer-web)
+![](/img/research/MSS_flyer-web.png)
 
 If you have experienced sexual problems and you would like to feel more sexually satisfied, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
 
