@@ -1,0 +1,323 @@
+---
+title: "Setting Vital Values for 2020"
+authors:
+  - admin
+date: "2019-12-30"
+slug: setting-vital-values-2020
+summary: "Use principles of ACT to revise, refine, and reframe that which is most important to you across life domains for the new decade."
+categories:
+  - Creativity
+  - Skills
+  - Reflection
+tags:
+- community
+- advice
+- service
+- ACT
+- values
+image:
+  caption: "Photo courtesy of Snapwire via Pexels.com"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+```{r include=FALSE}
+# Setup
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+# Dependencies
+library(tidyverse)
+library(scales)
+
+# Create a blank theme
+blank_theme <- theme_minimal()+
+  theme(
+    rect = element_rect(fill = "transparent"),
+    plot.background = element_rect(fill = "transparent", color = NA),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.border = element_blank(),
+    panel.grid = element_blank(),
+    axis.ticks = element_blank(),
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_blank(),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 14)
+  )
+```
+
+<center>
+[TL;DR]
+</center>
+
+Resting in the twilight of a passing decade, I noticed a thought flash across my mind: am I living a valued life?
+
+> "Perhaps the biggest tragedy of our lives is that freedom is possible, yet we can pass our years trapped in the same old patterns."
+>
+> [—Brach (2003)]{style="float:right"}
+
+Am I doing what matters most to me?
+
+How can I remember to organize my life around priorities?
+
+> "When you are too busy being what your mind says you are, stepping outside of your normal habits becomes impossible, even when it would clearly be useful to do so."
+>
+> [—Hayes, Strosahl, and Wilson (2012)]{style="float:right"}
+
+What do you value?
+
+Now is a good time to list them out, restate them in the context of today, and decide how you intend to express them.
+
+## But Values Don't Change
+
+A friend of mine observed, "most people think that values don't change." 
+
+You might think, "but I grew up with these values." Perhaps you've always valued friendship. Here is my challenge: what *exactly* do you value about friendship? 
+
+You can revisit your values without letting them go. Keep them if you want to.
+
+As you reflect on your values, consider these questions:
+
+* Do I value this because I *have* to?
+* Do I value this because I *should*?
+* Do I value this because it creates the *best life* for me / my family / my community?
+
+Similar to Spring cleaning or oil changes, revisiting your values on a regular basis ensures that your actions align with deeply meaningfully principles. 
+
+In our culture, where immediate gratification sits on a diamond throne, it is easy to lose track of what is important. 
+
+We end up binging on social media, shopping absentmindedly, or pleasing people who drain our energy. In a sea of endless choices, we swim unsatisfied.  
+
+Here are two questions for 2020 and beyond. Write them on a sticky note. Place them somewhere visible.
+
+<center>
+What am I doing right now?
+
+Does it express my values?
+</center>
+
+# How Should I Select My Values?
+___
+Debates exist on how to select what is most valuable. Should values be individualistic or created collectively? Are values better if they reflect long-term, "higher-order" pleasure? Should values provide a sense of pleasure and mastery? 
+
+I encourage you to explore these debates if they capture your attention. For our purposes, *good* values can be described as meeting these criteria:
+
+1. freely chosen
+2. intrinsically rewarding
+3. involve major life domains
+
+## Freely Chosen
+
+As you decide on the values of your personal philosophy, use words and phrases that are meaningful to you, your family, or your culture. A Christian friend of mine, for example, likes to think of his values as his Personal 10 Commandments. 
+
+A value is impactful if you put it in your own words. The words themselves matter less than the fact that **you** chose them. The same value of *being a good parent* can be expressed as:
+
+* Love my kids to the moon and back.
+* Be a good dad.
+* Show up no matter what.
+* Todo por mis hijos (everything for my children).
+
+You get the idea.
+
+<div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/87jGhdRVzUOJNh2s0q" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+I suggest that you state your values in the present tense as imperatives. 
+
+The value *satisfying romance* seems stale, something you might say when remarking on a Netflix special. "What a satisfying romance" is a few steps removed from "man, that shit was good." 
+
+What's good about it? 
+
+What do you mean by satisfying? 
+
+Where are **you** in the value? 
+
+Put yourself in the value. *Be a loving partner* is better because you can repeat this value to yourself—it is motivating, it calls you to action. 
+
+You might add more context, such as *be a loving partner through thick and thin*, but only if those additional words help you exercise your value.
+
+## Intrinsically Rewarding 
+
+A value is not a goal. Well-chosen values feel good simply by doing things that express them.
+
+A good goal is based on a solid value.
+
+**Find a lover**, for example, is a goal. It can be accomplished. Values, on the other hand, are maintained. If the goal, *find a lover*, is connected to the value, *create emotional intimacy in my life*, then you have the seed of a good goal (it needs more refinement, but more on that later).
+
+Values are expressed repeatedly because *expressing* them is rewarding. 
+
+It is okay to borrow values that excite you. Values that are memorable have a better chance of being turned into behavior. 
+
+There is no shame in choosing a cliché if it appeals to you. 
+
+*Work hard, play hard* is acceptable if the value was freely chosen and brings you fulfillment. After all, it involves two major life domains: career and leisure.
+
+## Involve Major Life Domains
+
+Good values touch upon the big areas in your life. One reason I encourage you to revisit your values is because the importance of life domains changes over time.
+
+As a teenager, independence may have been a big theme in your life. After a close call with cancer, you might value community more than ever before.
+
+Thinking of major life domains can be simple:
+
+```{r}
+# Create data frame
+df_wlp <- data.frame(
+  domain = c("Work", "Play", "Love"),
+  value = c(0.25, 0.25, 0.50)
+)
+
+# Create pie chart
+ggplot(df_wlp, aes(x = "", y = value, fill = domain)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start = 0) +
+  scale_fill_brewer(palette = "GnBu") +
+  labs(fill = "Life Domains") +
+  blank_theme +
+  theme(axis.text.x = element_blank())
+```
+
+More specific:
+
+```{r}
+# Create data frame
+df_wlp <- data.frame(
+  domain = c("Work", "Play", "Love Self", "Love Others"),
+  value = c(0.25, 0.25, 0.25, 0.25)
+)
+
+# Create pie chart
+ggplot(df_wlp, aes(x = "", y = value, fill = domain)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start = 0) +
+  scale_fill_brewer(palette = "GnBu") +
+  labs(fill = "Life Domains") +
+  blank_theme +
+  theme(axis.text.x = element_blank())
+```
+
+Or as complex as you like:
+
+```{r}
+# Create data frame
+df_wlp <- data.frame(
+  domain = c("Career", "Finances", "Leisure", "Sport", "Health", "Personal Growth", "Family", "Friends", "Spirituality"),
+  value = c(0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1)
+)
+
+# Create pie chart
+ggplot(df_wlp, aes(x = "", y = value, fill = domain)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start = 0) +
+  scale_fill_brewer(palette = "GnBu") +
+  labs(fill = "Life Domains") +
+  blank_theme +
+  theme(axis.text.x = element_blank())
+```
+
+You might even try to create a value for each domain. If you value work, do you value the opportunity to make a difference, to excel at a skill, something else?
+
+If you value love, do you value spending time with your logical / chosen family more than your biological family?
+
+You might also create values than span across multiple domains.
+
+For instance, the Golden Rule—do to others as you would have others do to you—affects your family, friends, neighborhood, and the wider community. 
+
+A list of values that covers multiple major life domains ensures that you are balanced.
+
+# The Purpose of Values
+___
+Values lead to action. 
+
+Strongly stated values that are owned, self-rewarding, and broad enkindle your heart to commit to life-giving actions. 
+
+They buffer you against inaction, impulsivity, and avoidance.
+
+<div style="width:100%;height:0;padding-bottom:58%;position:relative;"><iframe src="https://giphy.com/embed/ZuVjzlXywRMJ2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+Which actions can you take that have the flavor of your values?
+
+# An Example
+___
+Here are my 7 chosen values for 2020, paired with meanings, actions, and domains. 
+
+The number of values is a personal preference. 
+
+Keep your list short so you remember them.
+
+## 1) Practice loving-kindness to self, others, et al.
+
+An open, curious style of relating. This value embodies balance, patience, and humility. I enact it when I eat a plant-based diet, sleep regularly, hike often, recycle my plastics, listen intently, and share joy. A value of forgiveness. Being a good neighbor. The value of one love. It reminds me to provide for others without losing myself in the process. I decide to be fully present in my relationships.
+
+**DOMAINS**: health, personal growth, family,️ friends, spirituality, leisure
+
+## 2) Tend to the torch, then pass it
+
+Contributions to human welfare. This value expresses generativity, unity, and legacy. I enact it when I perform research, teach others, save money for my nephew, offer therapy, and volunteer. When I model recovery, mindfulness, and discipline, I tend to the torch. This is a value of professional meaning. Does my work make an impact? Is it compassionate? Have I improved any lives? The value of using skills for the common good. 
+
+**DOMAINS**: career, finances, personal growth, friends,️ community
+
+## 3) Accept, choose, take action
+
+Inspired by Steven C. Hayes. Psychological flexibility. This value is pragmatic and keeps me grounded. I enact it when I face fears, alter unhelpful habits, and rewrite my self-story with intention. A value of mindfulness, dedication, and fluid movement. It helps me locate my roadblocks, reminding me that self-doubt is *just* an experience of doubt—that envy, approval-seeking, shame, incompetence—these are merely experiences to be had.
+
+**DOMAINS**: spirituality, personal growth, career,️ health
+
+## 4) Start immediately, do it flamboyantly—no exceptions
+
+Inspired by William James. Fully alive, present action. This value expresses courage. Refusal to delay or settle for a hollow life. When impulsivity, inaction, and avoidance arise—grasping, aversion, delusion—this value commands me to return to my commitments, like an inner coach. A rallying call to be my best. I enact it when I write daily or try something new, even if I am afraid. The verbal cure to procrastination. If not me, who? If not now, when?
+
+**DOMAINS**: career, personal growth, health
+
+## 5) Perform, without fail, that which I resolve
+
+Inspired by Benjamin Franklin. Fidelity. Another form of dedication, this is the value of honor, integrity, and dependability. When I set a goal or make a promise, I intend to meet it. "Without fail" does not mean that I must succeed, only that I will make a good faith attempt. I enact it by maintaining recovery, being on time, setting weekly goals, and persisting through difficult times.
+
+**DOMAINS**: health, career, finances, family, friends, spirituality
+
+## 6) Seek solidarity and social support
+
+Nurturing relationships. This value involves emotional intimacy, compassionate connection, and humor. I enact it when I schedule game nights with friends, volunteer for the LGBTQ+ community, serve as an ally for culturally diverse friends, and call my family regularly. The value of political action—supporting the underdog and vulnerable others. Helping without the assumption of quid pro quo.
+
+**DOMAINS**: health, friends, family, community, spirituality, leisure
+
+## 7) Attend to context
+
+The big picture. The value of systems, history, and situations. Remembering my mortality. I enact this value when I take different perspectives and consider alternative explanations. A value of multiculturalism, coexistence, and uncertainty.
+
+**DOMAINS**: community, spirituality, career, personal growth
+
+### Final Thoughts
+
+My values have creative tension baked into them—they balance one another.
+
+If I meditate long enough, I could probably argue that they each cover multiple domains.
+
+It matters less that I match each value to the *right* domain. By thinking about the domains, I considered the big picture of my life.
+
+That's the point.
+
+#TL;DR
+___
+Here are the key takeaways:
+
+* Revisit your values annually at a minimum—are you living by them?
+* Good values are freely chosen, self-rewarding, and cover major life domains.
+* If you state values as commands (i.e., be a loving parent), they are motivating and clear.
+* As often as possible, link your daily actions to your core values.
+
+Note: given the intended audience, this post synthesizes content without pairing ideas with citations.
+
+### References
+___
+Beck, J. S. (2011). *Cognitive behavior therapy: Basics and beyond* (2nd ed.). New York, NY: Guilford Press.
+
+Brach, T. (2003). *Radical acceptance: Embracing your life with the heart of a Buddha*. New York, NY: Bantam Books.
+
+Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). *Acceptance and commitment therapy: The process and practice of mindful change*. New York, NY: The Guilford Press.
+
+Hsieh, C. (2005). Age and relative importance of major life domains. *Journal of Aging Studies, 19*(4), 503-512. https://doi.org/10.1016/j.jaging.2005.07.001
+
+Kornfield, J. (2008). *The wise heart: A guide to the universal teachings of Buddhist psychology*. New York, NY: Bantam Books.
+
+Mills, J. S. (1879). *Utilitarianism* (7th ed.). London: Longmas, Green, and Co.

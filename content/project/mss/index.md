@@ -13,7 +13,7 @@ summary = "Implication of sexual scripts among MSM in how sexual practices and d
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["sexuality", "research", "sex positive", "MSM", "gay", "bisexual", "qualitative"]
+tags = ["sexuality", "research", "sex positive", "MSM", "gay", "bisexual", "qualitative", "lgbtq"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

@@ -21,3 +21,7 @@ output: blogdown::html_page
 ---
 
 Blog content coming soon.
+
+Update [12/29/2019]: blog content never coming. 
+
+Too many projects to manage! 🤷
