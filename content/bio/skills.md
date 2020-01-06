@@ -37,7 +37,7 @@ weight = 1
   icon = "book"
   icon_pack = "fas"
   name = "Author"
-  description = "I published my first article in a scientific journal and currently have a second under review. On my blog, you can find helpful solutions to Kevin P. McIntyre's [Open Stats Lab](https://sites.trinity.edu/osl)."
+  description = "I currently have two publications in peer-reviewed journals. On my blog, you can find helpful solutions to Kevin P. McIntyre's [Open Stats Lab](https://sites.trinity.edu/osl)."
 
 [[feature]]
   icon = "hand-holding-heart"
