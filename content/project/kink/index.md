@@ -88,4 +88,4 @@ Review these signs to determine if seeing a therapist might be beneficial. Feel 
 1. The issue causes excessive embarrassment or makes you want to avoid others
 2. The issue has caused your quality of life to decrease
 3. The issue has negatively affected school, work, or relationships
-4. The issue causes emotions that are difficult to tolerate, at causing you to feel overwhelmed by the emotion.
+4. The issue causes emotions that are difficult to tolerate, causing you to feel overwhelmed by the emotion.

@@ -6,7 +6,7 @@ bio: Research interests primarily focus on sexual minorities, ethnic minorities,
 
 education:
   courses:
-  - course: B.A. in Psychology, minor Religioys Studies
+  - course: B.A. in Psychology, minor Religious Studies
     institution: California State University, Bakersfield
     year: 2019
     
