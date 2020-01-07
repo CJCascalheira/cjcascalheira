@@ -63,6 +63,8 @@ The purpose of the National Minority Health Geography Project is to explore how 
 ___
 As a participant, you can expect a survey that will last for about 10-15 minutes.
 
+You will answer questions about identity, depression, anxiety, resilience, and well-being. 
+
 There are no known risks associated with this project which are greater than those ordinarily encountered in daily life. If you experience discomfort at any time, you may discontinue participation without penalty. 
 
 Participation in this study is voluntary.
@@ -92,3 +94,5 @@ ___
 This study is the national, United States version of the [International Associations Between Location and Health in Minority Populations](https://osf.io/ewhqk/) project. This web page is concerned with the contribution effort of New Mexico State University.
 
 For more information about how geography affects minority health among LGBTQ+ people, check out the [Movement Advancement Project](http://www.lgbtmap.org/).
+
+![](/img/research/GMH_recruitment-flyer.png)
