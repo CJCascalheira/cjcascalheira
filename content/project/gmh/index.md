@@ -6,7 +6,7 @@ title = "Geography & Minority Health"
 date = 2020-01-06
 
 # Add authors
-authors = ["admin"]
+authors = ["admin", "flinn", "cera"]
 
 # Project summary to display on homepage.
 summary = "Collaboration on the International Associations Between Location and Health in Minority Populations project."
