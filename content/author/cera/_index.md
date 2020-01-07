@@ -7,8 +7,8 @@ bio: Research interests include social perceptions of grief and loss among ethni
 education:
   courses:
   - course: B.A. in Psychology
-    institution: University
-    year: 2018
+    institution: New Mexico State University
+    year: 2016
     
 email: jose93@nmsu.edu
 interests:

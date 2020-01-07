@@ -8,7 +8,7 @@ education:
   courses:
   - course: M.A. in Clinical Psychology
     institution: University of Detroit Mercy
-    year: 2015
+    year: 2016
     
 email: flinn@nmsu.edu
 interests:
