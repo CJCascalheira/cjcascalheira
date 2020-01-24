@@ -57,9 +57,38 @@ Are you looking for a boyfriend, but just can't seem to find him?
 
 ![](/img/research/MSS_flyer-web.png)
 
-If you have experienced sexual problems and you would like to feel more sexually satisfied, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
+If you have experienced sexual problems or you would like to feel more sexually satisfied, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
 
 We will pay you $10 in Amazon.com Gift Cards, delivered to an email address of your choice, to compensate you for your time.
+
+# Do I Qualify?
+___
+You can participate in this study if you:
+
+* identify as a man
+* are attracted to men
+* are over the age of 18
+* experience a sexual problem(s), a lack of sexual satisfaction, or some other undesired outcome(s) relating to your sex life
+
+#What Do You Mean by "Problems" and "Satisfied"?
+___
+The definitions are up to you. What has been bothering you about sex and relationships?
+
+Some examples might, but don't have to, include:
+
+* difficulty finding a sexual partner
+* not having enough sex or the type of sex that you want
+* attracted to straight-acting men only
+* getting high before or after sex
+* feeling bad before or after sex
+* engaging in risky behaviors
+* staying in unsatisfying relationships
+* difficulty talking to your partner about your fantasies
+* loss of sexual desire
+* difficulty sustaining an erection
+* watching "too much" pornography
+
+If you are unsure, feel free to contact us.
 
 # What's the Purpose?
 ___
@@ -73,7 +102,7 @@ After answering some demographic questions in the first interview, we will ask y
 
 These questions focus on your desires (e.g., “Who do you remember being attracted to?”), fantasies (e.g., “What turns you on the most?”), behaviors (e.g., “How do you currently find your sexual partners?”), and satisfaction (e.g., “How satisfied are you with those practices?”). 
 
-At the end of the first interview, we will ask if you would like to participate in a follow-up interview. 
+At the end of the first interview, we will ask if you would like to participate in a follow-up interview.
 
 During the follow-up interview, we will ask you to describe your sexual experiences and masturbatory behavior since we last met (e.g., “What did you do, feel, or think to experience what turns you on the most?”). 
 
