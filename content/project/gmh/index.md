@@ -71,7 +71,7 @@ Participation in this study is voluntary.
 
 ## Confidentiality
 ___
-Your responses are anonymous. We do not track IP addresses or ask for any identifying information.
+We do not track IP addresses or ask for any identifying information.
 
 The survey will ask you to select your location on Google Maps. However, you are encouraged to select an *approximate* location, such as a nearby business, landmark, neighborhood, or city. This is easy to do in Google Maps.
 
