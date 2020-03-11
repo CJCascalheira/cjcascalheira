@@ -6,7 +6,7 @@ title = "Geography & Minority Health"
 date = 2020-01-06
 
 # Add authors
-authors = ["admin", "flinn", "wang", "cera"]
+authors = ["admin", "flinn", "ijebor", "wang", "cera"]
 
 # Project summary to display on homepage.
 summary = "Collaboration on the International Associations Between Location and Health in Minority Populations project."
@@ -27,7 +27,7 @@ external_link = ""
 slides = ""
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "/docs/projects/GMH_IRB_informed-consent.pdf"
 url_slides = ""
 url_video = ""
 url_code = ""
@@ -51,7 +51,7 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
 ___
 How does our location in the world affect our mental and behavioral health?
 
-If you are over the age of 18 and would like to participate, please visit the survey now. **Survey link coming soon.**
+If you are over the age of 18 and would like to participate, please visit the survey now: **http://bit.ly/nmsu_gmh**
 
 You do not have to identify as a minority to participate.
 
@@ -85,7 +85,7 @@ Please do not use identifying information in your written responses (i.e., last 
 
 ## Informed Consent 
 ___
-You can access the informed consent by clicking the PDF link at the top of the page. **Informed consent coming soon.**
+You can access the informed consent by clicking the [PDF link at the top of the page](/docs/projects/GMH_IRB_informed-consent.pdf).
 
 Note that the informed consent will look slightly different in the survey link because it uses a format required by the [University of Southern Illinois at Carbondale](https://siu.edu/), the affiliated instituion of the Principal Investigator, [Dr. Douglas Knutson](https://cola.siu.edu/psychology/faculty-staff/faculty-list/knutson-douglas.php).
 
