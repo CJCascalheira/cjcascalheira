@@ -87,8 +87,6 @@ Please do not use identifying information in your written responses (i.e., last 
 ___
 You can access the informed consent by clicking the [PDF link at the top of the page](/docs/projects/GMH_IRB_informed-consent.pdf).
 
-Note that the informed consent will look slightly different in the survey link because it uses a format required by the [University of Southern Illinois at Carbondale](https://siu.edu/), the affiliated instituion of the Principal Investigator, [Dr. Douglas Knutson](https://cola.siu.edu/psychology/faculty-staff/faculty-list/knutson-douglas.php).
-
 # Want to Learn More?
 ___
 This study is the national, United States version of the [International Associations Between Location and Health in Minority Populations](https://osf.io/ewhqk/) project. This web page is concerned with the contribution effort of New Mexico State University.
