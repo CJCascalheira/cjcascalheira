@@ -19,7 +19,9 @@ image:
 output: blogdown::html_page
 ---
 
-Here is how you can participate in #MpactTDOV, a community campaign to support transgender people in Las Cruces.
+![](/post/mpact-tdov/mpact-tdov-featured.jpg)
+
+Here is how you can participate in [#MpactTDOV](https://www.facebook.com/search/top/?q=%23MpactTDOV&epa=SEARCH_BOX), a community campaign to support transgender people in Las Cruces.
 
 Simply create a Facebook profile photo using one of our photo frame filters, designed by the one and only, [Bri Nicole](https://www.facebook.com/brieanna.wells1).
 
