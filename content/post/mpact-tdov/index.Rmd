@@ -1,0 +1,60 @@
+---
+title: "Mpact Transgender Day of Visibility (TDOV) 2020"
+authors:
+  - admin
+date: "2020-03-25"
+slug: mpact-tdov
+summary: "Applying a Facebook filter to support the Mpact of Las Cruces TDOV 2020 community campaign."
+categories:
+  - Community
+  - Service
+tags:
+- service
+- lgbtq
+- transgender
+image:
+  caption: "Picture courtesy of Mpact of Las Cruces"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+Here is how you can participate in #MpactTDOV, a community campaign to support transgender people in Las Cruces.
+
+Simply create a Facebook profile photo using one of our photo frame filters, designed by the one and only, [Bri Nicole](https://www.facebook.com/brieanna.wells1).
+
+# Step 1
+___
+First, go to our [discussion page](https://www.facebook.com/events/211064573428108/?active_tab=discussion).
+
+Scroll down until you find a Facebook frame that you like, such as being [trans and proud](https://www.facebook.com/MpactLasCruces/posts/2940596986002752?__tn__=C-R), a [proud ally parent](https://www.facebook.com/MpactLasCruces/posts/2940624339333350?__tn__=C-R), or a [proud ally mom](https://www.facebook.com/MpactLasCruces/posts/2940645922664525?__tn__=C-R).
+
+When you find one that you like, click the **Try It** button.
+
+![](/post/mpact-tdov/mpact-tdov-1.png)
+
+# Step 2
+___
+Next, make any adjusts to your photo.
+
+When you are satisfied, click **Use as Profile Photo**.
+
+![](/post/mpact-tdov/mpact-tdov-2.png)
+
+# Step 3
+___
+Return to your profile page and edit your profile photo.
+
+![](/post/mpact-tdov/mpact-tdov-3.png)
+
+Add #MpactTDOV to the photo description and say that you are at Mpact of Las Cruces.
+
+![](/post/mpact-tdov/mpact-tdov-4.png)
+
+# Celebrate!
+___
+Thank you for helping [Mpact of Las Cruces](https://www.facebook.com/MpactLasCruces/) to create a safe, supportive space for transgender equality.
+
+If your profile profile photo looks this this, then we can easily find and share your support on the national Transgender Day of Visiblity.
+
+![](/post/mpact-tdov/mpact-tdov-5.png)
