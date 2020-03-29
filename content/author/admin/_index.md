@@ -4,18 +4,21 @@ authors:
 bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities, with attention to addiction, sexual well-being, and non-traditional sexual practices (i.e., BDSM, kink). Clinical interests include mindfulness, ACT, and CBT.
 education:
   courses:
+  - course: Ph.D. in Counseling Psychology
+    institution: New Mexico State University
+    year: in progress
   - course: B.A. in Psychology
     institution: University of Massachusetts, Lowell
     year: 2012
 email: coryjc@nmsu.edu
 interests:
-- Sexuality
+- Sexualities
+- Gender
 - Sexual Well-Being
+- Dehumanization
 - Mindfulness
-- Cognitive Behavioral Therapy
-- Acceptance and Commitment Therapy
-- Addiction
-- Non-traditional Sexual Practices
+- CBT / ACT
+- Interpersonal Process
 name: Cory J. Cascalheira
 organizations:
 - name: New Mexico State University
@@ -52,6 +55,6 @@ user_groups:
 - Visitors
 ---
 
-Cory J. Cascalheira, B.A. (he / him / his) is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include oppression, resilience, and identity among marginalized populations, especially sexual minorities. 
+Cory J. Cascalheira, B.A. (he / him / his) is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include experiences of oppression, resistance, and resilience among marginalized populations, especially sexual and gender minorities and people with alternative sexualities, and how these experiences impact identity, well-being, and mental health outcomes. 
 
-Clinically, he has experience delivering cognitive-behavioral therapy during individual and group interventions with people suffering from homelessness, addiction, and recidivism. Currently, he serves as a practicum counselor and research assistant.
+Clinically, he has experience delivering cognitive-behavioral therapies during individual and group interventions with people suffering from homelessness, addiction, and recidivism. Cory has worked in college counseling centers and community behavioral health settings. In addition to addiction and case management, Cory has experience counseling people with academic distress, anxiety, body image concerns, and compulsive behaviors. Currently, he serves as a practicum counselor and graduate research assistant.
