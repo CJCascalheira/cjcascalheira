@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual minorities, with attention to addiction, sexual well-being, and non-traditional sexual practices (i.e., BDSM, kink). Clinical interests include mindfulness, ACT, and CBT.
+bio: Research interests include identity, oppression, and resilience among marginalized populations, especially sexual and gender minorities, with attention to addiction, sexual well-being, internalization processes, and non-traditional sexual practices (i.e., BDSM, kink). Clinical interests include mindfulness, ACT, and CBT.
 education:
   courses:
   - course: Ph.D. in Counseling Psychology

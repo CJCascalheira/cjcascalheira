@@ -1,0 +1,208 @@
+---
+title: "Strengths > Stress"
+authors:
+  - admin
+date: "2020-04-08"
+slug: strengths-greater-than-stress
+summary: "COVID-19 stressing you out? Choose to activate your greatest personal strengths to get through this. Simply pause, notice, and apply."
+categories:
+  - Creativity
+  - Skills
+  - Reflection
+tags:
+- community
+- advice
+- service
+- stress management
+- values
+image:
+  caption: "Photo courtesy of piyush123 of IMGBIN"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+<center>
+[TL;DR]
+</center>
+
+The current pandemic has disrupted all of our lives. 
+
+We are working from home or working extra hours. We might have been laid off.
+
+Our loved ones are getting sick or we worry they might. 
+
+Some of us now must balance being a teacher to our kids while managing our own course work.
+
+As the uncertainity attempts to shake us, I invite you to consider a new way to handle your stress: **unleash your personal strength**.
+
+Research supports the use of positive psychology to deal with stressors, such as managing academic distress, finding work–life balance, or coping with major disruptions.
+
+> "He who has a why to live for can bear almost any how."
+>
+> [—Nietzsche]{style="float:right"}
+
+This technique is simple.
+
+When we [act on our values](https://www.cjcascalheira.com/setting-vital-values-2020/), our actions have meaning.
+
+This practice, [which you can download as a PDF](/post/strengths-greater-than-stress/Strengths-Greater-Than-Stress.pdf), combines character strengths and mindfulness to reduce stress.
+
+# Step 1: Identify Your Strengths
+___
+To begin, figure out which character strengths bring you the most joy.
+
+You can pick 3 to 5 from [this list](https://www.viacharacter.org/pdf/AdultStrengthIcons2020.pdf).
+
+Or, if you want to take a short 10 minute survey, navigate to the VIA Institute on Character and [take the free survey](https://www.viacharacter.org/). Sign up for a free account using an email and password.
+
+If you are over 18, make sure to take the **VIA Adult Survey**, answering each question honestly. Note that there is a version for children ages 13 to 17.
+
+![](/post/strengths-greater-than-stress/strengths-greater-than-stress_1.png)
+	 
+Once you are done with the survey, you can skip the next page and get your results. 
+
+Feel free to create a deeper profile—totally up to you. 
+
+A deeper profile is not needed for this activity.
+
+![](/post/strengths-greater-than-stress/strengths-greater-than-stress_2.png) 
+
+On the next screen, you will see a rank order of your character strengths.
+
+There is no need to pay for anything (unless you want to). 
+
+Scroll down and note your top 3 to 5 character strengths. What are they? 
+
+![](/post/strengths-greater-than-stress/strengths-greater-than-stress_3.png)
+
+Write down your greatest 3 to 5 strengths.
+
+What do you think about these strengths?
+
+Are you surprised? 
+
+Do they seem to fit you?
+
+Once you have your top 3 to 5 character strengths, you are ready for the next step.
+
+# Step 2: The Mindful Pause
+___
+Whenever you find yourself feeling stressed, take a moment to pause.
+
+Take one deep breath. Let your eyes drift down, focusing softly on the ground or whatever is in front of you. You also can close them.
+
+Simply notice yourself breathing for the next 10 to 15 seconds.
+
+Now, ask yourself: **how can I use one of my character strengths right now**?
+
+The flow is simple:
+
+1. **Pause** with one deep breath.
+2. **Notice** your breath for 10 – 15 seconds.
+3. **Apply** your strength(s) to the moment.
+
+# Step 3: Practice
+___
+Try using the mindful pause throughout the day, whenever you feel stressed. It is okay to pause several times. 
+
+You may notice yourself having thoughts like this is not working or I’m not good at this or even this is so dumb. When you notice those thoughts, simply pause, notice, and apply.
+
+There are [many ways you can use your character strengths](https://www.psychologytoday.com/us/blog/what-matters-most/201505/new-ways-happiness-strengths). Here are some examples to manage the stress of balancing school, work, and family life during COVID-19. 
+How would you use your strength(s)?
+
+### Stressful Scenario: I feel lonely. I miss my friends.
+
+**Creativity**: Create [your own meme](https://imgflip.com/memegenerator) and send it to your friends. Use Zoom or FaceTime to see their reaction.
+
+**Curiosity**: Explore a new game to play online together. 
+
+**Judgment**: Think of all the ways to contact your friend, such as sending them a surprise letter
+
+### Stressful Scenario: I cannot focus at home. I’m falling behind. I feel distracted and guilty.
+
+**Love of Learning**: Search the Internet for focusing techniques, such as [pomodoro](https://francescocirillo.com/pages/pomodoro-technique) or [special apps](https://zapier.com/blog/stay-focused-avoid-distractions/), evaluate which is best
+
+**Perspective**: Imagine somebody important. What would they tell you right now?
+
+**Bravery**: Remember this is a new challenge. Tell a family member what you will do about it.
+
+### Stressful Scenario: There’s no way I can teach my kids and myself. I feel tense and exasperated. 
+
+**Perseverance**: Identify 1 new way to relax as a family. Look into [online platforms](https://www.khanacademy.org/) and rewards your kids for completing a certain number of tasks.
+
+**Honesty**: Request extensions from your teacher or employer after explaining your situation. 
+
+**Zest**: Pause the learning for 30 mins and have “recess,” playing an active game, like tag.
+
+### Stressful Scenario: I cannot focus at home. I’m falling behind. I feel guilty and distracted.
+
+**Love**: Recite a [lovingkindness prayer](https://www.youtube.com/watch?v=-d_AA9H4z9U) for yourself. Tell yourself how well you did before COVID-19.
+
+**Kindness**: Call a hospital and thank the first person who answers the phone for their service.
+
+**Social Intelligence**: Write how you are feeling to an ex-partner in a way they might understand.
+
+### Stressful Scenario: I just don’t get this. The assignment is too hard. I feel overwhelmed and unsure.
+
+**Teamwork**: Message your coworkers or classmates. Ask how they approached the problem.
+
+**Fairness**: Take a moment to take care of your plant or pet—some being who relies on you for protection.
+
+**Leadership**: Start a group discussion about the difficulty of / unrealistic demands of the work. 
+
+### Stressful Scenario: I am so annoyed with these conference calls. This is a waste of time. I am frustrated.
+
+**Forgiveness**: Tell yourself, “they’re trying, we’re all trying.” Make a silent wish for them to plan the call better next time.
+
+**Humility**: What would it be like to lead this conference call? What would you want participants to think about you?
+
+**Prudence**: Listen for action steps and write them down, or if the call does not involve you specifically, plan what you will do next.
+
+### Stressful Scenario: I hate being stuck here. I feel trapped.
+
+**Self-Regulation**: Start to monitor how many steps you take around the block. Count how many glasses of water you drink each day.
+
+**Appreciation of Beauty & Excellence**: Watch the sunrise or sunset. Listen to your favorite song.
+
+**Gratitude**: Identify something good in your life, such as your health or access to electricity, and recite 5 reasons you thankful.
+
+### Stressful Scenario: Somebody I know has COVID-19. What if they die? What if I’m next? I am afraid.
+
+**Hope**: Write down what you will do if they live. Read about advances in modern medicine and remember the likelihood of finding a cure.
+
+**Humor**: Watch your favorite stand-up comedian and call the person in a good mood.
+
+**Spirituality**: Pray to your higher power. Read a book that awakens your sense of being connected to something greater than yourself.
+
+### Final Thoughts
+
+Any strength can work for any stress scenario, but yes, some might be more applicable depending on the context.
+
+Do what feels right in the moment.
+
+Just remember to pause, notice your breath, and choose to apply your greatest strengths.
+
+Warm wishes to you, your family, and your community. 
+
+# TL;DR
+___
+Here are the key takeaways:
+
+1. **Pause** with one deep breath.
+2. **Notice** your breath for 10 – 15 seconds.
+3. **Apply** your strength(s) to the moment.
+
+Note: given the intended audience, this post synthesizes content without pairing ideas with citations. A particular thanks to the work of Dr. Niemiec, whose blogs inspired this post.
+
+### References
+___
+Gander, F., Proyer, R. T., Ruch, W., & Wyss, T. (2013). Strength-based positive interventions: Further evidence for their potential in enhancing well-being and alleviating depression. Journal of Happiness Studies, 14(4), 1241–1259. https://doi.org/10.1007/s10902-012-9380-0
+
+Niemiec, R. M. (2016, April 22). The best mindfulness exercise most people don’t know. Psychology Today. https://www.psychologytoday.com/us/blog/what-matters-most/201604/the-best-mindfulness-exercise-most-people-don-t-know
+
+Niemiec, R. M. (2017, January 17). 10 new strategies for stress management. Psychology Today. https://www.psychologytoday.com/us/blog/what-matters-most/201701/10-new-strategies-stress-management
+
+piyush123. (2019, February 12). Logo blue wind wave sea level PNG. IMGBIN. https://imgbin.com/png/G9iU8K5Y/logo-blue-wind-wave-sea-level-png
+
+Seligman, M. E. P., Steen, T. A., Park, N., & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421. https://doi.org/10.1037/0003-066X.60.5.410
