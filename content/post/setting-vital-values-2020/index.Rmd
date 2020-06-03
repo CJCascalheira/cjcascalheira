@@ -237,6 +237,8 @@ They buffer you against inaction, impulsivity, and avoidance.
 
 Which actions can you take that have the flavor of your values?
 
+It should be noted that most values can be expressed in a single word. However, I find them memorable if I translate them into rules for living, or short, motivating sentences. 
+
 # An Example
 ___
 Here are my 7 chosen values for 2020, paired with meanings, actions, and domains. 
@@ -313,6 +315,8 @@ ___
 Beck, J. S. (2011). *Cognitive behavior therapy: Basics and beyond* (2nd ed.). New York, NY: Guilford Press.
 
 Brach, T. (2003). *Radical acceptance: Embracing your life with the heart of a Buddha*. New York, NY: Bantam Books.
+
+Harris, R. (2019). *ACT made simple: An easy-to-read primer on Acceptance and Commitment Therapy*. New Harbinger Publications, Inc.
 
 Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). *Acceptance and commitment therapy: The process and practice of mindful change*. New York, NY: The Guilford Press.
 

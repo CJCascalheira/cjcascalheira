@@ -43,7 +43,7 @@ weight = 1
   icon = "hand-holding-heart"
   icon_pack = "fas"
   name = "Therapist"
-  description = "I served homeless men and women as a counselor-in-training, facilitating groups in psychoeducation—such as [WRAP](https://copelandcenter.com/), [WHAM](https://www.integration.samhsa.gov/health-wellness/wham), and [Matrix](https://store.samhsa.gov/series/matrix-manuals)—and cognitive behavioral therapy. Currently, I am a practicum counselor at [NMSU](https://cep.nmsu.edu/)."
+  description = "I served homeless men and women as a substance abuse counselor-in-training. Currently, I am a practicum counselor at [NMSU](https://wellness.nmsu.edu/) and a behavioral health intern with [Zia Recovery Center](https://ziarecoverycenter.com/)."
 
 [[feature]]
   icon = "hands-helping"
