@@ -47,21 +47,13 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   focal_point = "Center"
 +++
 
-# Currently Seeking Participants!
-___
-Some people process past trauma through BDSM and/or kink play. Scholars estimate that this is the case for about 18% of the BDSM / kink community. 
-
-Sex-positive, kink-aware researchers at New Mexico State University want to hear your story.
-
-![](/img/research/Kink_flyer-web.png)
-
-If you believe kink and/or BDSM have helped you heal from or cope with sexual or physical abuse in childhood, please contact us by [email](mailto:coryjc@nmsu.edu) or [phone](tel:575-323-1272) to schedule a confidential interview (18+ only).
-
 # What's the Purpose?
 ___
 The primary aim of the present project is to create a thematic model of how survivors of childhood abuse heal from, cope with, and transform their trauma through kink and/or bondage, discipline, sadism, and masochism (BDSM). 
 
 Additionally, it attempts to reduce the stigmatizing language of pathology around non-traditional sexual practices.
+
+**Data collection has ended.**
 
 # What Should I Expect?
 ___

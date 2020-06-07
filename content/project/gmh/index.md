@@ -47,17 +47,11 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
   focal_point = "Center"
 +++
 
-# Currently Seeking Participants!
-___
-How does our location in the world affect our mental and behavioral health?
-
-If you are over the age of 18 and would like to participate, please visit the survey now: **http://bit.ly/nmsu_gmh**
-
-You do not have to identify as a minority to participate.
-
 # What's the Purpose?
 ___
 The purpose of the National Minority Health Geography Project is to explore how geographic location may relate to health in minority populations.
+
+**Data collection has ended.**
 
 # What Should I Expect?
 ___
