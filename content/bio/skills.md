@@ -43,7 +43,7 @@ weight = 1
   icon = "hand-holding-heart"
   icon_pack = "fas"
   name = "Therapist"
-  description = "I served homeless men and women as a substance abuse counselor-in-training. Currently, I am a practicum counselor at [NMSU](https://wellness.nmsu.edu/) and a behavioral health intern with [Zia Recovery Center](https://ziarecoverycenter.com/)."
+  description = "I served homeless men and women as an addictions counselor-in-training. Currently, I am a practicum counselor at [NMSU](https://wellness.nmsu.edu/) and a behavioral health intern with [Zia Recovery Center](https://ziarecoverycenter.com/)."
 
 [[feature]]
   icon = "hands-helping"
