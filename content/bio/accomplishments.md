@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.cjcascalheira.com/docs/certificates/cascalheira_beck_depression.pdf"
   date_start = "2018-07-10"
   date_end = "2018-09-02"
-  description = "Created a Cognitive Conceptualization Diagram for a client and self, trained on how to administer worksheets such as the Thought Record, and explored key core beliefs of depressions (unlovability, helplessness, worthlessness)."
+  description = "Created a Cognitive Conceptualization Diagram for a client and self, trained on how to administer worksheets such as the Thought Record, and explored key core beliefs of depression (unlovability, helplessness, worthlessness)."
 
 [[item]]
   organization = "Beck Institute for Cognitive Behavior Therapy"
@@ -67,4 +67,14 @@ date_format = "Jan 2006"
   date_start = "2018-12-14"
   date_end = "2019-01-24"
   description = "Correlation, regression, and inference."
+  
+[[item]]
+  organization = "ACT Mindfully"
+  organization_url = "https://www.actmindfully.com.au/"
+  title = "ACT for Beginners"
+  url = "https://psychwire.com/harris/act-beginners"
+  certificate_url = "https://www.cjcascalheira.com/docs/certificates/cascalheira_act-mindfully_beginners.pdf"
+  date_start = "2020-04-29"
+  date_end = "2020-06-10"
+  description = "Psychological flexibility using a triflex model based on the work of Russ Harris (2019). Learned practical skills (e.g., unhooking exercises, scrunching feelings metaphor) for immediate use with clients."
 +++

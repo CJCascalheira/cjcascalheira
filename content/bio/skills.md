@@ -24,14 +24,14 @@ weight = 1
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R user"
+  name = "R User"
   description = "I have been an avid R user since 2018. I use R to create reproducible analyses and visualizations. You can find my current work on [GitHub](https://github.com/CJCascalheira)."
   
 [[feature]]
   icon = "award"
   icon_pack = "fas"
   name = "Educator"
-  description = "I developed GED curricula and tutored male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/). While training as a Substance Abuse Counselor, I assembled a six-month intensive outpatient curriculum for [SafeHouse Ministries](http://safehouse-ministries.com/)."
+  description = "I developed GED curricula and tutored male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/). While training as an Addictions Counselor, I assembled a six-month intensive outpatient curriculum for [SafeHouse Ministries](http://safehouse-ministries.com/)."
   
 [[feature]]
   icon = "book"
