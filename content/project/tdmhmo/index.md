@@ -49,13 +49,15 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
 
 # Currently Seeking Participants
 ___
-Survey link coming soon. IRB approval pending.
+If you are eligible to participate, please consider taking the survey now: https://survey.nmsu.edu/surveys/index.php?s=DEJ7FWHXWE
 
 # What's the Purpose?
 ___
 The purpose of this study is to explore how your personal experiences as a transgender person may impact mental health.
 
-This project involves a survey in which you will answer questions about identity and discrimination. You will also answer questions about how people treat your body, including experiences of sexual harassment, questions about how you view your body, questions about your family, and questions about how you have been feeling lately.
+This project involves a survey in which you will answer questions about identity, discrimination, and mental health. Content includes questions about the body, sexual harassment, family, positive and negative thoughts about the self, and recent feelings. 
+
+Your participation will help support social efforts, community outreach, and policy initiatives as well as improve therapy.
 
 # Am I Eligible?
 ___
