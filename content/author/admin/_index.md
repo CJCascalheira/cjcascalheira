@@ -56,6 +56,6 @@ user_groups:
 - Visitors
 ---
 
-Cory J. Cascalheira, B.A. (he / him / his) is a graduate student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include experiences of oppression, resistance, and resilience among marginalized populations, especially sexual and gender minorities and people with diverse sexualities, and how these experiences impact identity, well-being, and mental health outcomes. 
+Cory J. Cascalheira, B.A. (he / they) is a doctoral student in the Department of Counseling & Educational Psychology at New Mexico State University. His research interests include experiences of oppression, resistance, and resilience among marginalized populations, especially sexual and gender minorities and people with diverse sexualities, and how these experiences impact identity, well-being, and mental health outcomes. 
 
 Clinically, he has experience delivering cognitive-behavioral and mindfulness-based therapies during individual and group interventions with people suffering from homelessness, addiction, recidivism, academic distress, anxiety, body image concerns, and compulsive behaviors. Cory has worked in college counseling centers and community behavioral health settings. Currently, he serves as a practicum counselor and graduate research assistant.
