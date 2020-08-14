@@ -31,7 +31,7 @@ weight = 1
   icon = "award"
   icon_pack = "fas"
   name = "Educator"
-  description = "I developed GED curricula and tutored male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/). While training as an Addictions Counselor, I assembled a six-month intensive outpatient curriculum for [SafeHouse Ministries](http://safehouse-ministries.com/)."
+  description = "I developed GED curricula and tutored male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/). I have taught undergraduate classes at New Mexico State University."
   
 [[feature]]
   icon = "book"
@@ -49,6 +49,6 @@ weight = 1
   icon = "hands-helping"
   icon_pack = "fas"
   name = "Advocate"
-  description = "I serve on the board of [PFLAG Las Cruces](http://www.pflaglascruces.org/), crafting outreach media that tells our story. As a core member of [Mpact Las Cruces](https://www.facebook.com/MpactLasCruces/), I promote events that target young (18 - 29 years old) men who have sex with men and transgender people to reduce health disparities, build community, and enhance sexual well-being."
+  description = "I serve on the board of [PFLAG Las Cruces](http://www.pflaglascruces.org/), crafting outreach media and organizing community projects. I also serve as a representative or committee member in psychology-based organization, locally and nationally."
 
 +++

@@ -77,4 +77,14 @@ date_format = "Jan 2006"
   date_start = "2020-04-29"
   date_end = "2020-06-10"
   description = "Psychological flexibility using a triflex model based on the work of Russ Harris (2019). Learned practical skills (e.g., unhooking exercises, scrunching feelings metaphor) for immediate use with clients."
+
+[[item]]
+  organization = "Center for Positive Sexuality"
+  organization_url = "https://positivesexuality.org/"
+  title = "Positive Sexuality Summer Research Internship"
+  url = "https://positivesexuality.org/"
+  certificate_url = "https://www.cjcascalheira.com/docs/certificates/cascalheira_positive-sexuality-research-internship.pdf"
+  date_start = "2020-06-11"
+  date_end = "2020-08-10"
+  description = "Worked with Dr. Liam Wignall on projects related to the phenomenology of 24/7 BDSM and the influence of COVID-19 on sexual activity and personal relationships."
 +++
