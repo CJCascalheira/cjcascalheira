@@ -9,7 +9,7 @@ date = 2020-08-14
 authors = ["admin"]
 
 # Project summary to display on homepage.
-summary = "How do people perceive and behave regarding the COVID-19 coronavrisu, globally?"
+summary = "How do people perceive and behave regarding the COVID-19 coronavirus, globally?"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
