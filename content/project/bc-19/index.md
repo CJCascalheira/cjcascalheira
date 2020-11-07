@@ -27,7 +27,7 @@ external_link = ""
 slides = ""
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "/docs/projects/BC-19_IRB_informed-consent.pdf"
 url_slides = ""
 url_video = ""
 url_code = ""
@@ -49,22 +49,20 @@ links = [{icon_pack = "fab", icon="twitter", name="Follow", url = "https://twitt
 
 # What's the Purpose?
 ___
-Coming soon.
+The purpose of the study is to better understand people’s perceptions and behaviors regarding the COVID-19 coronavirus, and to compare experiences from around the world. For example, we are interested in beliefs about the likelihood of catching the virus, and severity of the virus, and in behaviors people are taking to cope with the virus.
+
+This is a [Psi Chi](https://www.psichi.org/) NICE: CROWD project.
 
 # What Should I Expect?
 ___
-Coming soon.
+This project involves a survey and includes questions about the coronavirus, government attitudes, mental health, perceived risk, and quality of life.
 
 ## Confidentiality
 ___
-Coming soon.
+No personal information will be collected. Your responses are anonymous. We neither track IP addresses nor ask for any identifying information. Your data will be stored on password-protected, encrypted computers. 
 
 ## Informed Consent 
 ___
-You can access the informed consent by clicking the [PDF link at the top of the page]().
-
-# Want to Learn More?
-___
-Coming soon.
+You can access the informed consent by clicking the [PDF link at the top of the page](/docs/projects/BC-19_IRB_informed-consent.pdf).
 
 ![](/img/research/BC-19_recruitment-img.png)
