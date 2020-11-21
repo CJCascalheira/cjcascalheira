@@ -1,0 +1,62 @@
+---
+title: "Rural Reading Rainbow"
+authors:
+  - admin
+date: "2020-10-13"
+slug: rural-reading-rainbow
+summary: "Rural Reading Rainbow is an evidence-based project to reduce discrimination against LGBTQ+ students and increase the visibility of LGBTQ+ culture in Southern New Mexico."
+categories:
+  - Service
+  - LGBTQ
+  - Activism
+tags:
+- community
+- service
+- Las Cruces
+- PFLAG
+image:
+  caption: "Photo courtesy of PFLAG.com"
+  focal_point: ""
+  preview_only: true
+output: blogdown::html_page
+---
+
+```{r include=FALSE}
+# Setup
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+# Dependencies
+library(tidyverse)
+library(scales)
+
+# Create a blank theme
+blank_theme <- theme_minimal()+
+  theme(
+    rect = element_rect(fill = "transparent"),
+    plot.background = element_rect(fill = "transparent", color = NA),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.border = element_blank(),
+    panel.grid = element_blank(),
+    axis.ticks = element_blank(),
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.text.x = element_blank(),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 14)
+  )
+```
+
+<center>
+[TL;DR]
+</center>
+
+Here.
+
+#TL;DR
+___
+Here are the key takeaways:
+
+* 
+
+### References
+___
