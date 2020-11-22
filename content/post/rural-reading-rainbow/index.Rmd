@@ -21,36 +21,68 @@ image:
 output: blogdown::html_page
 ---
 
-```{r include=FALSE}
-# Setup
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-
-# Dependencies
-library(tidyverse)
-library(scales)
-
-# Create a blank theme
-blank_theme <- theme_minimal()+
-  theme(
-    rect = element_rect(fill = "transparent"),
-    plot.background = element_rect(fill = "transparent", color = NA),
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
-    panel.border = element_blank(),
-    panel.grid = element_blank(),
-    axis.ticks = element_blank(),
-    plot.title = element_text(size = 14, face = "bold"),
-    axis.text.x = element_blank(),
-    legend.text = element_text(size = 12),
-    legend.title = element_text(size = 14)
-  )
-```
-
 <center>
 [TL;DR]
 </center>
 
-Here.
+Good news! I wrote a grant on behalf of PFLAG Las Cruces and we won $5,000 to fund a project a designed. Special thanks to the [Envision Fund](https://www.santafecf.org/envisionfund) of the Santa Fe Community Foundation!
+
+Let me tell you about Rural Reading Rainbow.
+
+# Summary of the Project
+___
+Aligned with the enhancement of cultural vibrancy in southern New Mexico, Rural Reading Rainbow is an evidence-based project to reduce discrimination against LGBTQ+ students and increase the visibility of LGBTQ+ culture by (1) providing LGBTQ-themed literature to schools and libraries, (2) implementing cultural enrichment events, and (3) partnering with culturally diverse LGBTQ+ students through funded internships.
+
+The project targets the New Mexican counties of Doña Ana, Grant, Luna, Otero, and Sierra.
+
+Given that one aim of Rural Reading Rainbow is the provision of LGBTQ-themed literature and children’s programming to schools and community libraries, our project is aligned with anti-bullying / safe school-based efforts for LGBTQ students. 
+
+For example, research shows that accessible LGBTQ-themed literature increases student belongingness and enhances the cultural competency of non-LGBTQ community members (Brand & Maasch, 2017). 
+
+Such an initiative may also increase the multicultural competence of teachers, staff, and other educational stakeholders regarding family diversity (e.g., Blackburn & Clark, 2011).
+
+## Why is This Needed?
+
+Compared to urban peers (sexual orientation [SO] = 3.85; gender identity [GI] = 2.87), LGBTQ+ youth in rural areas are more likely to experience victimization due to less supportive community climates (SO = 4.97; GI = 3.44, p < .001; Kosciw et al., 2015). Additionally, students in schools without LGBTQ-inclusive curricula are more likely to feel unsafe (Kosciw et al., 2018). Only 20% of students report positive representations of LGBTQ+ people (GLSEN, 2019). 
+
+# Goals and Objectives
+___
+Our project has 3 overarching goals and 15 subordinate objectives.
+
+1.	Provision of LGBTQ-inclusive curricular resources to schools and libraries in five high-poverty counties
+    * Develop relationships with administrators, librarians, and teachers
+    * Establish a list of libraries (from 16) and schools (from 136) willing to receive and display our book donations (i.e., Lambda Literary)
+    * Establish a point of contact (PoC) at each institution
+    * Connect the PoC with PFLAG and GLSEN resources (e.g., safe zone training).
+    * Distribute LGBTQ-themed literature to PoCs
+    * If schools or libraries are unwilling to receive donations, we will select different titles to distribute to existing partners
+
+2.	Implementation of cultural enrichment events
+    * Establish a Drag Queen Story Hour in southern New Mexico in collaboration with drag performers in Las Cruces, Deming, Silver City, and Alamogordo
+    * Create promotion media for the events
+    * Release announcements and stories through various channels
+    * Leverage developed relationships (see 1.a) to promote a monthly Drag Queen Story Hour, either via Zoom or in-person
+
+3.	Partnership with culturally diverse LGBTQ+ students
+    * Create an internship application for students and distribute to NMSU programs
+    * Select two student interns to assist with the project
+    * Invite the interns to participate in board meetings to learn about non-profits
+    * Train the interns in project management
+    * Provide supervision and feedback to interns
+
+# Rationale
+___
+In rural areas, few LGBTQ+ students are out to their peers (39.6%) and school staff (24.1%; Kosciw et al., 2015). 
+
+Coming out, which is easier when environments are perceived as supportive, can result in lower levels of depression and greater overall well-being (Russell et al., 2011). 
+
+Although coming out early can increase the risk of victimization (Kosciw et al., 2018), the outcome may be less likely if non-LGBTQ peers are exposed to LGBTQ-inclusive curricula. 
+
+Indeed, Kappus (2016) found that LGBTQ+ parents, with children in PK-12 school systems within Doña Ana county, wanted their children’s classrooms to include LGBTQ literature. 
+
+LGBTQ+ students in schools with LGBTQ-themed resources report fewer depressive symptoms, substance use, and suicidal thoughts (Goodenow et al., 2006; Hatzenbuehler et al., 2014; Poteat et al., 2013). 
+
+Greater resources may also increase peer support which, in turn, is related to positive mental health, self-acceptance, and well-being (Shilo & Savaya, 2011).
 
 # TL;DR
 ___
