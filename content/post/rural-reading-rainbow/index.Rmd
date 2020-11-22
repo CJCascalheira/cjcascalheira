@@ -52,11 +52,35 @@ blank_theme <- theme_minimal()+
 
 Here.
 
-#TL;DR
+# TL;DR
 ___
-Here are the key takeaways:
+The Rural Reading Rainbow project:
 
-* 
+* is funded $5,000 by the [Envision Fund](https://www.santafecf.org/envisionfund) of the Santa Fe Community Foundation
+* provides LGBTQ-themed literature to schools and libraries
+* implements cultural enrichment events
+* partners with culturally diverse LGBTQ+ students through funded internships
 
 ### References
 ___
+Blackburn, M. V., & Clark, C. T. (2011). Analyzing talk in a long-term literature discussion group: Ways of operating within LGBT-inclusive and queer discourses. *Reading Research Quarterly, 46*(3), 222–248.
+
+Brand, S. T., & Maasch, S. L. (2017). Updating classroom libraries and cross-curricular activities: Celebrating gender identity and diversity through LGBTQ books. *Childhood Education, 93*(5), 430–439. https://doi.org/10.1080/00094056.2017.1367240
+
+GLSEN. (2019). *2017 state snapshot: School climate in New Mexico*. https://www.glsen.org/sites/default/files/2019-11/New%20Mexico_Snapshot_2017_0.pdf
+
+Goodenow, C., Szalacha, L., & Westheimer, K. (2006). School support groups, other school factors, and the safety of sexual minority adolescents. *Psychology in the Schools, 43*(5), 573–589. https://doi.org/10.1002/pits.20173
+
+Hatzenbuehler, M. L., Birkett, M., Van Wagenen, A., & Meyer, I. H. (2014). Protective school climates and reduced risk for suicide ideation in sexual minority youths. *American Journal of Public Health, 104*(2), 279–286. https://doi.org/10.2105/AJPH.2013.301508
+
+Kappus, B. (2016). *LGBTQ parents: Their perceptions and attitudes regarding their ontological experiences within their children’s school environment* (Publication No. 10141462) [Doctoral dissertation, New Mexico State University]. ProQuest Dissertations and Theses Global.
+
+Kosciw, J. G., Greytak, E. A., Zongrone, A. D., Clark, C. M., & Truong, N. L. (2018). *The 2017 national school climate survey: The experiences of lesbian, gay, bisexual, transgender, and queer youth in our nation’s schools*. GLSEN.
+
+Kosciw, J. G., Palmer, N. A., & Kull, R. M. (2015). Reflecting resiliency: Openness about sexual orientation and/or gender identity and its relationship to well-being and educational outcomes for LGBT students. *American Journal of Community Psychology, 55*(1–2), 167–178. https://doi.org/10.1007/s10464-014-9642-6
+
+Poteat, V. P., Sinclair, K. O., DiGiovanni, C. D., Koenig, B. W., & Russell, S. T. (2013). Gay–straight alliances are associated with student health: A multischool comparison of LGBTQ and heterosexual youth. *Journal of Research on Adolescence, 23*(2), 319–330. https://doi.org/10.1111/j.1532-7795.2012.00832.x
+
+Russell, S. T., Ryan, C., Toomey, R. B., Diaz, R. M., & Sanchez, J. (2011). Lesbian, gay, bisexual, and transgender adolescent school victimization: Implications for young adult health and adjustment. *Journal of School Health, 81*(5), 223–230. https://doi.org/10.1111/j.1746-1561.2011.00583.x
+
+Shilo, G., & Savaya, R. (2011). Effects of family and friend support on LGB youths’ mental health and sexual orientation milestones. *Family Relations, 60*(3), 318–330. https://doi.org/10.1111/j.1741-3729.2011.00648.x
