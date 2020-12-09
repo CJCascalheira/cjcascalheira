@@ -29,7 +29,7 @@ date_format = "January 2006"
   description = """Assists [Dr. Leanna Lucero](https://tpal.nmsu.edu/) in the School of Teacher Preparation, Administration, and Leadership to explore (a) social justice in math education and (b) queer-inclusive pedagogy in elementary schools; partners with [Dr. Tracie Hitter](https://cep.nmsu.edu) to (a) review student analyses employing the listening guide as a technique and (b) write and revise manuscripts; collaborates with Dr. Tracie Hitter and [Dr. Na-Yeun Choi](https://cep.nmsu.edu) on a project exploring racism among African Americans and Asian Americans at a Hispanic-serving institution; collaborates with [Dr. Eve Adams](https://cep.nmsu.edu) to analyze and write up data from a multi-year mindfulness project using univariate statistics."""
 
 [[experience]]
-  title = "Substance Abuse Counselor-in-Training"
+  title = "Addictions Counselor-in-Training"
   company = "SafeHouse Ministries"
   company_url = "http://safehouse-ministries.com/"
   location = "Columbus, GA"
