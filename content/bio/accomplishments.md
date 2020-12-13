@@ -87,4 +87,14 @@ date_format = "Jan 2006"
   date_start = "2020-06-11"
   date_end = "2020-08-10"
   description = "Worked with Dr. Liam Wignall on projects related to the phenomenology of 24/7 BDSM and the influence of COVID-19 on sexual activity and personal relationships."
+
+[[item]]
+  organization = "NM Opioid Hub"
+  organization_url = ""
+  title = "Basic ASAM Criteria Training"
+  url = ""
+  certificate_url = "https://www.cjcascalheira.com/docs/certificates/cascalheira_nm-opioid_asam-criteria.pdf"
+  date_start = "2020-12-09"
+  date_end = "2020-12-09"
+  description = "Rating clients who misuse substances on six dimensions to establish level of care."
 +++
