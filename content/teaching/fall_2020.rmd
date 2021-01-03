@@ -164,4 +164,12 @@ survey_2[, -c(1, 8)] %>%
   kable_styling(c("striped", "hover"))
 ```
 
-The following qualitative feedback came from the official course evaluations from the department.
+The following (selected) qualitative feedback came from the official course evaluations from the department.
+
+"This course is my favorite course I have ever taken at NMSU. The instructor, when emailed, got back to me in a timely manner and if there was any confusion he would send out announcements. The course is structured very straight forward and was not confusing one bit."
+
+"Instructor Cory provided organized models to follow when assignments are due which helped me keep up with the assignments. Cory was great with providing feedback to better understand what we missed and what we can work on. Cory's overall strength was communication, organization, flexibility when we needed to have a meeting through zoom."
+
+"I think incorporating media clips helped me engage with the course material a lot more than my other courses. I really liked that Cory provided clear and very thorough videos about our major assignments because I am a visual learner. Required discussions helped me with consistent learning and reflecting throughout this course."
+
+"He was very patient and kind."
