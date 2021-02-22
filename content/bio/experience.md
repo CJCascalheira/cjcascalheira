@@ -20,6 +20,15 @@ date_format = "January 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Research Project Coordinator"
+  company = "Syracuse University"
+  company_url = "https://thecollege.syr.edu/"
+  location = "Remote"
+  date_start = "2021-01-28"
+  date_end = ""
+  description = """Works with Drs. [Jillian R. Scheer](https://thecollege.syr.edu/people/faculty/jillian-r-scheer-phd/), Skyler Jackson, and a team of research assistants (a) to implement Project QueST and (b) to assist with launching the laboratory."""
+
+[[experience]]
   title = "Graduate Research Assistant"
   company = "New Mexico State University"
   company_url = "https://education.nmsu.edu/"
