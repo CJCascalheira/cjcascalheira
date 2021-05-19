@@ -22,11 +22,20 @@ date_format = "January 2006"
 [[experience]]
   title = "Research Project Coordinator"
   company = "Syracuse University"
-  company_url = "https://thecollege.syr.edu/"
+  company_url = "https://jrscheer.expressions.syr.edu/"
   location = "Remote"
   date_start = "2021-01-28"
   date_end = ""
-  description = """Works with Drs. [Jillian R. Scheer](https://thecollege.syr.edu/people/faculty/jillian-r-scheer-phd/), Skyler Jackson, and a team of research assistants (a) to implement Project QueST and (b) to assist with launching the laboratory."""
+  description = """Works with Drs. [Jillian R. Scheer](https://thecollege.syr.edu/people/faculty/jillian-r-scheer-phd/), [Skyler Jackson](https://scholar.google.com/citations?user=tX9CEgIAAAAJ&hl=en&oi=ao), and a team of research assistants (1) to implement a project with the goal of developing a culturally sensitive intervention for trauma-exposed sexual minority women, (2) to assist with launching the laboratory, (3) to conduct meta-analyses and systematic scoping reviews, and (4) to assist in the design, implementation, and publication of other research projects focusing on LGBTQIA+ mental health."""
+
+[[experience]]
+  title = "Graduate Instructor"
+  company = "New Mexico State University"
+  company_url = "https://education.nmsu.edu/"
+  location = "Las Cruces, NM"
+  date_start = "2020-08-19"
+  date_end = ""
+  description = """Teaches undergraduate classes as the instructor of record, including a course about gender and culture (i.e., CEPY 320: Sex Roles in Education) and a research internship capstone course (i.e., CEPY 498: Community and Counseling Psychology Internship); uses principles of active learning; delivers instruction through asynchronous and synchronous methods."""
 
 [[experience]]
   title = "Graduate Research Assistant"
@@ -34,8 +43,8 @@ date_format = "January 2006"
   company_url = "https://education.nmsu.edu/"
   location = "Las Cruces, NM"
   date_start = "2019-08-21"
-  date_end = ""
-  description = """Assists [Dr. Leanna Lucero](https://tpal.nmsu.edu/) in the School of Teacher Preparation, Administration, and Leadership to explore (a) social justice in math education and (b) queer-inclusive pedagogy in elementary schools; partners with [Dr. Tracie Hitter](https://cep.nmsu.edu) to (a) review student analyses employing the listening guide as a technique and (b) write and revise manuscripts; collaborates with Dr. Tracie Hitter and [Dr. Na-Yeun Choi](https://cep.nmsu.edu) on a project exploring racism among African Americans and Asian Americans at a Hispanic-serving institution; collaborates with [Dr. Eve Adams](https://cep.nmsu.edu) to analyze and write up data from a multi-year mindfulness project using univariate statistics."""
+  date_end = "2021-05-14"
+  description = """Assisted [Dr. Leanna Lucero](https://tpal.nmsu.edu/) in the School of Teacher Preparation, Administration, and Leadership to explore (1) social justice in math education, (2) queer-inclusive pedagogy in elementary schools, (3) the experience of transgender and bisexual parents within public schools, and (4) the experience of LGBTQIA+ educators of color in the borderland region of the United States; partnered with [Dr. Tracie Hitter](https://cep.nmsu.edu) (1) to review student analyses employing the listening guide as a technique and (2) to write and to revise manuscripts; collaborated with Dr. Tracie Hitter and [Dr. Na-Yeun Choi](https://cep.nmsu.edu) on a project exploring racism among African Americans and Asian Americans at a Hispanic-serving institution; collaborated with [Dr. Eve Adams](https://cep.nmsu.edu) to analyze and to write up data from a multi-year mindfulness project using univariate statistics."""
 
 [[experience]]
   title = "Addictions Counselor-in-Training"

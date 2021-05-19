@@ -37,4 +37,8 @@ rsconnect/
 .Rproj.user
 
 # The public version of the website
-public/
+/public/
+
+# Suggestions from check_site()
+.DS_Store
+Thumbs.db

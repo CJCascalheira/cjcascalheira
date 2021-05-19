@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 3  # Order that this section will appear.
 
-title = "Certificates"
+title = "Certificates, Fellowships"
 subtitle = ""
 
 # Date format
@@ -86,7 +86,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.cjcascalheira.com/docs/certificates/cascalheira_positive-sexuality-research-internship.pdf"
   date_start = "2020-06-11"
   date_end = "2020-08-10"
-  description = "Worked with Dr. Liam Wignall on projects related to the phenomenology of 24/7 BDSM and the influence of COVID-19 on sexual activity and personal relationships."
+  description = "Worked with Drs. [Liam Wignall](https://scholar.google.com/citations?user=KTYOQqwAAAAJ&hl=en&oi=ao) and [Mark McCormack](https://scholar.google.com/citations?user=UzeUDZ8AAAAJ&hl=en&oi=ao) on projects related to the phenomenology of 24/7 BDSM and the influence of COVID-19 on sexual activity and personal relationships."
 
 [[item]]
   organization = "NM Opioid Hub"

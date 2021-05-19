@@ -37,18 +37,18 @@ weight = 1
   icon = "book"
   icon_pack = "fas"
   name = "Author"
-  description = "I currently have two publications in peer-reviewed journals. On my blog, you can find helpful solutions to Kevin P. McIntyre's [Open Stats Lab](https://sites.trinity.edu/osl)."
+  description = "I publish empirical articles in [peer-reviewed journals](https://scholar.google.com/citations?hl=en&user=SjNJK48AAAAJ). On my blog, you can find helpful solutions to Kevin P. McIntyre's [Open Stats Lab](https://sites.trinity.edu/osl)."
 
 [[feature]]
   icon = "hand-holding-heart"
   icon_pack = "fas"
   name = "Therapist"
-  description = "I served homeless men and women as an addictions counselor-in-training. Currently, I am a practicum counselor at [NMSU](https://wellness.nmsu.edu/) and a behavioral health intern with [Zia Recovery Center](https://ziarecoverycenter.com/)."
+  description = "I served homeless men and women as an addictions counselor-in-training. Currently, I am a practicum counselor at [NMSU](https://wellness.nmsu.edu/) and a behavioral health intern with [Family Medicine Center](https://www.mmclc.org/other-providers/family-medicine-center)."
 
 [[feature]]
   icon = "hands-helping"
   icon_pack = "fas"
   name = "Advocate"
-  description = "I serve on the board of [PFLAG Las Cruces](http://www.pflaglascruces.org/), crafting outreach media and organizing community projects. I also serve as a representative or committee member in psychology-based organization, locally and nationally."
+  description = "I am Vice President of [PFLAG Las Cruces](http://www.pflaglascruces.org/), managing grants, crafting outreach media, and organizing community projects. I also serve as a representative or committee member in psychology-based organization, locally and nationally."
 
 +++
