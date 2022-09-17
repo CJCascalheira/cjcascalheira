@@ -7,7 +7,7 @@ social:
   - display:
       header: true
     icon_pack: fab
-    icon: envelope
+    icon: mail
     link: mailto:coryjc@nmsu.edu
     label: Email
   - display:
