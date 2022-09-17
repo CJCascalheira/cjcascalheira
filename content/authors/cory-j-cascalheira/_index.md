@@ -2,7 +2,7 @@
 title: Cory J. Cascalheira
 role: "Doctoral Candidate in Counseling Psychology "
 avatar_filename: avatar.jpg
-bio: "Research interests include "
+bio: "Research interests include (1) the examination of stress-based, multilevel determinants and mechanisms conferring risk for LGBTQ+ health disparities (e.g., substance misuse); and (2) the use of computational methods (i.e., artificial intelligence) and big data to understand LGBTQ+ health behaviors and outcomes. Clinical interests include ACT, CBT, CPT, and MI."
 social:
   - display:
       header: true
@@ -11,14 +11,10 @@ social:
     link: https://www.researchgate.net/profile/Cory_Cascalheira
     label: ResearchGate
 organizations:
-  - name: Department of Counseling and Educational Psychology - New Mexico State
-      University
+  - name: New Mexico State University
     url: https://cep.nmsu.edu/
-  - name: Minority Stress and Trauma Lab - Syracuse University
+  - name: Syracuse University
     url: https://jrscheer.expressions.syr.edu/
-  - name: Hub for Health Innovation, Policy and Practice - University of California,
-      Los Angeles
-    url: https://hhipp.sites.luskin.ucla.edu/
 education:
   courses:
     - course: PhD, Counseling Psychology
