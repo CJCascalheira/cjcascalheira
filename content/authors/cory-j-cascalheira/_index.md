@@ -6,10 +6,40 @@ bio: "Research interests include (1) the examination of stress-based, multilevel
 social:
   - display:
       header: true
+    icon_pack: fab
+    icon: envelope
+    link: mailto:coryjc@nmsu.edu
+    label: Email
+  - display:
+      header: true
     icon_pack: ai
     icon: researchgate
     link: https://www.researchgate.net/profile/Cory_Cascalheira
     label: ResearchGate
+  - display:
+      header: true
+    icon_pack: fab
+    icon: twitter
+    link: https://twitter.com/CJCascalheira
+    label: Twitter
+  - display:
+      header: true
+    icon_pack: fab
+    icon: github
+    link: https://github.com/CJCascalheira
+    label: GitHub
+  - display:
+      header: true
+    icon_pack: ai
+    icon: academia
+    link: https://nmsu.academia.edu/CoryCascalheira
+    label: Academia
+  - display:
+      header: true
+    icon_pack: ai
+    icon: orcid
+    link: https://orcid.org/0000-0001-5780-3101
+    label: OrcID
 organizations:
   - name: New Mexico State University
     url: https://cep.nmsu.edu/
