@@ -6,8 +6,8 @@ bio: "Research interests include (1) the examination of stress-based, multilevel
 social:
   - display:
       header: true
-    icon_pack: fab
-    icon: mail
+    icon_pack: fas
+    icon: envelope
     link: mailto:coryjc@nmsu.edu
     label: Email
   - display:
