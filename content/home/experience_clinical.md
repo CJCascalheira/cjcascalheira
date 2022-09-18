@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 40
 
-title: Academic Experience
+title: Clinical Experience
 subtitle:
 
 # Date format for experience
