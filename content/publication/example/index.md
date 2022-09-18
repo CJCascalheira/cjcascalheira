@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,11 +11,11 @@ authors:
 author_notes:
   - ''
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+date: '2021-03-22T00:00:00Z'
+doi: '10.1080/19419899.2021.1901771'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2022-09-18T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
