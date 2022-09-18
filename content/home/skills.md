@@ -29,7 +29,7 @@ feature:
     icon_pack: fas
     name: Author
   - description: Cory uses CBT, ACT, RCT, and other evidence-based practices to prevent client problems, stop client suffering, and contribute to client development. He has neuropsychological and psychodiagnostic assessment experience.
-    icon: hands-holding-heart
+    icon: hand-holding-heart
     icon_pack: fas
     name: Therapist
   - description: Cory uses an active learning, participatory approach to student education, and has developed GED classes for male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/) and taught undergraduate classes in research and gender at [New Mexico State University](https://cep.nmsu.edu/).
@@ -37,7 +37,7 @@ feature:
     icon_pack: fas
     name: Educator
   - description: Cory is the Vice President of PFLAG Las Cruces and serves on national committees for [Division 44 of the American Psychological Association](https://www.apa.org/about/division/div44).
-    icon: helping-hands
+    icon: hand-heart
     icon_pack: fas
     name: Advocate
   
