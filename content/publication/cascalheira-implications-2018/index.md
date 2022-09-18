@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Implications of stigma as a barrier to PTSD care'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2018-10-22T00:00:00Z'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Annals of Psychiatry and Mental Health*
+publication_short: In *Annals of Psychiatry and Mental Health*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Post-Traumatic Stress Disorder (PTSD) is reported to affect 6.8% of the population of the United States, but often goes undiagnosed due to perceived stigma. Left untreated, PTSD has deleterious effects on quality of life, harming families, employers, and taxpayers with loss of life, loss of productivity, and elevated risk for criminality and addiction. Health care providers and employers play a vital role in reducing stigma, which derives, in part, from the nature of the trauma. Expanded routine screening, psychoeducation of stakeholders, and computer-mediated therapy may diminish stigma-related costs and improve access to care. The implications of stigma as a barrier to treatment should be considered in further research on the public health outcomes of PTSD.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/332447160_Implications_of_Stigma_as_a_Barrier_to_PTSD_Care'
 url_code: ''
 url_dataset: ''
 url_poster: ''

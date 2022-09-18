@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Factorial invariance of scores on the Self-Objectification Beliefs and Behaviors Scale (SOBBS) among transgender and nonbinary people'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2022-03-22T00:00:00Z'
+doi: '10.1080/07481756.2022.2032758'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Measurement and Evaluation in Counseling and Development*
+publication_short: In *Measurement and Evaluation in Counseling and Development*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'The dimensionality and factorial invariance of scores on the Self-Objectification Beliefs and Behaviors Scale (SOBBS) were examined with a sample of 590 transgender and nonbinary participants. Results failed to disconfirm the two-factor model and provided adequate estimates of internal consistency reliability. Strong, strict, and structural invariance of scores were observed.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/359069656_Factorial_Invariance_of_Scores_on_the_Self-Objectification_Beliefs_and_Behaviors_Scale_SOBBS_Among_Transgender_and_Nonbinary_People'
 url_code: ''
 url_dataset: ''
 url_poster: ''

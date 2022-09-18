@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Curative kink: Survivors of early abuse transform trauma through BDSM'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2021-06-22T00:00:00Z'
+doi: '10.1080/14681994.2021.1937599'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Sexual and Relationship Therapy*
+publication_short: In *Sexual and Relationship Therapy*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Bondage/discipline, dominance/submission, and sadism/masochism (BDSM; “kink”) are frequently pathologized as derivatives of abuse. Although the link is unsubstantiated, some kink-identified people who happen to be survivors of trauma may engage in kink, or trauma play, to heal from, cope with, and transform childhood abuse or adolescent maltreatment. The present study sought a thematic model (Braun & Clarke, Qualitative Research in Psychology, 3(2), 77–101, 2006) of trauma recovery through kink using a critical realist, inductive approach to inquiry. Participants were eligible if they had experienced early abuse, were adults, and practiced kink. Six superordinate themes were generated from semi-structured interviews with 20 participants from five countries: cultural context of healing (e.g. using BDSM norms and previous therapy to reframe kink and trauma), restructuring the self-concept (e.g. strengthening internal characteristics which had been harmed or distorted), liberation through relationship (e.g. learning to be valued by intimate others), reclaiming power (e.g. setting and maintaining personal boundaries), repurposing behaviors (e.g. engaging in aspects of prolonged exposure), and redefining pain (e.g. transcending painful memories through masochism). Notably, participants only reported retraumatizing experiences prior to learning about the structural safeguards of BDSM. Research and clinical implications are discussed by drawing on general models of trauma recovery.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/352440982_Curative_kink_Survivors_of_early_abuse_transform_trauma_through_BDSM'
 url_code: ''
 url_dataset: ''
 url_poster: ''

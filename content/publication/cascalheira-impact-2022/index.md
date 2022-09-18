@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'The impact of the COVID-19 pandemic on HIV-positive men who have sex with men: (Dis)connection to social, sexual, and health networks'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2022-08-22T00:00:00Z'
+doi: '10.1080/19419899.2022.2112745'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -27,7 +27,7 @@ publication_types: ['2']
 publication: In *Psychology & Sexuality*
 publication_short: In *Psychology & Sexuality*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'The COVID-19 pandemic has disproportionately affected HIV-positive cisgender men who have sex with men (MSM). Between May and June in 2020, we conducted one-on-one semi-structured qualitative interviews with 20 HIV-positive MSM aiming to describe their (dis)connection to social, sexual, and health networks during the COVID-19 pandemic. All participants relied on social support networks to manage pandemic-based distress, using computer-mediated communication as well as physical proximity. To connect to sexual networks, this sample described adaptations to their partner selection strategies, such as enumerating harm reduction approaches. To connect to health networks, participants depended on reassuring providers, resourceful case managers, telehealth, and streamlined access to their antiretroviral therapy (ART) medications. Nonetheless, stay-at-home recommendations reduced community connection, sexual activity, and healthcare access for many participants, and perceptions of these losses were shaped by psychosocial burdens (e.g. loneliness), structural burdens (e.g. environmental barriers, financial difficulties), and health-protective factors (e.g. hopeful outlook, adherence to a regular routine). The COVID-19 pandemic appears to have exacerbated health-related issues for HIV-positive MSM. Given the ongoing COVID-19 mutations, community-based organisations, clinicians, and researchers might use these findings to modify HIV prevention and intervention efforts.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/362605250_The_Impact_of_the_COVID-19_Pandemic_on_HIV-Positive_Men_Who_Have_Sex_With_Men_Disconnection_to_Social_Sexual_and_Health_Networks'
 url_code: ''
 url_dataset: ''
 url_poster: ''
