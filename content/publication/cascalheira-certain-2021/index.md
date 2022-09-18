@@ -74,5 +74,5 @@ slides: ""
 ---
 
 {{% callout note %}}
-Click the _Cite_ button download a bibtex for importing into a reference management system.
+Click the _Cite_ button to download a bibtex for importing into a reference management system.
 {{% /callout %}}
