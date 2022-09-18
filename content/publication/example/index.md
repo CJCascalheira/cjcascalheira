@@ -27,7 +27,7 @@ publication_types: ['2']
 publication: In *Psychology & Sexuality*
 publication_short: In *Psychology & Sexuality*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -74,5 +74,5 @@ slides: ""
 ---
 
 {{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Click the _Cite_ button download a bibtex for importing into a reference management system.
 {{% /callout %}}
