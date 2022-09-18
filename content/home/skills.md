@@ -16,18 +16,31 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-  - description: 90%
+  - description: An avid R user since 2018, Cory uses R to conduct reproducible multilevel, latent variable, and machine learning analyses and visualizations.
     icon: r-project
     icon_pack: fab
     name: R
-  - description: 100%
-    icon: chart-line
+  - description: An Python user since 2021, Cory uses Python to perform machine learning, experiment with deep neural networks, execute natural language processing, scrape the web, and download big data.
+    icon: python
+    icon_pack: fab
+    name: Python
+  - description: Cory primary writes for scientific audiences, but his reseacrh has been featured in popular outlets, such as [podcasts](https://podtail.com/podcast/meg-john-and-justin/cory-cascalheira-curative-kink/), [local](https://elpasoheraldpost.com/nmsu-doctoral-students-develop-guide-for-coping-with-self-isolation/) and [international](https://theconversation.com/how-lockdown-changed-our-sex-lives-new-research-156873) newspapers, and [other outlets](https://www.rawstory.com/sex/).
+    icon: book
     icon_pack: fas
-    name: Statistics
-  - description: 10%
-    icon: camera-retro
+    name: Author
+  - description: Cory uses CBT, ACT, RCT, and other evidence-based practices to help clients heal.
+    icon: hand-holding-heart
     icon_pack: fas
-    name: Photography
+    name: Therapist
+  - description: Cory uses an active learning, participatory approach to student education, and has developed GED classes for male inmates in the [Muscogee County Jail](https://www.columbusga.gov/sheriff/) and taught undergraduate classes in research and gender at [New Mexico State University](https://cep.nmsu.edu/).
+    icon: award
+    icon_pack: fas
+    name: Educator
+  - description: Cory is the Vice President of PFLAG Las Cruces and serves on national committees for Division 44 of the American Psychological Association.
+    icon: helping-hands
+    icon_pack: fas
+    name: Advocate
+  
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
