@@ -37,8 +37,8 @@ feature:
     icon_pack: fas
     name: Educator
   - description: Cory is the Vice President of PFLAG Las Cruces and serves on national committees for [Division 44 of the American Psychological Association](https://www.apa.org/about/division/div44).
-    icon: hand-heart
-    icon_pack: far
+    icon: handshake-angle
+    icon_pack: fas
     name: Advocate
   
 # Uncomment to use emoji icons.
