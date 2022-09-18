@@ -56,7 +56,7 @@ experience:
     description: Obtained grants; worked with assistant professors on projects related to LGBTQ+ health; trained and supervised undergraduate research assistants; disseminated results.
   - title: Volunteer Research Assistant
     company: Department of Psychology
-    company_url: 'https://cep.nmsu.edu/'
+    company_url: 'https://www.columbusstate.edu/psychology/'
     company_logo: 
     location: Columbus State University
     date_start: '2018-06-08'
