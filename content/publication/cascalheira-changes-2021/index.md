@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Changes in sexual fantasy and solitary sexual practice during social lockdown among young adults in the UK'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2021-05-22T00:00:00Z'
+doi: '10.1016/j.esxm.2021.100342'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,20 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Sexual Medicine*
+publication_short: In *Sexual Medicine*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Introduction: Pandemic-related social lockdown limited many sexual behaviors, but to date, no study has examined the perceived impact of social lockdown due to COVID-19 on sexual fantasy and solitary sexual behavior.
+
+Aims: The present study sought to examine the perceived impact of social lockdown on sexual fantasy and solitary sexual behavior among UK young adults in various living situations.
+
+Methods: A convenience sample of 565 adults aged 18-32 and living in the UK completed anonymous, web-based, study-specific questionnaires between May 14 and 18, 2020, 7 weeks after social lockdown was initiated. Mixed-method analyses were conducted.
+
+Main outcome measures: The study presents qualitative and quantitative data. Criterion variables were measured dichotomously as increases (vs no change) in sexual fantasy and increases (vs no change) in pornography consumption. Predictor variables were living arrangement, relationship status, and postlockdown changes in masturbation and pornography consumption.
+
+Results: Of all, 34.3% engaged in more sexual fantasizing during lockdown; women were more likely than men to report this increase. Living context and relationship status were predictors of increased fantasizing. Of all, 30.44% reported an increase in at least one solitary sexual practice. This increase was associated with an increase in sexual fantasizing and also with increased pornography consumption. Nineteen percent of participants reported an increase in pornography use, with men being more likely than women to report this increase. Participants mostly attributed their increases to boredom, increased free time, and replacing partnered sex.
+
+Conclusion: Shifts in sexual fantasizing and solitary sexual practices were predicted by living arrangements, relationship status, and gender. The present findings suggest that the assessment of sexual fantasy and solitary sexual activities may benefit patients presenting with pandemic-related stress. Although mostly exploratory, significant changes in sexual fantasy and solitary sexual practices were observed. A cross-sectional design, convenience sampling, and study-specific measures are limitations. Cascalheira CJ, McCormack M, Portch E, et al. Changes in Sexual Fantasy and Solitary Sexual Practice During Social Lockdown Among Young Adults in the UK. J Sex Med 2021;9:100342.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +52,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/351366183_Changes_in_Sexual_Fantasy_and_Solitary_Sexual_Practice_During_Social_Lockdown_Among_Young_Adults_in_the_UK'
 url_code: ''
 url_dataset: ''
 url_poster: ''
