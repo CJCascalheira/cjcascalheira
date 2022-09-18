@@ -3,6 +3,7 @@ title: CMIMS
 summary: Computational Methods Investigating Minority Stress (CMIMS).
 tags:
   - Machine Learning
+  - NLP
 date: '2021-08-19T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'PTSD symptoms and hazardous drinking indicators among trauma-exposed sexual minority women during heightened societal stress'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2021-12-22T00:00:00Z'
+doi: '10.1080/08964289.2021.2006132'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Behavioral Medicine*
+publication_short: In *Behavioral Medicine*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Trauma-exposed sexual minority women (SMW) are at elevated risk of posttraumatic stress disorder (PTSD) and hazardous drinking compared to trauma-exposed heterosexual women. To understand whether these problems might be exacerbated during times of elevated societal stress, we collected data from a New York-based sample of trauma-exposed SMW between April 2020 and August 2020, a period of notable, compounding societal stressors, including: (a) living in or near one of the first epicenters of the coronavirus disease 2019 (COVID-19) epidemic in the United States and (b) living through multiple high-profile occurrences of racism-related police violence and subsequent racial unrest. SMW (n?=?68) completed online self-report questionnaires related to trauma, PTSD symptoms, and alcohol use, and a subset (n?=?29) completed semi-structured qualitative interviews. PsycINFO was searched with terms related to SMW, PTSD, and alcohol use to identify studies with samples of SMW from articles published within the last 10?years to which we could compare our sample; this produced nine studies. Welch?s t-tests and Chi-square analyses revealed that SMW within our sample reported significantly higher PTSD symptom severity, probable PTSD, and hazardous drinking indicators (i.e., alcohol use disorder and heavy episodic drinking) between April 2020 and August 2020 compared to similar samples (i.e., trauma-exposed SMW and general samples of SMW) assessed previously. Qualitative reports also indicated that the societal stressors of 2020 contributed to mental and behavioral health concerns. These results underscore the need for integrated PTSD and alcohol use prevention and intervention efforts for trauma-exposed SMW during times of heightened societal stress.Supplemental data for this article is available online at https://doi.org/10.1080/08964289.2021.2006132 .'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/356811892_PTSD_Symptoms_and_Hazardous_Drinking_Indicators_among_Trauma-Exposed_Sexual_Minority_Women_during_Heightened_Societal_Stress'
 url_code: ''
 url_dataset: ''
 url_poster: ''

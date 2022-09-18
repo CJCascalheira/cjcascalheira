@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'The effectiveness of didactic and perspective-taking interventions on reducing multiple dimensions of heterosexism'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2022-04-22T00:00:00Z'
+doi: '10.1080/00918369.2022.2059969'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Journal of Homosexuality*
+publication_short: In *Journal of Homosexuality*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'This study examined the effect of two interventions (didactic and perspective-taking) on five dimensions of heterosexism (hostile, aversive, amnestic, paternalistic, and positive stereotypic). Participants were 117 undergraduate students, randomly assigned to one of three groups in this posttest-only control group experiment. After the intervention, the participants completed measures of sexual prejudice, right-wing authoritarianism (RWA), gender role beliefs (GRB), and a demographic questionnaire. Results from the first step of hierarchical regression models showed that RWA and GRB were significantly predictive of all dimensions of heterosexism except for positive stereotypic, accounting for 13.8% to 56.7% of the variance. This suggests that interventions targeting sexual prejudice should examine both variables. When between-group comparisons were added during the second step, the didactic intervention in comparison with the control group was significantly predictive of lower paternalistic heterosexism; the perspective-taking intervention in comparison with the control group was significantly predictive of lower positive stereotypic heterosexism.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/360118126_The_Effectiveness_of_Didactic_and_Perspective-Taking_Interventions_on_Reducing_Multiple_Dimensions_of_Heterosexism'
 url_code: ''
 url_dataset: ''
 url_poster: ''

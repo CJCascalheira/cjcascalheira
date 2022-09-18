@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Invisible stories: A phenomenological study of bi and trans parent experiences within elementary schools in the Southwestern United States'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2021-10-22T00:00:00Z'
+doi: '10.1080/00918369.2021.1987746'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Journal of Homosexuality*
+publication_short: In *Journal of Homosexuality*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Heteronormativity, family hegemony, and gender biases in K-12 education threaten child safety, parental dignity, and identity among queer families. While prior research examined the experiences of queer parents?specifically those of lesbian and gay parents?empirical attention to school-related experiences of trans and bi parents is lacking. Hence, this phenomenological study focuses on the PK-12 school-related experiences of bi and trans parents. Using queer theory as a theoretical framework, we review relevant literature on family hegemony, gender biases, and heteronormativity within school settings and its impact on children with queer families. Then, we discuss the methods and analysis used to understand the experiences of bi and trans parent participants. Analysis revealed four themes: (a) concern for the child; (b) value for diversity; (c) heteronormative nature of schools; and (d) importance of inclusivity. Finally, we provide recommendations on ways school personnel can better support trans and bi parents and their children.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/355108197_Invisible_Stories_A_Phenomenological_Study_of_Bi_and_Trans_Parent_Experiences_within_Elementary_Schools_in_the_Southwestern_United_States'
 url_code: ''
 url_dataset: ''
 url_poster: ''

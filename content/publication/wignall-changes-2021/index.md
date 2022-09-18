@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Changes in sexual desire and behaviors among UK young adults during social lockdown due to COVID-19'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -12,7 +12,7 @@ author_notes:
   - ''
 
 date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+doi: '10.1080/00224499.2021.1897067'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *The Journal of Sex Research*
+publication_short: In *The Journal of Sex Research*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'This study examined self-reported changes in young adults? sexual desire and behaviors during the most significant social restrictions imposed to deal with COVID-19. Drawing on a survey of 565 British adults aged 18?32 collected at the peak of social lockdown restrictions, we document an overall decrease in sexual behaviors consistent with abiding by social restrictions. We found that the levels of sexual desire reported by women (but not men) decreased compared with reports of pre-lockdown levels. Participants in serious relationships reported more increases in sexual activity than people who were single or dating casually, and there were significant differences according to gender and sexual orientation. The perceived impact of subjective wellbeing of people with high sociosexuality scores was disproportionately associated with social lockdown but there was no effect for general health. Thus, the impact on sexuality and general wellbeing should be considered by policymakers when considering future social restrictions related to COVID-19 or other public health emergencies.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/350470202_Changes_in_Sexual_Desire_and_Behaviors_among_UK_Young_Adults_During_Social_Lockdown_Due_to_COVID-19'
 url_code: ''
 url_dataset: ''
 url_poster: ''

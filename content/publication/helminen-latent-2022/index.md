@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'A latent class analysis of tailored substance use treatment programs: Implications for treating syndemic conditions facing sexual and gender minority populations'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2022-09-22T00:00:00Z'
+doi: '10.1016/j.drugalcdep.2022.109550'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,20 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Drug and Alcohol Dependence*
+publication_short: In *Drug and Alcohol Dependence*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Background
+Syndemics (i.e., multiple, co-occurring, and synergistic conditions) contribute to elevated substance use among sexual and gender minority (SGM) people relative to heterosexual, cisgender people. Research suggests that syndemic-informed and SGM-tailored treatments are effective in substance use treatment among SGM people. However, few studies have examined 1) the proportion of substance use treatment facilities offering syndemic-informed, SGM-tailored treatment programming; and 2) the availability and accessibility of syndemic-informed, SGM-tailored treatment programs across the U.S.
+
+Methods
+We used the 2020 National Survey of Substance Abuse Treatment Services (N-SSATS) dataset to perform a latent class analysis examining whether substance use treatment facilities’ tailored treatment programs cluster together to form distinct classes indicating whether facilities offer syndemic-informed and SGM-tailored programming. We then used multinomial logistic regression to examine associations between class membership and facility availability and accessibility.
+
+Results
+Analyses revealed four classes of substance use treatment facilities’ tailored programs. Facilities with syndemic-informed and SGM-tailored treatment programs compared to facilities with no tailored programs were more likely to be in the Northeast compared to the Midwest and South; to offer payment assistance versus not offer payment assistance; and to be private, for-profit facilities versus public or non-profit facilities.
+
+Conclusions
+This study’s findings identify the need for more facilities with syndemic-informed and SGM-tailored treatment, particularly in the Midwestern and Southern U.S. regions. Facilities offering syndemic-informed and SGM-tailored treatment might present accessibility barriers for low-income SGM people, as they were more likely to be private, for-profit facilities; however, they were more likely to offer payment assistance.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +52,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/361664132_A_latent_class_analysis_of_tailored_substance_use_treatment_programs_Implications_for_treating_syndemic_conditions_facing_sexual_and_gender_minority_populations'
 url_code: ''
 url_dataset: ''
 url_poster: ''

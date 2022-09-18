@@ -1,5 +1,5 @@
 ---
-title: 'A certain evolution: A phenomenological study of 24/7 BDSM and negotiating consent'
+title: 'Using field trips to create relevant social justice informed mathematics lessons in an elementary teacher education program: An action research study'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -11,8 +11,8 @@ authors:
 author_notes:
   - ''
 
-date: '2021-03-22T00:00:00Z'
-doi: '10.1080/19419899.2021.1901771'
+date: '2022-07-22T00:00:00Z'
+doi: '10.1080/01626620.2022.2096709'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2022-09-18T00:00:00Z'
@@ -24,10 +24,10 @@ publishDate: '2022-09-18T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Psychology & Sexuality*
-publication_short: In *Psychology & Sexuality*
+publication: In *Action in Teacher Education*
+publication_short: In *Action in Teacher Education*
 
-abstract: 'BDSM as a full-time lifestyle is stigmatised and underexamined as a phenomenon. Previous studies have investigated 24/7 sadomasochism (SM), 24/7 dominance and submission (D/s), or total power exchange (TPE), yet 24/7 BDSM remains under researched. Using a social constructionist and sexual diversity framework, we used insider knowledge to recruit four participants: a female slave/masochist, a male sadist, a female submissive, and a male dominant/protector. Interpretative phenomenological analysis revealed four superordinate and 10 subordinate themes: routes towards the fundamentals (sexually explicit resources, kink-related experiences), full-on lifestyle (self-in-role, flexible rules, shades of play, polyamory), dynamic consent (honesty, contextual communication), and practicalities (challenges, benefits). Our findings suggested that 24/7 BDSM is a socially constructed, consensual, full-time adherence to kink-related roles and behaviours untethered to time-limited scenes, woven into other life domains, and operating as an umbrella term to encompass other perpetual power dynamics. The themes contribute to the debate of kink as a sexual identity or serious leisure. We concluded that the centrality of self-in-role coupled with leisure features support 24/7 BDSM as an erotic lifestyle. Implications for sexual diversity, sex education, clinical guidelines, and social justice are discussed.'
+abstract: 'Teaching mathematics for social justice is a rich research area in which field trips have been under examined. The paucity of literature on math-based field trips for social justice, specifically, warrants further investigation. This action research study aims to improve our practice of empowering elementary preservice teachers to design math-based field trips to enhance student awareness of social justice issues. Two research questions (RQ) guided this project: (RQ1) How can teacher educators inspire social change within math education via the preparation of future elementary teachers using math-based field trips? (RQ2) What are preservice teachers? perceptions of designing socially just math lessons using fieldtrips? We provide an overview of previous literature, describe the project we designed, and provide an analysis of preservice teachers? experiences and perceptions of this project. Thematic analysis of student journals and final assignments generated eight overarching themes and three subordinate themes organized by three phases. Organization by phases indicates a structural approach that teacher educators may use when introducing a similar activity. Further analysis revealed elementary preservice teachers emphasized the beneficial challenge of this assignment, suggesting that math-based social justice field trips are important additions to teacher education programs. Finally, we discuss what we learned from this study as teacher educators and researchers and provide recommendations to the field of teacher education.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.researchgate.net/publication/349927679_A_Certain_Evolution_A_Phenomenological_study_of_247_BDSM_and_Negotiating_Consent'
+url_pdf: 'https://www.researchgate.net/publication/362076262_Using_Field_Trips_to_Create_Relevant_Social_Justice_Informed_Mathematics_Lessons_in_an_Elementary_Teacher_Education_Program_An_Action_Research_Study'
 url_code: ''
 url_dataset: ''
 url_poster: ''
