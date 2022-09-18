@@ -66,6 +66,7 @@ experience:
     date_start: '2020-03-31'
     date_end: '2020-12-31'
     description: Facilitated counseling groups for withdrawal management with cisgender men and women from diverse ethnic and socioeconomic backgrounds using mindfulness-based relapse prevention, DBT skills training, and the Wellness Recovery Action Plan (WRAP); facilitated a supportive, expressive group on healthy relationships; co-facilitated groups (i.e., twelve-step, life skills) with a diverse team of behavioral health professionals using an Integrated Dual Disorder Treatment (IDDT) model.
+Setting: Community Intensive Outpatient for Substance Misuse (ASAM 3.1)
 
   - title: Group Practicum Facilitator
     company: NMSU Community Mental Health & Wellness Clinic
