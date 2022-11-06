@@ -39,7 +39,7 @@ Results will help support the development of technology-delivered mental health 
 
 Check out the visual consent form to learn more.
 
-![CMIPS Visual Consent Form 1](projects/cmps-visual-consent-1.jpg "caption")
+![CMIPS Visual Consent Form 1](projects/cmips-visual-consent-1.jpg "caption")
 
 **Project Funding**
 
