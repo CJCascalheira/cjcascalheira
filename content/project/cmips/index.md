@@ -37,7 +37,9 @@ The aim of this project is to use machine learning and natural language processi
 
 Results will help support the development of technology-delivered mental health tools (e.g., digital mental health apps) specifically designed for LGBTQ+ people.
 
-![CMIPS Visual Consent Form 1](cmps-visual-consent-1.jpg)
+Check out the visual consent form to learn more.
+
+![CMIPS Visual Consent Form 1](projects/cmps-visual-consent-1.jpg "caption")
 
 **Project Funding**
 
