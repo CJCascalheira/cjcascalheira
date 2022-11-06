@@ -10,7 +10,7 @@ date: '2022-11-01T00:00:00Z'
 external_link: ''
 
 image:
-  caption: Photo from Ohio Psychological Association website.
+  caption: Photo from the CMIPS Visual Consent form.
   focal_point: Smart
 
 links:
@@ -36,6 +36,8 @@ slides: ''
 The aim of this project is to use machine learning and natural language processing to model psychosocial stressors among LGBTQ+ people using their Facebook and/or Twitter data. In other words, to apply artificial intelligence to understand how LGBTQ+ people talk about stressful experiences on Facebook and/or Twitter. 
 
 Results will help support the development of technology-delivered mental health tools (e.g., digital mental health apps) specifically designed for LGBTQ+ people.
+
+![CMIPS Visual Consent Form 1](cmps-visual-consent-1.jpg)
 
 **Project Funding**
 
