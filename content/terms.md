@@ -14,6 +14,8 @@ header:
 
 **TERMS OF SERVICE**
 
+Last updated November 06, 2022
+
 All information provided on www.cjcascalheira.com is referred to as the "Service."
 
 **1. USING THIS WEBSITE.**
