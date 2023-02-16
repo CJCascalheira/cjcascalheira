@@ -24,7 +24,7 @@ feature:
     icon: python
     icon_pack: fab
     name: Python
-  - description: Cory primarily writes for scientific audiences, but his research has been featured in popular outlets, such as [podcasts](https://podtail.com/podcast/meg-john-and-justin/cory-cascalheira-curative-kink/), [local](https://elpasoheraldpost.com/nmsu-doctoral-students-develop-guide-for-coping-with-self-isolation/) and [international](https://theconversation.com/how-lockdown-changed-our-sex-lives-new-research-156873) newspapers, and [other outlets](https://www.rawstory.com/sex/).
+  - description: Cory primarily writes for scientific audiences, but his research has been featured in popular outlets, such as [podcasts](https://podtail.com/podcast/meg-john-and-justin/cory-cascalheira-curative-kink/), [local](https://elpasoheraldpost.com/nmsu-doctoral-students-develop-guide-for-coping-with-self-isolation/) and [international](https://theconversation.com/how-lockdown-changed-our-sex-lives-new-research-156873) newspapers, [online magazines](https://www.vice.com/en/article/bvm9k8/survey-bot-fraud-lgbtq-health), and [other outlets](https://www.rawstory.com/sex/).
     icon: book
     icon_pack: fas
     name: Author
