@@ -28,8 +28,8 @@ experience:
     company_logo:
     location: VA Medical Center - Texas
     date_start: '2022-07-15'
-    date_end: ''
-    description: Works with a home-based primary care (HBPC) team; provides behavioral consultation to an interdisciplinary team (IDT) at meetings; assess cognitive decline in HBPC-enrolled veterans; attends trainings in CPT through the VA Talent Management System (TMS).
+    date_end: '2022-12-12'
+    description: Worked with a home-based primary care (HBPC) team; provided behavioral consultation to an interdisciplinary team (IDT) at meetings; assessed cognitive decline in HBPC-enrolled veterans; attended workshops on CPT through the VA Talent Management System (TMS).
 
   - title: Behavioral Health Consultant
     company: MMC Family Medicine Center
@@ -37,8 +37,8 @@ experience:
     company_logo:
     location: Primary Care Clinic - New Mexico
     date_start: '2021-08-17'
-    date_end: ''
-    description: Provides behavioral health consultation on an integrated team of physicians, medical residents, nurses, nurse practitioners, social workers, and trainees; administers and interprets ADHD and psychodiagnostic assessments; consults patients on harm reduction and lifestyle medicine; provides brief psychotherapy using ACT, CBT, RCT, and CPT; works with a variety of presenting concerns, including anxiety, depression, trauma, alcohol misuse, drug misuse, adjustment disorder, identity concerns, complex trauma, and gender dysphoria.
+    date_end: '2022-12-12'
+    description: Provided behavioral health consultation on an integrated team of physicians, medical residents, nurses, nurse practitioners, social workers, and trainees; administered and interpreted ADHD and psychodiagnostic assessments; consulted with patients on harm reduction and lifestyle medicine; provided brief psychotherapy using ACT, CBT, RCT, and CPT; worked with a variety of presenting concerns, including anxiety, depression, trauma, alcohol misuse, drug misuse, adjustment disorder, identity concerns, complex trauma, and gender dysphoria.
 
   - title: Graduate Clinical Supervisor
     company: NMSU Community Mental Health & Wellness Clinic

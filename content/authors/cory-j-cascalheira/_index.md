@@ -59,6 +59,3 @@ Cory J. Cascalheira, BA, LSAA (he / they) is an NIH MBRS R25 RISE Fellow and a d
 
 
 Clinically, he has experience delivering cognitive-behavioral, mindfulness-based, and relational-cultural interventions through individual and group modalities with people living with homelessness, addiction, recidivism, academic distress, anxiety, depression, PTSD, loss, and concerns about body image and identity development. Cory has worked in college counseling centers, community behavioral health settings, integrated primary care, and VA medical centers. 
-
-
-Currently, he serves as a behavioral health consultant, graduate research assistant, and lab manager.
