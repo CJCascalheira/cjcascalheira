@@ -33,6 +33,8 @@ slides: ''
 
 **Computational Methods Investigating Psychosocial Stressors (CMIPS)**
 
+This project has received [IRB approval](https://www.cjcascalheira.com/uploads/CMIPS_IRB-approval.pdf).
+
 The aim of this project is to use machine learning and natural language processing to model psychosocial stressors among LGBTQ+ people using their Facebook and/or Twitter data. In other words, to apply artificial intelligence to understand how LGBTQ+ people talk about stressful experiences on Facebook and/or Twitter. 
 
 Results will help support the development of technology-delivered mental health tools (e.g., digital mental health apps) specifically designed for LGBTQ+ people.
