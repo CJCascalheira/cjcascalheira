@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Psychology Fellow
+    company: VA Puget Sound Health Care System, Seattle
+    company_url: ''
+    company_logo:
+    location: Seattle, WA
+    date_start: '2023-07-17'
+    date_end: ''
+    description: Starting in July 2023!
+    
   - title: Health Services Student Trainee
     company: El Paso VA Health Care System
     company_url: ''

@@ -28,8 +28,8 @@ experience:
     company_logo: 
     location: Syracuse University
     date_start: '2021-01-28'
-    date_end: ''
-    description: Manages a large team of undergraduate students, postbaccalaureate research assistants, and graduate students; implements multiple funded projects to understand how psychosocial stressors impact the development and course of PTSD symptoms and hazardous drinking among sexual minority women; assists in funding acquisition; disseminates findings.
+    date_end: '2023-05-12'
+    description: Managed a large team of undergraduate students, postbaccalaureate research assistants, and graduate students; implemented multiple funded projects to understand how psychosocial stressors impact the development and course of PTSD symptoms and hazardous drinking among sexual minority women; assisted in funding acquisition; disseminated findings.
     
   - title: Research Extern
     company: Hub for Health Intervention, Policy and Practice
