@@ -36,7 +36,7 @@ feature:
     icon: award
     icon_pack: fas
     name: Educator
-  - description: Cory is the Vice President of PFLAG Las Cruces and serves on national committees for [Division 44 of the American Psychological Association](https://www.apa.org/about/division/div44).
+  - description: Cory has served on the board of directors for LGBTQ+ non-profits and currently serves on a national science committee for [Division 44 of the American Psychological Association](https://www.apa.org/about/division/div44).
     icon: handshake-angle
     icon_pack: fas
     name: Advocate

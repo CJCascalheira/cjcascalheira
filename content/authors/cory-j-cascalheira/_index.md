@@ -55,7 +55,7 @@ education:
       year: 2012
 superuser: true
 ---
-Cory J. Cascalheira, BA, LSAA (he / they) is an NIH MBRS R25 RISE Fellow and a doctoral candidate in the Department of Counseling & Educational Psychology at New Mexico State University. His research program has two foci: (1) the examination of stress-based, multilevel determinants and mechanisms conferring risk for LGBTQ+ health disparities (e.g., substance misuse); (2) the use of computational methods (i.e., artificial intelligence) and big data to understand LGBTQ+ health behaviors and outcomes; and (3) the development of innovative interventions (e.g., digital health).
+Cory J. Cascalheira, BA, LSAA (he / they) is an NIH MBRS R25 RISE Fellow and a doctoral candidate in the Department of Counseling & Educational Psychology at New Mexico State University. His research program has three foci: (1) the examination of stress-based, multilevel determinants and mechanisms conferring risk for LGBTQ+ health disparities (e.g., substance misuse); (2) the use of computational methods (i.e., artificial intelligence) and big data to understand LGBTQ+ health behaviors and outcomes; and (3) the development of innovative interventions (e.g., digital health).
 
 
 Clinically, he has experience delivering cognitive-behavioral, mindfulness-based, and relational-cultural interventions through individual and group modalities with people living with homelessness, addiction, recidivism, academic distress, anxiety, depression, PTSD, loss, and concerns about body image and identity development. Cory has worked in college counseling centers, community behavioral health settings, integrated primary care, and VA medical centers. 
