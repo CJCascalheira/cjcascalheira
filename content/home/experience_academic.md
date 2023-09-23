@@ -22,15 +22,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Lab Manager
-    company: Minority Stress and Trauma Lab
-    company_url: 'https://jrscheer.expressions.syr.edu/'
-    company_logo: 
-    location: Syracuse University
-    date_start: '2021-01-28'
-    date_end: '2023-05-12'
-    description: Managed a large team of undergraduate students, postbaccalaureate research assistants, and graduate students; implemented multiple funded projects to understand how psychosocial stressors impact the development and course of PTSD symptoms and hazardous drinking among sexual minority women; assisted in funding acquisition; disseminated findings.
-    
   - title: Research Extern
     company: Hub for Health Intervention, Policy and Practice
     company_url: 'https://hhipp.sites.luskin.ucla.edu/'
@@ -48,6 +39,24 @@ experience:
     date_start: '2021-08-01'
     date_end: ''
     description: Obtains grants; applies artificial intelligence and big data to the study of psychosocial stressors among LGBTQ+ adults; manages a large team of undergraduate students, doctoral students, postdoctoral fellows, and assistant professors in the creation of a large, qualitatively annotated database of social media posts; disseminates results.
+
+  - title: Lab Manager
+    company: Minority Stress and Trauma Lab
+    company_url: 'https://jrscheer.expressions.syr.edu/'
+    company_logo: 
+    location: Syracuse University
+    date_start: '2021-01-28'
+    date_end: '2023-05-12'
+    description: Managed a large team of undergraduate students, postbaccalaureate research assistants, and graduate students; implemented multiple funded projects to understand how psychosocial stressors impact the development and course of PTSD symptoms and hazardous drinking among sexual minority women; assisted in funding acquisition; disseminated findings.
+
+  - title: Research Extern
+    company: CONNECT Complex Systems and Health Disparities Research Program
+    company_url: 'https://isgmh.northwestern.edu/centers-programs/connect-program/'
+    company_logo: 
+    location: Institute for Sexual and Gender Minority Health and Wellbeing, Northwestern University
+    date_start: '2023-01-01'
+    date_end: '2023-05-12'
+    description: Gained grant experience; presented science to various stakeholder workshops; contributed to NIH-funded research; disseminated findings.
     
   - title: NICE Chair
     company: Network for International Collaborative Exchange

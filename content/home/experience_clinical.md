@@ -22,14 +22,14 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Psychology Fellow
+  - title: Predoctoral Clinical Psychology Intern
     company: VA Puget Sound Health Care System, Seattle
     company_url: ''
     company_logo:
-    location: Seattle, WA
+    location: VA Medical Center - Washington
     date_start: '2023-07-17'
     date_end: ''
-    description: Starting in July 2023!
+    description: Delivers CBT-D, COPE, and ACT to individual patients and facilitates CBT-SUD, DBT Skills, and interpersonal process groups in the Addiction Treatment Center; co-facilitates a LGBTQ+ support group; leads interprofessional team meetings; conducts case management, treatment planning, and assessment; plans seminars; contributes to grant-funded research on LGBTQ+ Veterans.
     
   - title: Health Services Student Trainee
     company: El Paso VA Health Care System
@@ -41,7 +41,7 @@ experience:
     description: Worked with a home-based primary care (HBPC) team; provided behavioral consultation to an interdisciplinary team (IDT) at meetings; assessed cognitive decline in HBPC-enrolled veterans; attended workshops on CPT through the VA Talent Management System (TMS).
 
   - title: Behavioral Health Consultant
-    company: MMC Family Medicine Center
+    company: Memorial Medical Center, Family Medicine Center
     company_url: ''
     company_logo:
     location: Primary Care Clinic - New Mexico

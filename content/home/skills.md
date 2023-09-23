@@ -16,11 +16,11 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-  - description: An avid R user since 2018, Cory uses R to conduct reproducible multilevel, latent variable, and machine learning analyses and visualizations.
+  - description: An avid R user since 2018, Cory uses R to conduct reproducible multilevel, latent variable, and artificial intelligence analyses and visualizations.
     icon: r-project
     icon_pack: fab
     name: R
-  - description: A Python user since 2021, Cory uses Python to perform machine learning, experiment with deep neural networks, execute natural language processing, scrape the web, and download big data.
+  - description: A Python user since 2021, Cory uses Python to perform machine learning, deep neural networks,  natural language processing, scrape the web, and download big data.
     icon: python
     icon_pack: fab
     name: Python
@@ -28,7 +28,7 @@ feature:
     icon: book
     icon_pack: fas
     name: Author
-  - description: Cory uses CBT, ACT, RCT, and other evidence-based practices to prevent client problems, stop client suffering, and contribute to client development. He has neuropsychological and psychodiagnostic assessment experience.
+  - description: Cory uses CBT, COPE, PE, CPT, MI, ACT, RCT, and other evidence-based practices to prevent client problems, stop client suffering, and contribute to client development. He has neuropsychological and psychodiagnostic assessment experience.
     icon: hand-holding-heart
     icon_pack: fas
     name: Therapist

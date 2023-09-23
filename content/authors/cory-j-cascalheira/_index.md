@@ -2,7 +2,7 @@
 title: Cory J. Cascalheira
 role: "Doctoral Candidate in Counseling Psychology "
 avatar_filename: avatar.jpg
-bio: "Research interests include (1) the examination of stress-based, multilevel determinants and mechanisms conferring risk for LGBTQ+ health disparities (e.g., substance misuse); (2) the use of computational methods (i.e., artificial intelligence) and big data to understand LGBTQ+ health behaviors and outcomes; and (3) the development of innovative interventions (e.g., digital health). Clinical interests include ACT, CBT, CPT, and MI."
+bio: "Research interests include (1) the examination of stress-based, multilevel determinants and mechanisms conferring risk for LGBTQ+ health disparities (e.g., substance misuse); (2) the use of computational methods (i.e., artificial intelligence) and big data to understand LGBTQ+ health behaviors and outcomes; and (3) the development of innovative interventions (e.g., digital health). Clinical interests include ACT, CBT, COPE, PE, CPT, and MI for substance use disorders and posttraumatic stress disorder."
 social:
   - display:
       header: true
