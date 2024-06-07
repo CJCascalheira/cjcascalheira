@@ -22,14 +22,23 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: MIRECC Postdoctoral Fellow 
+    company: VA Puget Sound Health Care System, Seattle
+    company_url: ''
+    company_logo:
+    location: VA Medical Center - Washington
+    date_start: '2024-07-29'
+    date_end: ''
+    description: Specializes in PTSD and SUD among minoritized Veterans.
+    
   - title: Research Extern
     company: Hub for Health Intervention, Policy and Practice
     company_url: 'https://hhipp.sites.luskin.ucla.edu/'
     company_logo: 
     location: University of California, Los Angeles
     date_start: '2022-07-01'
-    date_end: ''
-    description: Assists in the design of a technology-delivered health promotion intervention to reduce HIV risk among gay, bisexual, and other men who have sex with men; disseminates findings.
+    date_end: '2024-07-12'
+    description: Assisted in the design of a technology-delivered health promotion intervention to reduce HIV risk among gay, bisexual, and other men who have sex with men; disseminates findings.
     
   - title: RISE Fellow
     company: Department of Counseling & Educational Psychology
@@ -37,8 +46,8 @@ experience:
     company_logo: 
     location: New Mexico State University
     date_start: '2021-08-01'
-    date_end: ''
-    description: Obtains grants; applies artificial intelligence and big data to the study of psychosocial stressors among LGBTQ+ adults; manages a large team of undergraduate students, doctoral students, postdoctoral fellows, and assistant professors in the creation of a large, qualitatively annotated database of social media posts; disseminates results.
+    date_end: '2024-07-12'
+    description: Obtained grants; applied artificial intelligence and big data to the study of psychosocial stressors among LGBTQ+ adults; managed a large team of undergraduate students, doctoral students, postdoctoral fellows, and assistant professors in the creation of a large, qualitatively annotated database of social media posts; disseminated results.
 
   - title: Lab Manager
     company: Minority Stress and Trauma Lab

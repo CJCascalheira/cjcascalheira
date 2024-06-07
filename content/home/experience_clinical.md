@@ -28,8 +28,8 @@ experience:
     company_logo:
     location: VA Medical Center - Washington
     date_start: '2023-07-17'
-    date_end: ''
-    description: Delivers CBT-D, COPE, and ACT to individual patients and facilitates CBT-SUD, DBT Skills, and interpersonal process groups in the Addiction Treatment Center; co-facilitates a LGBTQ+ support group; leads interprofessional team meetings; conducts case management, treatment planning, and assessment; plans seminars; contributes to grant-funded research on LGBTQ+ Veterans.
+    date_end: '2024-07-12'
+    description: Delivered CBT-D, COPE, PE, and ACT to individual patients; facilitated CBT-SUD, CPT-SUD, DBT Skills, social support, and interpersonal process groups in the Addiction Treatment Center, Spinal Cord Injury Unit, and PTSD Outpatient Clinic; co-facilitated a LGBTQ+ support group; lead interprofessional team meetings; conducted case management, treatment planning, and assessment; planned seminars; presented research findings; contributed to the LGBTQ+ State of the Art national research planning committee; contributed to grant-funded research on LGBTQ+ Veterans; consulted on natural language processing.
     
   - title: Health Services Student Trainee
     company: El Paso VA Health Care System
